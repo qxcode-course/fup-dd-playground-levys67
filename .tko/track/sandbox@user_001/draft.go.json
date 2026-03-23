@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-13-08",
+            "content": "@@ -115,16 +115,35 @@\n  a / b %0A\n+    fmt.Print(div)%0A\n     var \n@@ -176,13 +176,8 @@\n int(\n-div, \n res)\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-17-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int = 2\n    var b int = 3\n    fmt.Scan(&a, &b)\n    var div int = a / b \n    var res int = a - b\n    fmt.Print(div, res)\n}\n",
+            "lines": "10"
+        }
+    ]
+}

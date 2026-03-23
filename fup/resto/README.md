@@ -1,4 +1,4 @@
-# Resultado e resto na divisão
+ # Resultado e resto na divisão
 
 ![Imagem Teorema da Divisão](../../.tko/cache/fup/base/resto/cover.png)
 

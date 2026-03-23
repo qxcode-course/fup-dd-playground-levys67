@@ -1,4 +1,4 @@
----
+ ---
 # Não altere essa chave, ela deve ser única para cada rascunho
 key=user_001
 ---

@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-10-35",
+            "content": "@@ -37,66 +37,8 @@\n ) %7B%0A\n-    var a int = 12%0A    var b int = 6%0A    fmt.Scan(&a, &b)%0A\n     \n@@ -53,19 +53,16 @@\n tln(\n-(a + b ) /2\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-14-42",
+            "content": "@@ -43,23 +43,19 @@\n   var a \n-float32\n+int\n  = 12%0A  \n@@ -66,15 +66,11 @@\n r b \n-float32\n+int\n  = 6\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-23_17-15-07",
+            "content": "@@ -121,16 +121,17 @@\n n((a + b\n+ \n ) /2)%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-23_17-15-40",
+            "content": "@@ -129,10 +129,8 @@\n ) /2\n-.0\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-23_17-17-38",
+            "content": "@@ -119,14 +119,8 @@\n tln(\n-%22%25f%22, \n (a +\n@@ -128,10 +128,11 @@\n b) /\n- \n 2\n+.0\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-23_17-22-58",
+            "content": "@@ -103,42 +103,8 @@\n &b)%0A\n-    var c float32 = ((a + b) / 2)%0A\n     \n@@ -116,17 +116,28 @@\n rint\n-f\n+ln\n (%22%25f%22, \n-c\n+(a + b) / 2\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-23_17-25-19",
+            "content": "@@ -154,10 +154,8 @@\n f(%22%25\n-.1\n f%22, \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-23_17-26-09",
+            "content": "@@ -157,10 +157,8 @@\n %25.1f\n-%5Cn\n %22, c\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-23_17-27-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a float32 = 12\n    var b float32 = 6\n    fmt.Scan(&a, &b)\n    var c float32 = ((a + b) / 2)\n    fmt.Printf(\"%.1f\\n\", c)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

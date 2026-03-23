@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-03-10_18-18-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -37,90 +37,8 @@\n ) %7B%0A\n-    var a int = 12%0A    var b int = 6%0A    fmt.Scan(&a, &b)%0A    var div int = a / b%0A\n     \n@@ -53,11 +53,16 @@\n tln(\n-div\n+%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-17_18-12-50",
+            "content": "@@ -140,49 +140,6 @@\n iv)%0A\n-    var res int = a %25 b%0A    fmt.Print(res)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-23_17-02-34",
+            "content": "@@ -128,16 +128,18 @@\n mt.Print\n+ln\n (div)%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-03-10",
+            "content": "@@ -162,24 +162,8 @@\n %25 b%0A\n-    fmt.Print()%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-04-21",
+            "content": "@@ -176,11 +176,8 @@\n int(\n-%22 %22\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_17-04-34",
+            "content": "@@ -194,10 +194,8 @@\n rint\n-ln\n (res\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_17-05-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int = 12\n    var b int = 6\n    fmt.Scan(&a, &b)\n    var div int = a / b\n    fmt.Print(div)\n    var res int = a % b\n    fmt.Print(\" \")\n    fmt.Println(res)\n}\n",
+            "lines": "12"
         }
     ]
 }
