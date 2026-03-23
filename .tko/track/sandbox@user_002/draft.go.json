@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-34-05",
+            "content": "@@ -37,75 +37,8 @@\n ) %7B%0A\n-    var num1, num2 float64%0A    fmt.Scan(&num1)%0A    fmt.Scan(&num2)%0A\n     \n@@ -64,22 +64,9 @@\n ndo%22\n-, num1, num2\n )%0A%7D%0A%0A\n-%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-52-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float64\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Println(\"ola mundo\", num1, num2)\n}\n\n\n",
+            "lines": "10"
+        }
+    ]
+}

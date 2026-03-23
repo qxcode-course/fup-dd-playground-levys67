@@ -1,0 +1,35 @@
+2026-03-10 17:32:45, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-03-10 17:33:14, EXEC, v:1, k:sandbox@user_002, mode:FULL, size:6, fail:COMP
+2026-03-10 17:33:14, EXEC, v:1, k:sandbox@user_002, mode:FULL, size:6, fail:COMP
+2026-03-10 17:34:05, EXEC, v:1, k:sandbox@user_002, mode:LOCK, rate:0, size:6
+2026-03-10 17:39:24, MOVE, v:1, k:sandbox@user_002, mode:BACK
+2026-03-10 17:39:24, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-03-10 17:39:26, MOVE, v:1, k:sandbox@user_002, mode:BACK
+2026-03-10 17:39:26, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-03-10 17:39:27, MOVE, v:1, k:sandbox@user_002, mode:BACK
+2026-03-10 17:39:38, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-03-10 17:39:43, EXEC, v:1, k:sandbox@user_002, mode:FULL, rate:0
+2026-03-10 17:52:36, EXEC, v:1, k:sandbox@user_002, mode:FREE, size:10
+2026-03-10 17:59:17, MOVE, v:1, k:sandbox@user_002, mode:BACK
+2026-03-10 18:04:59, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-10 18:05:02, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-10 18:05:03, EXEC, v:1, k:fup@tres, mode:FULL, rate:0, size:5
+2026-03-10 18:13:17, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-10 18:13:40, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-10 18:13:42, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:7
+2026-03-10 18:13:42, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:7
+2026-03-10 18:13:47, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:7
+2026-03-10 18:13:53, EXEC, v:1, k:fup@tres, mode:FREE
+2026-03-10 18:16:58, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-10 18:18:06, MOVE, v:1, k:fup@resto, mode:DOWN
+2026-03-10 18:18:11, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-10 18:18:12, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:5
+2026-03-10 18:19:51, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-10 18:25:52, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-10 18:25:57, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:25:57, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:26:08, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:26:09, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:26:21, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:26:22, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-10 18:26:38, EXEC, v:1, k:fup@tres, mode:FULL, rate:100

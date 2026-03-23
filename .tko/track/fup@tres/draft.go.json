@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-05-03",
+            "content": "@@ -1,44 +1,34 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A\n+@@ -37,53 +37,8 @@%0A ) %257B%250A%0A-\n     \n@@ -42,17 +42,19 @@\n b, c int\n-%0A\n+%250A\n     fmt.\n@@ -73,25 +73,45 @@\n  &c)\n+%250A\n %0A    \n-fmt.Prin\n+ %0A@@ -53,17 +53,16 @@%0A \n tln(\n+%0A-\n a + \n@@ -119,8 +119,31 @@\n  + c\n-)%0A%7D\n+%0A+%2522qxcode%2522%0A )%250A%257D%250A\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_18-13-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    fmt.Scan(&a, &b, &c)\n    fmt.Println(a + b + c)\n}\n",
+            "lines": "7"
+        }
+    ]
+}
