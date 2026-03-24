@@ -2,8 +2,88 @@
     "patches": [
         {
             "label": "2026-03-23_17-30-40",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -37,288 +37,8 @@\n ) %7B%0A\n-    var a float32 = 2%0A    var b float32 = 8%0A    var c float32 = 5%0A    fmt.Scan(&a, &b, &c)%0A    var z float32 = 1555%0A    var x float32 = 4206%0A    var y float32 = 761%0A    fmt.Scan(&z, &x, &y)%0A    var din float32 = 54771.81%0A    var az float32 = a * z%0A    var bx float32 = b * x%0A    %0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-24_16-41-40",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -262,19 +262,18 @@\n     var \n-gas\n+az\n  float32\n@@ -284,24 +284,40 @@\n  * z\n- + b * x + c * y\n+%0A    var bx float32 = b * x%0A    \n %0A   \n@@ -333,17 +333,16 @@\n tln(\n-din - gas\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-24_17-02-28",
+            "content": "@@ -253,17 +253,17 @@\n  54771.8\n-7\n+1\n %0A    var\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-03-14",
+            "content": "@@ -316,16 +316,11 @@\n rint\n-f(%22%252f%22,\n+ln(\n din \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-05-41",
+            "content": "@@ -49,18 +49,18 @@\n  a float\n-64\n+32\n  = 2%0A   \n@@ -71,18 +71,18 @@\n  b float\n-64\n+32\n  = 8%0A   \n@@ -89,26 +89,26 @@\n  var c float\n-64\n+32\n  = 5%0A    fmt\n@@ -140,18 +140,18 @@\n  z float\n-64\n+32\n  = 1555%0A\n@@ -165,18 +165,18 @@\n  x float\n-64\n+32\n  = 4206%0A\n@@ -190,18 +190,18 @@\n  y float\n-64\n+32\n  = 761%0A \n@@ -241,18 +241,18 @@\n in float\n-64\n+32\n  = 54771\n@@ -276,10 +276,10 @@\n loat\n-64\n+32\n  = a\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-07-04",
+            "content": "@@ -316,17 +316,16 @@\n rintf(%22%25\n-.\n 2f%22,din \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-07-21",
+            "content": "@@ -323,10 +323,8 @@\n %25.2f\n-%5Cn\n %22,di\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-07-35",
+            "content": "@@ -54,17 +54,17 @@\n oat64 = \n-9\n+2\n %0A    var\n@@ -76,17 +76,17 @@\n oat64 = \n-3\n+8\n %0A    var\n@@ -149,11 +149,12 @@\n 4 = \n-724\n+1555\n %0A   \n@@ -174,12 +174,12 @@\n 4 = \n-3200\n+4206\n %0A   \n@@ -199,12 +199,11 @@\n 4 = \n-3327\n+761\n %0A   \n@@ -250,16 +250,16 @@\n 4 = \n-49569.79\n+54771.87\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-09-14",
+            "content": "@@ -281,35 +281,29 @@\n 4 = \n-(\n a * z\n-)\n  + \n-(\n b * x\n-)\n  + \n-(\n c * y\n-)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-09-51",
+            "content": "@@ -54,17 +54,17 @@\n oat64 = \n-3\n+9\n %0A    var\n@@ -72,25 +72,25 @@\n b float64 = \n-4\n+3\n %0A    var c f\n@@ -98,17 +98,17 @@\n oat64 = \n-4\n+5\n %0A    fmt\n@@ -149,11 +149,10 @@\n 4 = \n-46\n 7\n+2\n 4%0A  \n@@ -173,11 +173,12 @@\n 4 = \n-178\n+3200\n %0A   \n@@ -198,12 +198,12 @@\n 4 = \n+33\n 27\n-30\n %0A   \n@@ -251,14 +251,14 @@\n  = 4\n-7773.8\n+9569.7\n 9%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-13-25",
+            "content": "@@ -149,19 +149,16 @@\n 4 = 4674\n-.00\n %0A    var\n@@ -173,19 +173,16 @@\n 64 = 178\n-.00\n %0A    var\n@@ -202,11 +202,8 @@\n 2730\n-.00\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-15-55",
+            "content": "@@ -54,17 +54,17 @@\n oat64 = \n-2\n+3\n %0A    var\n@@ -76,17 +76,17 @@\n oat64 = \n-8\n+4\n %0A    var\n@@ -98,17 +98,17 @@\n oat64 = \n-5\n+4\n %0A    fmt\n@@ -149,12 +149,15 @@\n 4 = \n-1555\n+4674.00\n %0A   \n@@ -177,12 +177,14 @@\n 4 = \n-4206\n+178.00\n %0A   \n@@ -204,11 +204,15 @@\n 4 = \n-761\n+2730.00\n %0A   \n@@ -259,16 +259,16 @@\n 4 = \n-5\n 477\n-1.87\n+73.89\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-18-26",
+            "content": "@@ -44,32 +44,35 @@\n   var a float64 \n+= 2\n %0A    var b float\n@@ -66,32 +66,35 @@\n   var b float64 \n+= 8\n %0A    var c float\n@@ -88,32 +88,35 @@\n   var c float64 \n+= 5\n %0A    fmt.Scan(&a\n@@ -135,32 +135,38 @@\n   var z float64 \n+= 1555\n %0A    var x float\n@@ -164,24 +164,30 @@\n r x float64 \n+= 4206\n %0A    var y f\n@@ -193,16 +193,21 @@\n float64 \n+= 761\n %0A    fmt\n@@ -244,17 +244,26 @@\n float64 \n- \n+= 54771.87\n %0A    var\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-23-18",
+            "content": "@@ -83,32 +83,57 @@\n  var c float64 %0A\n+    fmt.Scan(&a, &b, &c)%0A\n     var z float6\n@@ -201,34 +201,8 @@\n  &y)\n- %0A    fmt.Scan(&a, &b, &c)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-24-50",
+            "content": "@@ -166,18 +166,19 @@\n an(&\n-a, &b, &c)\n+z, &x, &y) \n %0A   \n@@ -184,35 +184,34 @@\n   fmt.Scan(&\n-z, &x, &y) \n+a, &b, &c)\n %0A    var din\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-25-45",
+            "content": "@@ -225,27 +225,8 @@\n 4  %0A\n-    fmt.Scan(&din)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-26-29",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n    var a float64 \n    var b float64 \n    var c float64 \n    var z float64 \n    var x float64 \n    var y float64 \n    fmt.Scan(&a, &b, &c)\n    fmt.Scan(&z, &x, &y) \n    var din float64  \n    fmt.Scan(&din)\n    var gas float64 = (a * z) + (b * x) + (c * y)\n    fmt.Printf(\"%.2f\\n\",din - gas)\n}\n",
+            "lines": "16"
         }
     ]
 }
