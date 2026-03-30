@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-59-27",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -41,278 +41,35 @@\n     \n-var a float32 = 0%0A    var b float32 = 0%0A    var c float32 = 0%0A    fmt.Scan(&a,&b,&c)%0A    var per float32 = (a +b +c) / 2%0A    var heron float32 = per * (per - a) * (per - b) * (per - c)%0A    var area float32 = float32(math.Sqrt(float64(heron))) %0A    fmt.Printf(%22%25.2f%22,area\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_18-17-33",
+            "content": "@@ -319,10 +319,8 @@\n %25.2f\n-%5Cn\n %22,ar\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_18-17-46",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a float32 = 0\n    var b float32 = 0\n    var c float32 = 0\n    fmt.Scan(&a,&b,&c)\n    var per float32 = (a +b +c) / 2\n    var heron float32 = per * (per - a) * (per - b) * (per - c)\n    var area float32 = float32(math.Sqrt(float64(heron))) \n    fmt.Printf(\"%.2f\\n\",area)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

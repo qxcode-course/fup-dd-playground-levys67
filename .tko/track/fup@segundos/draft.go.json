@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_16-53-33",
+            "content": "@@ -41,209 +41,35 @@\n     \n-var time int %0A    var hora int = time / 3600%0A    var min_seg int = (time %25 3600) %0A    var min int = min_seg / 60%0A    var sec int = min_seg %25 60%0A    fmt.Scan(&time)%0A    fmt.Println(hora,%22:%22,min,%22:%22,sec \n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-07-17",
+            "content": "@@ -203,24 +203,8 @@\n time\n-,&hora,&min,&sec\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-08-00",
+            "content": "@@ -214,17 +214,8 @@\n &min\n-_seg,&min\n ,&se\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-10-13",
+            "content": "@@ -247,19 +247,27 @@\n ln(hora,\n-min\n+%22:%22,min,%22:%22\n ,sec )%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-10-31",
+            "content": "@@ -54,14 +54,8 @@\n int \n-= 3641\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-11-18",
+            "content": "@@ -56,30 +56,12 @@\n t = \n-0%0A    fmt.Scan(&time)%0A\n+3641\n %0A   \n@@ -183,24 +183,69 @@\n in_seg %25 60%0A\n+    fmt.Scan(&time,&hora,&min_seg,&min,&sec)%0A\n     fmt.Prin\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-14-53",
+            "content": "@@ -222,19 +222,11 @@\n rint\n-f(%22%25d%25d%25d%22,\n+ln(\n hora\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-24-01",
+            "content": "@@ -227,12 +227,10 @@\n (%22%25d\n-:\n %25d\n-:\n %25d%22,\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-24-46",
+            "content": "@@ -226,17 +226,17 @@\n f(%22%25d:%25d\n-p\n+:\n %25d%22,hora\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-25-04",
+            "content": "@@ -230,13 +230,11 @@\n d:%25d\n-:\n+p\n %25d\n-%5Cn\n %22,ho\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-25-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var time int = 0\n    fmt.Scan(&time)\n\n    var hora int = time / 3600\n    var min_seg int = (time % 3600) \n    var min int = min_seg / 60\n    var sec int = min_seg % 60\n    fmt.Printf(\"%d:%d:%d\\n\",hora,min,sec )\n}\n",
+            "lines": "12"
+        }
+    ]
+}

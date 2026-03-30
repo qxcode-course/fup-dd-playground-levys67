@@ -14,18 +14,19 @@ sources:
   tasks: null
 expanded:
 - fup@base
-- sandbox@00_rascunhos
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:86, friend:nao, guided:1}'
   fup@media: '{self:1, rate:100, study:20, friend:nao, guided:1}'
   fup@sobrou: '{self:1, rate:100, study:90, friend:nao, guided:1}'
+  fup@segundos: '{self:1, rate:100, study:40, friend:hanna}'
+  fup@celsius: '{self:1, rate:100, study:30, friend:hanna}'
+  fup@pintando: '{self:1, rate:100, study:20}'
 flags:
-  panel: 0
+  panel: 3
   inbox: 0
   show_panel: 0
-  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@sobrou
+selected: fup@base
