@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-36-59",
+            "content": "@@ -41,117 +41,35 @@\n     \n-a := 0%0A    fmt.Scan(&a)%0A    if a %3E= 0 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else %7B%0A        fmt.Println(%22 %22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-43-12",
+            "content": "@@ -142,11 +142,9 @@\n ln(%22\n-NAO\n+ \n %22)%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-43-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    fmt.Scan(&a)\n    if a >= 0 {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}

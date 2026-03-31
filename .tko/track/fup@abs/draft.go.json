@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-46-50",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -37,118 +37,8 @@\n ) %7B%0A\n-    var a float64 = 0%0A    var b float64 = 0%0A    fmt.Scan(&a,&b)%0A    var c float64 = a - b%0A    c = math.Abs(c)%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_16-57-40",
+            "content": "@@ -173,13 +173,27 @@\n Println(\n-c\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_16-57-56",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a float64 = 0\n    var b float64 = 0\n    fmt.Scan(&a,&b)\n    var c float64 = a - b\n    c = math.Abs(c)\n    fmt.Println(c)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

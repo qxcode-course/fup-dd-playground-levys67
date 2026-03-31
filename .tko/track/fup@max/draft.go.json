@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-10-12",
+            "content": "@@ -41,133 +41,35 @@\n     \n-a := 0%0A    b := 0%0A    fmt.Scan(&a,&b)%0A    if a == b, a %3E= b %7B%0A        fmt.Println(a)%0A    %7D else %7B%0A        fmt.Println(b)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-21-27",
+            "content": "@@ -86,16 +86,24 @@\n  if a ==\n+ b, a %3E=\n  b %7B%0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-21-43",
+            "content": "@@ -129,53 +129,10 @@\n lse \n-if a %3E b \n %7B%0A\n-        fmt.Println(a)%0A    %7D else%0A\n     \n@@ -154,11 +154,12 @@\n (b)%0A    \n+%7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-23-38",
+            "content": "@@ -169,18 +169,16 @@\n   %7D else\n- %7B\n %0A       \n@@ -197,23 +197,8 @@\n (b)%0A\n-    %7D%0A        %0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-24-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    b := 0\n    fmt.Scan(&a,&b)\n    if a == b {\n        fmt.Println(a)\n    } else if a > b {\n        fmt.Println(a)\n    } else {\n        fmt.Println(b)\n    }\n        \n    \n}\n",
+            "lines": "16"
+        }
+    ]
+}
