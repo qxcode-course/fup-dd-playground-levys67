@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_18-07-49",
+            "content": "@@ -41,97 +41,35 @@\n     \n-a, b := 0, 0%0A    fmt.Scan(&a,&b)%0A    for a := a; a %3C b; a++ %7B%0A        fmt.Printf(%22%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_18-13-52",
+            "content": "@@ -74,29 +74,8 @@\n &b)%0A\n-    fmt.Printf(%22%5B %22)%0A\n     \n@@ -123,22 +123,17 @@\n tf(%22\n-%25d %22,a\n+%22\n )%0A    %7D%0A\n     \n@@ -132,27 +132,6 @@\n   %7D%0A\n-    fmt.Printf(%22 %5D%22)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_18-21-03",
+            "content": "@@ -170,14 +170,15 @@\n Printf(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_18-21-11",
+            "content": "@@ -175,10 +175,8 @@\n f(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_18-21-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a, b := 0, 0\n    fmt.Scan(&a,&b)\n    fmt.Printf(\"[ \")\n    for a := a; a < b; a++ {\n        fmt.Printf(\"%d \",a)\n    }\n    fmt.Printf(\"]\\n\")\n}\n",
+            "lines": "11"
+        }
+    ]
+}

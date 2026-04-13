@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-52-09",
+            "content": "@@ -41,101 +41,35 @@\n     \n-a := 0%0A    b := 0%0A    fmt.Scan(&a,&b)%0A    for a := 0; a %3C b; a++%7B%0A        fmt.Println(a)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_17-57-13",
+            "content": "@@ -92,9 +92,9 @@\n  := \n-1\n+0\n ; a \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_17-58-08",
+            "content": "@@ -85,16 +85,20 @@\n   for a \n+:= 1\n ; a %3C b;\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_17-58-39",
+            "content": "@@ -89,13 +89,8 @@\n r a \n-:= 0 \n ; a \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_18-00-46",
+            "content": "@@ -85,16 +85,21 @@\n   for a \n+:= 0 \n ; a %3C b;\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_18-03-12",
+            "content": "@@ -89,13 +89,8 @@\n r a \n-:= 0 \n ; a \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_18-04-42",
+            "content": "@@ -92,13 +92,9 @@\n  := \n-a + 1\n+0\n  ; a\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_18-06-04",
+            "content": "@@ -90,16 +90,20 @@\n  a := a \n++ 1 \n ; a %3C b;\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_18-06-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    b := 0\n    fmt.Scan(&a,&b)\n    for a := a ; a < b; a++{\n        fmt.Println(a)\n    }\n}\n",
+            "lines": "10"
+        }
+    ]
+}

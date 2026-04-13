@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-18-56",
+            "content": "@@ -214,41 +214,8 @@\n og3 \n-%7C%7C jog1 != jog2 && jog2 == jog3  \n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-23-01",
+            "content": "@@ -301,17 +301,17 @@\n Println(\n-0\n+1\n )%0A    %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-23-25",
+            "content": "@@ -198,17 +198,17 @@\n og2 \n-%7C%7C\n+&&\n  jog\n-2 =\n+1 !\n = jo\n@@ -222,16 +222,32 @@\n og1 \n+!= jog2 && jog2 \n == jog3 \n %7B%0A  \n@@ -242,16 +242,17 @@\n == jog3 \n+ \n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-25-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    jog1 := 0\n    jog2 := 0\n    jog3 := 0\n    fmt.Scan(&jog1,&jog2,&jog3)\n    if jog1 == jog2 && jog1 == jog3{\n        fmt.Println(3)\n    } else if jog1 == jog2 || jog2 == jog3 || jog1 == jog3 {\n        fmt.Println(2)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "15"
+        }
+    ]
+}

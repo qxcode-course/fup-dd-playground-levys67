@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-03-31_17-48-46",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,70 +37,8 @@\n ) %7B%0A\n-    a := 0%0A    fmt.Scan(&a)%0A    if condition %7B%0A        %0A    %7D%0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-46-14",
+            "content": "@@ -72,17 +72,17 @@\n  if \n-a %25 7 ==0\n+condition\n  %7B%0A \n@@ -92,68 +92,46 @@\n     \n-println(%22SIM%22)%0A    %7D else %7B%0A        println(%22NAO%22)%0A    %7D%0A    \n+%0A    %7D%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-06_17-50-52",
+            "content": "@@ -78,9 +78,9 @@\n %25 7 \n-!\n+=\n =0 %7B\n@@ -101,11 +101,11 @@\n ln(%22\n-NAO\n+SIM\n %22)%0A \n@@ -125,35 +125,35 @@\n        println(%22\n-SIM\n+NAO\n %22)%0A    %7D%0A    %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_17-52-29",
+            "content": "@@ -74,17 +74,17 @@\n f a %25 7 \n-=\n+!\n =0 %7B%0A   \n@@ -88,29 +88,25 @@\n         \n-fmt.P\n+p\n rintln(%22\n SIM%22)%0A  \n@@ -101,11 +101,11 @@\n ln(%22\n-SIM\n+NAO\n %22)%0A \n@@ -128,21 +128,17 @@\n     \n-fmt.P\n+p\n rintln(%22\n NAO%22\n@@ -125,35 +125,35 @@\n        println(%22\n-NAO\n+SIM\n %22)%0A    %7D%0A    %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_17-54-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    fmt.Scan(&a)\n    if a % 7 ==0 {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n    \n}\n",
+            "lines": "12"
         }
     ]
 }

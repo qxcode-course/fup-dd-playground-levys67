@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_16-49-24",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -41,221 +41,35 @@\n     \n-var a, b, c, d float64 = 0.00, 0.00, 0.00, 0.00%0A    fmt.Scan(&a, &b, &c , &d)%0A    cont1 := (a - c)%0A    dist1 := math.Pow(cont1,2)%0A    cont2 := (b - d) %0A    dist2 := math.Pow (cont2,2)%0A    fmt.Println(dist1 - dist2\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-35-08",
+            "content": "@@ -220,24 +220,25 @@\n  := math.Pow\n+ \n (cont2,2)%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-06_17-36-37",
+            "content": "@@ -59,16 +59,22 @@\n var a, b\n+, c, d\n  float64\n@@ -90,32 +90,9 @@\n 0.00\n- %0A    var c, d float64 =\n+,\n  0.0\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-06_17-38-06",
+            "content": "@@ -150,16 +150,37 @@\n &d)%0A\n+    cont1 := (a - c)%0A\n     dist\n  := \n@@ -175,16 +175,17 @@\n     dist\n+1\n  := math\n@@ -189,39 +189,73 @@\n ath.\n-Sqrt%7B(x%E2%82%82 - x%E2%82%81)%5E2 + (y%E2%82%82 - y%E2%82%81)%5E2%7D\n+Pow(cont1,2)%0A    cont2 := (b - d) %0A    dist2 := math.Pow(cont2,2)\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-06_17-40-27",
+            "content": "@@ -215,12 +215,21 @@\n tln(dist\n+1 - dist2\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_17-40-42",
+            "content": "@@ -173,25 +173,29 @@\n rt%7B(\n-a - c\n+x%E2%82%82 - x%E2%82%81\n )%5E2 + (\n-b - d\n+y%E2%82%82 - y%E2%82%81\n )%5E2%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_17-41-43",
+            "content": "@@ -158,17 +158,26 @@\n dist := \n-(\n+math.Sqrt%7B\n (a - c)%5E\n@@ -189,17 +189,17 @@\n b - d)%5E2\n-)\n+%7D\n %0A    fmt\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-27-55",
+            "content": "@@ -76,25 +76,26 @@\n = 0.00, 0.00\n+ \n %0A\n-\n     var c, d\n@@ -155,117 +155,38 @@\n    d\n-ac := c - a%0A    dbd := d - b%0A    dist := math.Pow(dac,2)%0A    dist2 := math.Pow(dbd,2)%0A    dif := dist + dist2\n+ist := ((a - c)%5E2 + (b - d)%5E2)\n %0A   \n@@ -200,13 +200,14 @@\n intln(di\n-f\n+st\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-36-43",
+            "content": "@@ -189,23 +189,14 @@\n   di\n-f\n+st\n  := \n-math.Sqrt(\n math\n@@ -210,12 +210,22 @@\n c,2)\n- + (\n+%0A    dist2 := \n math\n@@ -235,18 +235,40 @@\n w(dbd,2)\n-))\n+%0A    dif := dist + dist2\n %0A    fmt\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_17-39-09",
+            "content": "@@ -254,19 +254,11 @@\n rint\n-f(%22%25f.2%5Cn%22,\n+ln(\n dif)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-44-16",
+            "content": "@@ -258,11 +258,11 @@\n f(%22%25\n+f\n .2\n-f\n %5Cn%22,\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-48-25",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b float64 = 0.00, 0.00\n    var c, d float64 = 0.00, 0.00\n    fmt.Scan(&a, &b, &c , &d)\n    dac := c - a\n    dbd := d - b\n    dif := math.Sqrt(math.Pow(dac,2) + (math.Pow(dbd,2)))\n    fmt.Printf(\"%.2f\\n\",dif)\n}\n",
+            "lines": "15"
+        }
+    ]
+}
