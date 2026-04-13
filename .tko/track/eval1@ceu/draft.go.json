@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_18-01-16",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -37,73 +37,8 @@\n ) %7B%0A\n-    amarelinha := %5B%5Dint(1,2,3,4,5,6,7,8,9,10)%0A    n := 0%0A    fmt%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_18-23-55",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n    amarelinha := []int(1,2,3,4,5,6,7,8,9,10)\n    n := 0\n    fmt\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "8"
+        }
+    ]
+}
