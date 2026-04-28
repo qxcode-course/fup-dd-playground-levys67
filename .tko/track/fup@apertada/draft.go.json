@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_16-38-12",
+            "content": "@@ -41,229 +41,35 @@\n     \n-lista := make(%5B%5Dint, 5)%0A    for i := 0; i %3C 5; i++ %7B%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    menor := lista%5B0%5D%0A    for _, v := range lista %7B%0A        if v %3C menor %7B%0A            menor = v%0A        %7D%0A    %7D%0A    fmt.Println(menor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_16-52-35",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    lista := make([]int, 5)\n    for i := 0; i < 5; i++ {\n        fmt.Scan(&lista[i])\n    }\n    menor := lista[0]\n    for _, v := range lista {\n        if v < menor {\n            menor = v\n        }\n    }\n    fmt.Println(menor)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

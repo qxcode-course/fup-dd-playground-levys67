@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_18-21-50",
+            "content": "@@ -169,10 +169,8 @@\n 02d/\n-19\n %2502d\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_18-23-26",
+            "content": "@@ -161,24 +161,26 @@\n d %2502d/%2502d/\n+19\n %2502d%5Cn%22,hora\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_18-23-52",
+            "content": "@@ -166,16 +166,18 @@\n d/%2502d/%25\n+02\n d%5Cn%22,hor\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_18-24-12",
+            "content": "@@ -170,11 +170,8 @@\n 2d/%25\n--02\n d%5Cn%22\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_18-27-05",
+            "content": "@@ -166,16 +166,19 @@\n d/%2502d/%25\n+-02\n d%5Cn%22,hor\n@@ -201,12 +201,8 @@\n ,ano\n-%25100\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_18-30-21",
+            "content": "@@ -166,18 +166,16 @@\n d/%2502d/%25\n-02\n d%5Cn%22,hor\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_18-30-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    hora := 0;minuto := 0;dia := 0;mes := 0;ano := 0\n    fmt.Scan(&hora,&minuto,&dia,&mes,&ano)\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\",hora,minuto,dia,mes,ano%100)\n}\n",
+            "lines": "7"
+        }
+    ]
+}

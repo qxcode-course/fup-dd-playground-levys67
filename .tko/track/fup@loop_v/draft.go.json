@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-25-09",
+            "content": "@@ -37,95 +37,8 @@\n ) %7B%0A\n-    a := 0%0A    b := 0%0A    fmt.Scan(&a, &b)%0A    for i := a; i %3C= b; i++%7B%0A        %0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-32-03",
+            "content": "@@ -109,24 +109,35 @@\n ++%7B%0A        \n+%0A    %7D%0A    \n fmt.Println(\n@@ -140,15 +140,23 @@\n tln(\n-i)%0A    %7D\n+%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-28_17-32-40",
+            "content": "@@ -122,16 +122,18 @@\n mt.Print\n+ln\n (i)%0A    \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-32-49",
+            "content": "@@ -80,28 +80,8 @@\n &b)%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -126,44 +126,16 @@\n rint\n-f(%22 %25d%22,i)%0A    %7D%0A    fmt.Println(%22%5D%22)\n+(i)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-34-32",
+            "content": "@@ -92,16 +92,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n@@ -176,15 +176,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-28_17-34-45",
+            "content": "@@ -114,16 +114,17 @@\n = a; i %3C\n+=\n  b; i++%7B\n@@ -128,37 +128,8 @@\n ++%7B%0A\n-         if i / 2 != 0 %7B%0A    \n     \n@@ -153,22 +153,11 @@\n %25d%22,\n- \n i)%0A\n-        %7D%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-28_17-45-04",
+            "content": "@@ -114,17 +114,16 @@\n = a; i %3C\n-=\n  b; i++%7B\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-45-57",
+            "content": "@@ -138,17 +138,17 @@\n    if i \n-%25\n+/\n  2 != 0 \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-46-48",
+            "content": "@@ -142,9 +142,9 @@\n f i \n-/\n+%25\n  2 !\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-47-06",
+            "content": "@@ -138,17 +138,17 @@\n    if i \n-%25\n+/\n  2 != 0 \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-48-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    b := 0\n    fmt.Scan(&a, &b)\n    fmt.Print(\"[\")\n    for i := a; i <= b; i++{\n         if i % 2 != 0 {\n            fmt.Printf(\" %d\", i)\n        }\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "14"
+        }
+    ]
+}

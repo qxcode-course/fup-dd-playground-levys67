@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-08-22",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -42,249 +42,34 @@\n    f\n- := %22%22%0A    n := 0%0A    fmt.Scan(&f, &n)%0A    if f == %22r%22 %7B%0A        fmt.Println(math.Round(float64(n)))%0A    %7Delse if f == %22c%22 %7B%0A        fmt.Println(math.Ceil(float64(n)))%0A    %7D else if f == %22f%22 %7B%0A        fmt.Println(math.Floor(float64(n)))%0A    %7D\n+mt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-17-45",
+            "content": "@@ -73,11 +73,8 @@\n := 0\n-.00\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_17-18-37",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    f := \"\"\n    n := 0.00\n    fmt.Scan(&f, &n)\n    if f == \"r\" {\n        fmt.Println(math.Round(float64(n)))\n    }else if f == \"c\" {\n        fmt.Println(math.Ceil(float64(n)))\n    } else if f == \"f\" {\n        fmt.Println(math.Floor(float64(n)))\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

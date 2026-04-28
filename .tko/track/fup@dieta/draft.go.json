@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_18-04-13",
+            "content": "@@ -234,68 +234,31 @@\n     \n-media := soma / dias%0A    fmt.Printf(%22%25.1f%5Cn%22, float64(media)\n+fmt.Println(soma / dias\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-05-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    dias := 0\n    fmt.Scan(&dias)\n    con := make([]int, dias)\n    for i := 0; i < dias; i++ {\n        fmt.Scan(&con[i])\n    }\n    soma := 0\n    for _, v := range con {\n        soma += v\n    }\n    media := soma / dias\n    fmt.Printf(\"%.1f\\n\", float64(media))\n}\n",
+            "lines": "16"
+        }
+    ]
+}
