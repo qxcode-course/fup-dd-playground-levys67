@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_11-53-30",
+            "content": "@@ -37,11 +37,39 @@\n ) %7B%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_11-54-09",
+            "content": "@@ -41,105 +41,7 @@\n     \n-n := 0%0A%09fmt.Scan(&n)%0A%09lista := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&lista%5Bi%5D)%0A%09%7D%0A%09\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_12-03-07",
+            "content": "@@ -139,94 +139,7 @@\n %09%7D%0A%09\n-fmt.Print(%22%5B%22)%0A%09for _, v := range lista %7B%0A%09%09fmt.Printf(%22 %25d,%22, v)%0A%09%7D%0A%09fmt.Println(%22 %5D%22)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-28_12-06-15",
+            "content": "@@ -191,16 +191,17 @@\n Printf(%22\n+ \n %25d,%22, v)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_12-06-46",
+            "content": "@@ -194,17 +194,16 @@\n ntf(%22%25d,\n- \n %22, v)%0A%09%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_12-06-59",
+            "content": "@@ -193,16 +193,18 @@\n intf(%22%25d\n+, \n %22, v)%0A%09%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_12-07-53",
+            "content": "@@ -193,17 +193,16 @@\n intf(%22%25d\n-,\n %22, v)%0A%09%7D\n@@ -216,14 +216,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_12-08-20",
+            "content": "@@ -191,17 +191,16 @@\n Printf(%22\n- \n %25d,%22, v)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_12-08-36",
+            "content": "@@ -155,17 +155,17 @@\n %22)%0A%09for \n-i\n+_\n , v := r\n@@ -181,22 +181,8 @@\n a %7B%0A\n-%09%09if i %3E 0 %7B%0A%09\n %09%09fm\n@@ -192,31 +192,18 @@\n rint\n+f\n (%22\n-, %22)%0A%09%09%7D%0A%09%09fmt.Print(\n+ %25d,%22, \n v)%0A%09\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_12-14-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    n := 0\n\tfmt.Scan(&n)\n\tlista := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&lista[i])\n\t}\n\tfmt.Print(\"[\")\n\tfor i, v := range lista {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(v)\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "18"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_16-56-30",
+            "content": "@@ -37,69 +37,8 @@\n ) %7B%0A\n-    n := 0%0A    fmt.Scan(&n)%0A    lista := make(%5B%5Dint, n)%0A    %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_11-23-19",
+            "content": "@@ -97,65 +97,8 @@\n     \n-for i := 0; i %3C n; i++%7B%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D\n %0A   \n@@ -110,17 +110,27 @@\n Println(\n-lista\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-28_11-31-19",
+            "content": "@@ -168,147 +168,16 @@\n rint\n-(%22%5B%22)%0A    for i, v := range lista %7B%0A        if i %3E 0 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A        fmt.Print(v)%0A    %7D%0A    fmt.Println(%22 %5D%22\n+ln(lista\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-28_11-45-05",
+            "content": "@@ -167,17 +167,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_11-45-25",
+            "content": "@@ -167,16 +167,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n@@ -243,17 +243,16 @@\n .Print(%22\n-,\n  %22)%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_11-45-53",
+            "content": "@@ -242,16 +242,17 @@\n .Print(%22\n+,\n  %22)%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_11-46-05",
+            "content": "@@ -167,17 +167,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_11-46-39",
+            "content": "@@ -251,51 +251,8 @@\n  %22)%0A\n-        %7D else %7B%0A            fmt.Print(%22%22)%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_11-47-37",
+            "content": "@@ -213,68 +213,146 @@\n     \n-fmt.Print(v)%0A    %7D%0A    fmt.Println(%22 %5D%22)%0A%7D%0Aif i %3E 0 %7B\n+if i %3E 0 %7B%0A            fmt.Print(%22 %22)%0A        %7D else %7B%0A            fmt.Print(%22%22)%0A        %7D%0A        fmt.Print(v)\n %0A    \n+%7D%0A\n     \n- \n+fmt.Println(%22 %5D%22)%0A%7D\n %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_11-49-14",
+            "content": "@@ -183,9 +183,9 @@\n for \n-_\n+i\n , v \n@@ -252,16 +252,27 @@\n %22 %5D%22)%0A%7D%0A\n+if i %3E 0 %7B%0A\n         \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_11-49-31",
+            "content": "@@ -222,16 +222,9 @@\n rint\n-f(%22 %25d%22,\n+(\n v)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_11-50-22",
+            "content": "@@ -167,16 +167,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_11-50-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    n := 0\n    fmt.Scan(&n)\n    lista := make([]int, n)\n    for i := 0; i < n; i++{\n        fmt.Scan(&lista[i])\n    }\n    fmt.Print(\"[\")\n    for _, v := range lista {\n        fmt.Printf(\" %d\",v)\n    }\n    fmt.Println(\" ]\")\n}\n         \n",
+            "lines": "16"
+        }
+    ]
+}

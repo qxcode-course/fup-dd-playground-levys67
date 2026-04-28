@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_12-22-24",
+            "content": "@@ -41,155 +41,35 @@\n     \n-n := 0%0A    d := 0%0A    fmt.Scan(&n, &d)%0A    div := n / d%0A    rest := n %25 d%0A    decimal := float64(n) / float64(d)%0A    fmt.Println(div, rest, decimal\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_12-36-34",
+            "content": "@@ -167,28 +167,11 @@\n rint\n-f(%22%25d%5Cn%25d%5Cn%25.2f%5Cn%22, \n+ln(\n div,\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-28_12-37-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    n := 0\n    d := 0\n    fmt.Scan(&n, &d)\n    div := n / d\n    rest := n % d\n    decimal := float64(n) / float64(d)\n    fmt.Printf(\"%d\\n%d\\n%.2f\\n\", div, rest, decimal)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

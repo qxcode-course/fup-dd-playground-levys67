@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_16-50-18",
+            "content": "@@ -41,442 +41,35 @@\n     \n-par_ou_impar := 0%0A    dedos1 := 0%0A    dedos2 := 0%0A    fmt.Scan(&par_ou_impar,&dedos1,&dedos2)%0A    if par_ou_impar == 0 && (dedos1 + dedos2) %25 2 == 0 %7B%0A        fmt.Println(0)%0A    %7D else if par_ou_impar == 0 && (dedos1 + dedos2) %25 2 != 0%7B%0A        fmt.Println(1)%0A    %7Delse if par_ou_impar == 1 && (dedos1 + dedos2) %25 2 == 0%7B%0A        fmt.Println(1)%0A    %7Delse if par_ou_impar == 1 && (dedos1 + dedos2) %25 2 != 0%7B%0A        fmt.Println(0)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_13-02-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    par_ou_impar := 0\n    dedos1 := 0\n    dedos2 := 0\n    fmt.Scan(&par_ou_impar,&dedos1,&dedos2)\n    if par_ou_impar == 0 && (dedos1 + dedos2) % 2 == 0 {\n        fmt.Println(0)\n    } else if par_ou_impar == 0 && (dedos1 + dedos2) % 2 != 0{\n        fmt.Println(1)\n    }else if par_ou_impar == 1 && (dedos1 + dedos2) % 2 == 0{\n        fmt.Println(1)\n    }else if par_ou_impar == 1 && (dedos1 + dedos2) % 2 != 0{\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}
