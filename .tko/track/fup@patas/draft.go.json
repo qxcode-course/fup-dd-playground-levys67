@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-30_11-53-16",
+            "content": "@@ -41,599 +41,35 @@\n     \n-chicobento := 0%0A    cebolinha := 0%0A    quantidade := 0%0A    fmt.Scan(&chicobento, &cebolinha, &quantidade)%0A    animais := make(%5B%5Dstring, quantidade)%0A    for i := 0; i %3C quantidade; i++ %7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D%0A    total := 0%0A    c := 0%0A    g := 0%0A    va := 0%0A    for _, v := range animais %7B%0A        if v == %22c%22 %7B%0A            c += 4%0A        %7D else if v == %22g%22 %7B%0A            g += 2%0A        %7D else if v == %22v%22 %7B%0A            va += 4%0A        %7D%0A    total += c + g + va%0A    %7D%0A    fmt.Println(total)%0A    dif1 := chicobento - total%0A    dif2 := cebolinha - total%0A    if dif1 %3E dif2 %7B%0A%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-30_12-24-39",
+            "content": "@@ -627,146 +627,8 @@\n 2 %7B%0A\n-        fmt.Println(%22chico bento%22)%0A    %7D else if dif2 %3E dif1 %7B%0A        fmt.Println(%22cebolinha%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-30_12-30-51",
+            "content": "@@ -301,16 +301,17 @@\n  0%0A    v\n+a\n  := 0%0A  \n@@ -320,20 +320,16 @@\n for _, v\n-alor\n  := rang\n@@ -356,19 +356,16 @@\n if v\n-alor\n  == %22c%22\n+ \n %7B%0A  \n@@ -396,28 +396,24 @@\n  %7D else if v\n-alor\n  == %22g%22 %7B%0A  \n@@ -452,12 +452,8 @@\n if v\n-alor\n  == \n@@ -471,16 +471,17 @@\n        v\n+a\n  += 4%0A  \n@@ -488,22 +488,16 @@\n       %7D%0A\n-    %7D%0A\n     tota\n@@ -510,16 +510,23 @@\n  + g + v\n+a%0A    %7D\n %0A    fmt\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-30_12-43-48",
+            "content": "@@ -657,24 +657,26 @@\n intln(%22c\n-ebolinha\n+hico bento\n %22)%0A    %7D\n@@ -716,34 +716,32 @@\n t.Println(%22c\n-hico bento\n+ebolinha\n %22)%0A    %7D els\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-30_12-45-41",
+            "content": "@@ -656,17 +656,17 @@\n rintln(%22\n-C\n+c\n ebolinha\n@@ -721,15 +721,15 @@\n ln(%22\n-C\n+c\n hico \n-B\n+b\n ento\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-30_12-46-18",
+            "content": "@@ -746,24 +746,8 @@\n lse \n-if dif1 == dif2 \n %7B%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-30_12-47-04",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -565,25 +565,16 @@\n dif1 := \n-math.Abs(\n chicoben\n@@ -579,25 +579,24 @@\n ento - total\n-)\n %0A    dif2 :=\n@@ -600,17 +600,8 @@\n  := \n-math.Abs(\n cebo\n@@ -609,25 +609,24 @@\n inha - total\n-)\n %0A    if dif1\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-30_12-55-18",
+            "content": "@@ -588,24 +588,16 @@\n ath.Abs(\n-float64(\n chicoben\n@@ -598,35 +598,25 @@\n icobento\n-)\n  - \n-float64(\n total)\n-)\n %0A    dif\n@@ -629,24 +629,16 @@\n ath.Abs(\n-float64(\n cebolinh\n@@ -642,27 +642,17 @@\n inha\n-)\n  - \n-float64(\n total)\n-)\n %0A   \n@@ -776,16 +776,32 @@\n  %7D else \n+if dif1 == dif2 \n %7B%0A      \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-04-30_12-57-52",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    chicobento := 0\n    cebolinha := 0\n    quantidade := 0\n    fmt.Scan(&chicobento, &cebolinha, &quantidade)\n    animais := make([]string, quantidade)\n    for i := 0; i < quantidade; i++ {\n        fmt.Scan(&animais[i])\n    }\n    total := 0\n    c := 0\n    g := 0\n    v := 0\n    for _, valor := range animais {\n        if valor == \"c\"{\n            c += 4\n        } else if valor == \"g\" {\n            g += 2\n        } else if valor == \"v\" {\n            v += 4\n        }\n    }\n    total += c + g + v\n    fmt.Println(total)\n    dif1 := math.Abs(float64(chicobento) - float64(total))\n    dif2 := math.Abs(float64(cebolinha) - float64(total))\n    if dif1 > dif2 {\n        fmt.Println(\"Cebolinha\")\n    } else if dif2 > dif1 {\n        fmt.Println(\"Chico Bento\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "40"
+        }
+    ]
+}
