@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_11-07-55",
+            "content": "@@ -41,186 +41,35 @@\n     \n-vel := 0%0A    time := 0%0A    cons := 0%0A    fmt.Scan(&vel, &time, &cons)%0A    t_hora := time * 60%0A    dist := vel * t_hora%0A    desm := dist / cons%0A    fmt.Printf(%22%25.2f%22,float64(desm)\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_11-17-58",
+            "content": "@@ -126,17 +126,17 @@\n := time \n-/\n+*\n  60%0A    \n@@ -204,13 +204,10 @@\n %25.2f\n-%5Cn\n %22,\n- \n floa\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_11-20-27",
+            "content": "@@ -125,21 +125,12 @@\n  := \n-float64(\n time\n-)\n  / 6\n@@ -147,20 +147,11 @@\n  := \n-float64(\n vel\n-)\n  * t\n@@ -179,21 +179,12 @@\n t / \n-float64(\n cons\n-)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_11-29-02",
+            "content": "@@ -77,10 +77,8 @@\n := 0\n-.0\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_11-32-20",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    vel := 0\n    time := 0\n    cons := 0.0\n    fmt.Scan(&vel, &time, &cons)\n    t_hora := float64(time) / 60\n    dist := float64(vel) * t_hora\n    desm := dist / float64(cons)\n    fmt.Printf(\"%.2f\\n\", float64(desm))\n}\n",
+            "lines": "12"
+        }
+    ]
+}

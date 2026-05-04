@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_11-34-43",
+            "content": "@@ -41,370 +41,35 @@\n     \n-val1 := 0%0A    val2 := 0%0A    val3 := 0%0A    fmt.Scan(&val1,&val2, &val3)%0A    if val1 %3E val2 %7C%7C val1 %3E val3 && val1 %3C val2 %7C%7C val1 %3C val3%7B%0A        fmt.Println(val1)%0A    %7D else if val2 %3E val1 %7C%7C val2 %3E val3 && val2 %3C val1 %7C%7C val2 %3C val3%7B%0A        fmt.Println(val2)%0A    %7D else if val3 %3E val1 %7C%7C val3 %3E val2 && val3 %3C val1 %7C%7C val3 %3C val2%7B%0A        fmt.Println(val3)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_11-48-23",
+            "content": "@@ -115,17 +115,16 @@\n %0A    if \n-(\n val1 %3E v\n@@ -131,42 +131,40 @@\n al2 \n-&&\n+%7C%7C\n  val1 \n-%3C\n+%3E\n  val3\n-) %7C%7C (\n+ && \n val1 \n-%3E\n+%3C\n  val\n-3 &&\n+2 %7C%7C\n  val\n@@ -170,19 +170,17 @@\n l1 %3C val\n-2) \n+3\n %7B%0A      \n@@ -217,67 +217,64 @@\n  if \n-(\n val2\n+ \n %3E val1 \n-&&\n+%7C%7C\n  val2 \n-%3C\n+%3E\n  val3\n-) %7C%7C (\n+ && \n val2 \n-%3E\n+%3C\n  val\n-3 &&\n+1 %7C%7C\n  val2\n+ \n %3C val\n-1) \n+3\n %7B%0A  \n@@ -311,17 +311,16 @@\n else if \n-(\n val3 %3E v\n@@ -327,33 +327,16 @@\n al1 \n-&&\n+%7C%7C\n  val3 \n-%3C val2) %7C%7C (val3 \n %3E va\n@@ -352,18 +352,31 @@\n 3 %3C val1\n-)\n  \n+%7C%7C val3 %3C val2\n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-04_12-01-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    val1 := 0\n    val2 := 0\n    val3 := 0\n    fmt.Scan(&val1,&val2, &val3)\n    if (val1 > val2 && val1 < val3) || (val1 > val3 && val1 < val2) {\n        fmt.Println(val1)\n    } else if (val2> val1 && val2 < val3) || (val2 > val3 && val2< val1) {\n        fmt.Println(val2)\n    } else if (val3 > val1 && val3 < val2) || (val3 > val2 && val3 < val1) {\n        fmt.Println(val3)\n    }\n}\n",
+            "lines": "15"
+        }
+    ]
+}

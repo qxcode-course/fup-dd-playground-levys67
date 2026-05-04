@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_12-03-49",
+            "content": "@@ -41,81 +41,35 @@\n     \n-a := 0%0A    b := 0%0A    fmt.Scan(&a, &b)%0A    for i := a; i %3C= b; i++ %7B%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_12-09-17",
+            "content": "@@ -80,22 +80,8 @@\n &b)%0A\n-    soma := 0%0A\n     \n@@ -114,100 +114,8 @@\n     \n-    if i%25 2 == 0 && i %25 3 == 0 %7B%0A            soma += i%0A        %7D%0A    %7D %0A    fmt.Println(soma)\n+%7D\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-04_12-13-09",
+            "content": "@@ -189,24 +189,27 @@\n       %7D%0A    \n+%7D %0A\n     fmt.Prin\n@@ -222,82 +222,6 @@\n ma)%0A\n-        else if a %3E b %7B%0A            fmt.Println(%22invalido%22)%0A        %7D%0A    %7D%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-04_12-16-05",
+            "content": "@@ -193,23 +193,8 @@\n   %7D%0A\n-    if a %3C b %7B%0A\n     \n@@ -219,17 +219,19 @@\n ma)%0A    \n-%7D\n+   \n  else if\n@@ -239,16 +239,20 @@\n a %3E b %7B%0A\n+    \n         \n@@ -278,27 +278,22 @@\n do%22)%0A   \n- %7D%0A\n      \n-   \n+%7D\n %0A    %7D%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_12-17-48",
+            "content": "@@ -189,20 +189,16 @@\n       %7D%0A\n-    \n     if a\n@@ -200,28 +200,24 @@\n  if a %3C b %7B%0A\n-    \n         fmt.\n@@ -230,20 +230,16 @@\n n(soma)%0A\n-    \n     %7D el\n@@ -256,28 +256,24 @@\n b %7B%0A        \n-    \n fmt.Println(\n@@ -286,23 +286,28 @@\n ido%22)%0A  \n+  %7D%0A\n       \n-%7D\n+  \n %0A    %7D%0A%7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-04_12-19-42",
+            "content": "@@ -185,24 +185,43 @@\n i%0A        %7D%0A\n+        if a %3C b %7B%0A\n             \n@@ -242,24 +242,31 @@\n ma)%0A        \n+%7D else \n if a %3E b %7B%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_12-21-36",
+            "content": "@@ -135,72 +135,9 @@\n  if \n-a %3E b %7B%0A            fmt.Println(%22invalido%22)%0A        %7D else if i \n+i\n %25 2 \n@@ -219,16 +219,71 @@\n n(soma)%0A\n+        if a %3E b %7B%0A            fmt.Println(%22invalido%22)%0A\n         \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_12-25-10",
+            "content": "@@ -298,9 +298,10 @@\n %7D%0A    %7D%0A\n+%7D\n %0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_12-25-30",
+            "content": "@@ -196,17 +196,8 @@\n e if\n- a %3C b &&\n  i %25\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_12-26-19",
+            "content": "@@ -179,26 +179,8 @@\n o%22)%0A\n-            break%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_12-27-05",
+            "content": "@@ -131,18 +131,109 @@\n      if \n-i%25\n+a %3E b %7B%0A            fmt.Println(%22invalido%22)%0A            break%0A        %7D else if a %3C b && i %25 \n 2 == 0 &\n@@ -239,15 +239,18 @@\n && i\n-%25\n+ %25 \n 3 == 0\n+ \n %7B%0A  \n@@ -279,26 +279,28 @@\n       %7D%0A    \n-%7D%0A\n+    \n     fmt.Prin\n@@ -309,10 +309,25 @@\n n(soma)%0A\n-%7D\n+        %7D%0A    %7D%0A\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_12-31-35",
+            "content": "@@ -195,81 +195,8 @@\n   %7D%0A\n-    if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A    %7D else if a %3C b %7B%0A    \n     \n@@ -213,16 +213,10 @@\n n(soma)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-04_12-33-59",
+            "content": "@@ -255,19 +255,19 @@\n e if a %3C\n-=\n  b\n+ \n %7B%0A      \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_12-34-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    b := 0\n    fmt.Scan(&a, &b)\n    soma := 0\n    for i := a; i <= b; i++ {\n        if i%2 == 0 && i%3 == 0{\n            soma += i\n        }\n    }\n    if a > b {\n        fmt.Println(\"invalido\")\n    } else if a <= b{\n        fmt.Println(soma)\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

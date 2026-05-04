@@ -23,9 +23,9 @@ sources:
   tasks: null
 expanded:
 - fup@if1
-- fup@for1
 - fup@base
 - fup@list
+- fup@for1
 flags:
   inbox: all
   panel: graph
@@ -33,5 +33,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@patas
-selected_index: 50
+selected: fup@dindin
+selected_index: 51
