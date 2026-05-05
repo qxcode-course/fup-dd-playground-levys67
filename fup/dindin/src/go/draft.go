@@ -1,42 +1,43 @@
 package main
-import "fmt"
+
+import ("fmt")
 func main() {
-    dindin := 0
-    sabor, turno := "", ""
-    fmt.Scan(&dindin, &sabor, &turno)
-    lista := make([]string, dindin)
-    for i := 0; i < dindin; i++ {
-        fmt.Scan(&lista[i])
-    }
-    
-    chocolate := 0
-    limão := 0
-    manha:= 0
-    tarde := 0
-    for _, v := range lista{
-        if v == "c" {
-            chocolate += 1
-        } else if v == "l" {
-            limão += 1
-        } else if v == "m" {
-            manha += 1
-        }else if v == "t" {
-            tarde += 1
+    qtde := 0
+    fmt.Scan(&qtde)
+    choc := 0
+    lim := 0
+    man := 0
+    tar := 0
+    sabor := ""
+    turno := ""
+    for i := 0; i < qtde; i++ {
+        fmt.Scan(&sabor, &turno)
+        if sabor == "c" {
+            choc += 1
+        } else {
+            lim += 1
+        }
+        if turno == "m" {
+            man += 1
+        } else {
+            tar += 1
         }
     }
-
-    if chocolate > limão {
+    if choc > lim {
         fmt.Println("c")
-    } else if limão > chocolate {
+    } else if lim > choc {
         fmt.Println("l")
-    }else if chocolate == limão {
+    } else {
         fmt.Println("empate")
     }
-    if manha < tarde {
-        fmt.Println("m")
-    } else if tarde < manha {
+    if man > tar {
         fmt.Println("t")
-    } else if manha == tarde {
+    } else if tar > man {
+        fmt.Println("m")        
+    } else {
         fmt.Println("empate")
     }
 }
+    
+  
+    

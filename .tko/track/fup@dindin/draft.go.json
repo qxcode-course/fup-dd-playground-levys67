@@ -52,8 +52,38 @@
         },
         {
             "label": "2026-05-05_17-14-40",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    dindin := 0\n    sabor, turno := \"\", \"\"\n    fmt.Scan(&dindin, &sabor, &turno)\n    lista := make([]string, dindin)\n    for i := 0; i < dindin; i++ {\n        fmt.Scan(&lista[i])\n    }\n    chocolate := 0\n    lim\u00e3o := 0\n    manha:= 0\n    tarde := 0\n    for _, v := range lista{\n        if v == \"c\" {\n            chocolate += 1\n        } else if v == \"l\" {\n            lim\u00e3o += 1\n        } else if v == \"m\" {\n            manha += 1\n        }else if v == \"t\" {\n            tarde += 1\n        }\n    }\n    if chocolate > lim\u00e3o {\n        fmt.Println(\"c\")\n    } else if lim\u00e3o > chocolate {\n        fmt.Println(\"l\")\n    }else if chocolate == lim\u00e3o {\n        fmt.Println(\"empate\")\n    }\n    if manha < tarde {\n        fmt.Println(\"m\")\n    } else if tarde < manha {\n        fmt.Println(\"t\")\n    } else if manha == tarde {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "content": "@@ -222,72 +222,8 @@\n   %7D%0A\n-    total_c := 0%0A    total_l := 0%0A    qtd_m := 0%0A    qtd_t := 0%0A\n     \n@@ -534,97 +534,8 @@\n   %7D%0A\n-    total_c += chocolate%0A    total_l += lim%C3%A3o%0A    qtd_m += manha%0A    qtd_t += tarde%0A    %0A\n     \n",
             "lines": "40"
+        },
+        {
+            "label": "2026-05-05_17-24-52",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -686,28 +686,33 @@\n     \n-if total_c %3E total_l\n+%0A    if chocolate %3E lim%C3%A3o\n  %7B%0A \n@@ -753,25 +753,25 @@\n  if \n-total_l %3E total_c\n+lim%C3%A3o %3E chocolate\n  %7B%0A \n@@ -811,26 +811,26 @@\n  if \n-total_c == total_l\n+chocolate == lim%C3%A3o\n  %7B%0A \n@@ -875,21 +875,21 @@\n  if \n-qtd_m %3C qtd_t\n+manha %3C tarde\n  %7B%0A \n@@ -930,21 +930,21 @@\n  if \n-qtd_t %3C qtd_m\n+tarde %3C manha\n  %7B%0A \n@@ -985,22 +985,22 @@\n  if \n-qtd_m == qtd_t\n+manha == tarde\n  %7B%0A \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-05_17-26-32",
+            "content": "@@ -19,13 +19,24 @@\n rt (\n+%0A%09\n %22fmt%22\n+%0A%09%22math%22%0A\n )%0Afu\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-05_17-26-56",
+            "content": "@@ -46,17 +46,16 @@\n   dindin\n-s\n  := 0%0A  \n@@ -61,26 +61,17 @@\n    sabor\n- := %22%22%0A   \n+,\n  turno :\n@@ -71,16 +71,20 @@\n turno :=\n+ %22%22,\n  %22%22%0A    \n@@ -99,17 +99,16 @@\n (&dindin\n-s\n , &sabor\n@@ -151,17 +151,16 @@\n , dindin\n-s\n )%0A    fo\n@@ -179,17 +179,16 @@\n %3C dindin\n-s\n ; i++ %7B%0A\n@@ -224,18 +224,19 @@\n    %7D\n- \n %0A    t\n-cho\n+otal_\n c :=\n@@ -243,19 +243,22 @@\n  0%0A    t\n-lim\n+otal_l\n  := 0%0A  \n@@ -259,20 +259,21 @@\n = 0%0A    \n-tman\n+qtd_m\n  := 0%0A  \n@@ -274,20 +274,21 @@\n = 0%0A    \n-ttar\n+qtd_t\n  := 0%0A  \n@@ -293,16 +293,21 @@\n     choc\n+olate\n  := 0%0A  \n@@ -311,16 +311,18 @@\n %0A    lim\n+%C3%A3o\n  := 0%0A  \n@@ -326,17 +326,18 @@\n %0A    man\n- \n+ha\n := 0%0A   \n@@ -340,16 +340,18 @@\n %0A    tar\n+de\n  := 0%0A  \n@@ -375,17 +375,16 @@\n ge lista\n- \n %7B%0A      \n@@ -411,24 +411,29 @@\n         choc\n+olate\n  += 1%0A      \n@@ -470,16 +470,18 @@\n      lim\n+%C3%A3o\n  += 1%0A  \n@@ -522,19 +522,22 @@\n      man\n+ha\n  +=\n+ \n 1%0A      \n@@ -531,33 +531,32 @@\n a += 1%0A        %7D\n- \n else if v == %22t%22\n@@ -573,16 +573,18 @@\n      tar\n+de\n  += 1%0A  \n@@ -599,16 +599,20 @@\n     \n+%7D%0A\n     t\n-cho\n+otal_\n c +=\n@@ -620,108 +620,422 @@\n choc\n-%0A        tlim += lim%0A        tman += man%0A       \n+olate%0A    total_l += lim%C3%A3o%0A    qtd_m += manha%0A    qtd_t += tarde%0A    if total_c %3E total_l %7B%0A        fmt.Println(%22c%22)%0A    %7D else if total_l %3E\n  t\n+o\n ta\n-r += tar%0A    %7D%0A    fmt.Print(&tchoc)%0A%7D%0A    %0A  %0A    \n+l_c %7B%0A        fmt.Println(%22l%22)%0A    %7Delse if total_c == total_l %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A    if qtd_m %3C qtd_t %7B%0A        fmt.Println(%22m%22)%0A    %7D else if qtd_t %3C qtd_m %7B%0A        fmt.Println(%22t%22)%0A    %7D else if qtd_m == qtd_t %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D\n %0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-05_17-52-50",
+            "content": "@@ -662,16 +662,38 @@\n r%0A    %7D%0A\n+    fmt.Print(&tchoc)%0A\n %7D%0A    %0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-05_17-55-28",
+            "content": "@@ -40,20 +40,23 @@\n ) %7B%0A    \n-qtde\n+dindins\n  := 0%0A  \n@@ -61,108 +61,111 @@\n     \n-fmt.Scan(&qtde)%0A    choc\n+sabor\n  := \n-0\n+%22%22\n %0A    \n-lim\n+turno\n  := \n-0\n+%22%22\n %0A    \n-man := 0%0A    tar := 0%0A    sabor := %22%22%0A    turno := %22%22\n+fmt.Scan(&dindins, &sabor, &turno)%0A    lista := make(%5B%5Dstring, dindins)\n %0A   \n@@ -185,12 +185,15 @@\n i %3C \n-qtde\n+dindins\n ; i+\n@@ -218,57 +218,82 @@\n an(&\n-sabor, &turno)%0A        if sabor == %22c%22 %7B%0A        \n+lista%5Bi%5D)%0A    %7D %0A    tchoc := 0%0A    tlim := 0%0A    tman := 0%0A    ttar := 0%0A\n     \n@@ -301,60 +301,81 @@\n hoc \n-+= 1%0A        %7D else %7B%0A            lim += 1\n+:= 0%0A    lim := 0%0A    man := 0%0A    tar := 0\n %0A    \n-    %7D\n+for _, v := range lista %7B\n %0A   \n@@ -386,19 +386,15 @@\n  if \n-turno\n+v\n  == %22\n-m\n+c\n %22 %7B%0A\n@@ -405,19 +405,20 @@\n         \n-man\n+choc\n  += 1%0A  \n@@ -421,32 +421,44 @@\n 1%0A        %7D else\n+ if v == %22l%22\n  %7B%0A            t\n@@ -456,19 +456,19 @@\n         \n-tar\n+lim\n  += 1%0A  \n@@ -478,179 +478,97 @@\n    %7D\n-%0A    %7D%0A    if choc %3E lim %7B%0A        fmt.Println(%22c%22)%0A    %7D else if lim %3E choc %7B%0A        fmt.Println(%22l%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)\n+ else if v == %22m%22 %7B%0A            man +=1%0A        %7D else if v == %22t%22 %7B\n %0A    \n-%7D%0A\n     \n-if man %3E\n+   \n  tar \n-%7B\n++= 1\n %0A   \n@@ -576,126 +576,91 @@\n     \n-fmt.Println(%22t%22)%0A    %7D else if tar %3E man %7B%0A        fmt.Println(%22m%22)  \n+%7D%0A        tchoc += choc%0A        tlim += lim%0A\n       \n-%0A\n   \n-  %7D else %7B%0A        fmt.Println(%22empate%22)\n+tman += man%0A        ttar += tar\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-05_18-09-35",
+            "content": "package main\n\nimport (\"fmt\")\nfunc main() {\n    qtde := 0\n    fmt.Scan(&qtde)\n    choc := 0\n    lim := 0\n    man := 0\n    tar := 0\n    sabor := \"\"\n    turno := \"\"\n    for i := 0; i < qtde; i++ {\n        fmt.Scan(&sabor, &turno)\n        if sabor == \"c\" {\n            choc += 1\n        } else {\n            lim += 1\n        }\n        if turno == \"m\" {\n            man += 1\n        } else {\n            tar += 1\n        }\n    }\n    if choc > lim {\n        fmt.Println(\"c\")\n    } else if lim > choc {\n        fmt.Println(\"l\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n    if man > tar {\n        fmt.Println(\"t\")\n    } else if tar > man {\n        fmt.Println(\"m\")        \n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n    \n  \n    \n",
+            "lines": "43"
         }
     ]
 }
