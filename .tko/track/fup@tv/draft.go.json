@@ -2,8 +2,78 @@
     "patches": [
         {
             "label": "2026-05-05_18-13-14",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,73 +37,8 @@\n ) %7B%0A\n-    val := 0%0A    par := 0%0A    fmt.Scan(&val, &par)%0A    cdpar := %0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-07_10-48-21",
+            "content": "@@ -101,50 +101,8 @@\n  := \n-float64((val / par)) + float64(par) * 0.05\n %0A   \n@@ -114,17 +114,27 @@\n Println(\n-cdpar\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-07_10-53-01",
+            "content": "@@ -148,130 +148,25 @@\n     \n-if par == 1 %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, float64(val))%0A    %7Delse if par != 1 %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, cdpar)%0A    %7D \n+fmt.Println(cdpar)\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-07_10-56-34",
+            "content": "@@ -123,15 +123,8 @@\n )) +\n- 0.05 *\n  flo\n@@ -128,28 +128,27 @@\n float64(\n-(val / par))\n+par) * 0.05\n %0A    if \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-07_10-59-38",
+            "content": "@@ -135,19 +135,27 @@\n float64(\n+(\n val\n+ / par)\n )%0A    if\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-07_11-01-21",
+            "content": "@@ -120,17 +120,19 @@\n par)) + \n-(\n+0.0\n 5 * floa\n@@ -143,15 +143,8 @@\n val)\n-) / 100\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-07_11-01-54",
+            "content": "@@ -121,16 +121,20 @@\n ar)) + (\n+5 * \n float64(\n@@ -141,19 +141,15 @@\n val)\n+)\n  / 100\n-) * 5\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-07_11-02-33",
+            "content": "@@ -121,33 +121,34 @@\n ar))\n-%0A    cdjur := cdpar * 0.0\n+ + (float64(val) / 100) * \n 5%0A  \n@@ -265,10 +265,10 @@\n , cd\n-ju\n+pa\n r)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-07_11-03-55",
+            "content": "@@ -148,35 +148,8 @@\n .05%0A\n-    cdtot := cdpar + cdjur%0A\n     \n@@ -264,11 +264,11 @@\n , cd\n-tot\n+jur\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-07_11-05-02",
+            "content": "@@ -150,19 +150,19 @@\n 5%0A    cd\n-mom\n+tot\n  := cdpa\n@@ -169,30 +169,13 @@\n r + \n-(\n cdjur\n- * float64(par))\n %0A   \n@@ -291,11 +291,11 @@\n , cd\n-mom\n+tot\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-07_11-07-51",
+            "content": "@@ -174,17 +174,16 @@\n cdjur * \n-(\n float64(\n@@ -190,13 +190,8 @@\n par)\n- - 1)\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-07_11-08-29",
+            "content": "@@ -324,75 +324,8 @@\n    %7D\n-%0A    if par == 1 %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, float64(val))%0A    %7D%0A\n+ \n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-07_11-10-23",
+            "content": "@@ -391,75 +391,8 @@\n    %7D\n- else if par != 1 %7B%0A        fmt.Println(cdmom * float64(par))%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-07_11-12-16",
+            "content": "@@ -325,42 +325,8 @@\n   %7D%0A\n-    total := cdmom * float64(par)%0A\n     \n@@ -428,25 +428,31 @@\n rint\n-f(%22%25.2f%5Cn%22, total\n+ln(cdmom * float64(par)\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-07_11-13-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    val := 0\n    par := 0\n    fmt.Scan(&val, &par)\n    cdpar := float64((val / par))\n    cdjur := cdpar * 0.05\n    cdmom := cdpar + (cdjur * (float64(par) - 1))\n    if par == 1 {\n        fmt.Printf(\"%.2f\\n\", float64(val))\n    }else if par != 1 {\n        fmt.Printf(\"%.2f\\n\", cdmom)\n    }\n    total := cdmom * float64(par)\n    if par == 1 {\n        fmt.Printf(\"%.2f\\n\", float64(val))\n    } else if par != 1 {\n        fmt.Printf(\"%.2f\\n\", total)\n    }\n\n}\n",
+            "lines": "22"
         }
     ]
 }

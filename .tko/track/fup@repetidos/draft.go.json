@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_12-43-50",
+            "content": "@@ -41,320 +41,35 @@\n     \n-procurado := 0%0A    tamanho := 0%0A    fmt.Scan(&procurado, &tamanho)%0A    numeros := make(%5B%5Dint, tamanho)%0A    for i := 0; i %3C= tamanho; i++ %7B%0A        fmt.Scan(numeros%5Bi%5D)%0A    %7D%0A    achado := 0%0A    for _, v := range numeros %7B%0A        if procurado == v %7B%0A            achado += 1%0A        %7D%0A    %7D%0A    fmt.Println(achado\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-07_12-53-02",
+            "content": "@@ -159,16 +159,17 @@\n = 0; i %3C\n+=\n  tamanho\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-07_12-57-15",
+            "content": "@@ -192,17 +192,16 @@\n mt.Scan(\n-&\n numeros%5B\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-07_12-57-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    procurado := 0\n    tamanho := 0\n    fmt.Scan(&procurado, &tamanho)\n    numeros := make([]int, tamanho)\n    for i := 0; i < tamanho; i++ {\n        fmt.Scan(&numeros[i])\n    }\n    achado := 0\n    for _, v := range numeros {\n        if procurado == v {\n            achado += 1\n        }\n    }\n    fmt.Println(achado)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

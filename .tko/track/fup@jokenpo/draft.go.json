@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_11-14-30",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -37,38 +37,8 @@\n ) %7B%0A\n-    jog1 := %22%22%0A    jog2 := %22%22%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-07_11-26-09",
+            "content": "@@ -76,83 +76,31 @@\n fmt.\n-Scan(&jog1, &jog2)%0A    if jog1 == jog2 %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-07_11-30-46",
+            "content": "@@ -147,240 +147,8 @@\n e%22)%0A\n-        // R ganha de S que ganha de P que ganha de R%0A    %7D else if (jog1 == %22R%22 && jog2 == %22S%22) %7C%7C (jog1 == %22S%22 && jog2 == %22P%22) %7C%7C (jog1 == %22P%22 && jog2 == %22R%22) %7B%0A        fmt.Println(%22jog1%22)%0A    %7D else %7B%0A        fmt.Println(%22jog2%22)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-07_11-42-51",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n    jog1 := \"\"\n    jog2 := \"\"\n    fmt.Scan(&jog1, &jog2)\n    if jog1 == jog2 {\n        fmt.Println(\"empate\")\n        // R ganha de S que ganha de P que ganha de R\n    } else if (jog1 == \"R\" && jog2 == \"S\") || (jog1 == \"S\" && jog2 == \"P\") || (jog1 == \"P\" && jog2 == \"R\") {\n        fmt.Println(\"jog1\")\n    } else {\n        fmt.Println(\"jog2\")\n    }\n}\n",
+            "lines": "15"
+        }
+    ]
+}
