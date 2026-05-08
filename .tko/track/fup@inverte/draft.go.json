@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_10-49-19",
+            "content": "@@ -10,206 +10,34 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22unicode%22%0A)%0Afunc main() %7B%0A    car := ''%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    texto := scanner.text()%0A    if unicode.IsUpper(car) %7B%0A%0A    %7D\n+%22fmt%22%0Afunc main() %7B\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-08_11-04-46",
+            "content": "@@ -18,19 +18,34 @@\n ort (%0A%09%22\n-fmt\n+bufio%22%0A%09%22fmt%22%0A%09%22os\n %22%0A%09%22unic\n@@ -80,326 +80,168 @@\n  := \n-%22%22\n+''\n %0A    \n-fmt.Scanln(&car)%0A    res := invert(car)%0A    fmt.Println(res)%0A    %0A%7D%0Afunc invert(car string) string %7B%0A    runes := %5B%5Drune(car)%5B0%5D%0A    if unicode.IsLower(runes)%7B%0A    return string(unicode.ToUpper(runes))%0A    %7D%0A    if unicode.IsUpper(runes) %7B%0A    return string(unicode.ToLower(runes))%0A    %7D%0A    return string(runes\n+scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    texto := scanner.text()%0A    if unicode.IsUpper(car) %7B%0A%0A    %7D%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_11-40-36",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"unicode\"\n)\nfunc main() {\n    car := \"\"\n    fmt.Scanln(&car)\n    res := invert(car)\n    fmt.Println(res)\n    \n}\nfunc invert(car string) string {\n    runes := []rune(car)[0]\n    if unicode.IsLower(runes){\n    return string(unicode.ToUpper(runes))\n    }\n    if unicode.IsUpper(runes) {\n    return string(unicode.ToLower(runes))\n    }\n    return string(runes)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

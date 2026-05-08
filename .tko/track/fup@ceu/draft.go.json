@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_12-08-13",
+            "content": "@@ -41,134 +41,35 @@\n     \n-num := 0%0A    fmt.Scan(&num)%0A    for i := 0; i %3C= 10; i++ %7B%0A        if i %25 num != 0 %7B%0A            fmt.Println(i)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-08_12-16-39",
+            "content": "@@ -143,16 +143,18 @@\n mt.Print\n+ln\n (i)%0A    \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-08_12-16-54",
+            "content": "@@ -69,27 +69,8 @@\n um)%0A\n-    fmt.Print(%22%5B%22)%0A\n     \n@@ -147,17 +147,9 @@\n rint\n-f(%22 %25d%22, \n+(\n i)%0A \n@@ -167,28 +167,6 @@\n   %7D%0A\n-    fmt.Println(%22 %5D%22)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-08_12-18-15",
+            "content": "@@ -132,17 +132,17 @@\n f i \n-/\n+%25\n  num != \n 1 %7B%0A\n@@ -137,17 +137,17 @@\n  num != \n-1\n+0\n  %7B%0A     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-08_12-18-43",
+            "content": "@@ -143,19 +143,8 @@\n = 1 \n-&& i %3E num \n %7B%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-08_12-19-43",
+            "content": "@@ -132,10 +132,25 @@\n f i \n-!=\n+/ num != 1 && i %3E\n  num\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-08_12-20-22",
+            "content": "@@ -184,68 +184,8 @@\n   %7D%0A\n-        if i == 10 %7B%0A            fmt.Print(%22ceu%22)%0A        %7D%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-08_12-22-36",
+            "content": "@@ -192,15 +192,65 @@\n     \n+if i == 10 %7B%0A            fmt.Print(%22ceu%22)%0A        %7D\n %0A    %7D\n-%0A\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_12-24-18",
+            "content": "@@ -188,117 +188,19 @@\n     \n-%7D%0A\n     \n-for i := 0; i %3C= 10; i++ %7B%0A        if i != num && i == 10%7B%0A            fmt.Print(%22ceu%22)%0A        %7D\n %0A    %7D\n+%0A\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-08_12-28-12",
+            "content": "@@ -139,19 +139,8 @@\n num \n-&& i != 10 \n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_12-28-38",
+            "content": "@@ -283,17 +283,16 @@\n .Print(%22\n- \n ceu%22)%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_12-28-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    fmt.Print(\"[\")\n    for i := 0; i <= 10; i++ {\n        if i != num && i != 10 {\n            fmt.Printf(\" %d\", i)\n        }\n    }\n    for i := 0; i <= 10; i++ {\n        if i != num && i == 10{\n            fmt.Print(\" ceu\")\n        }\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "18"
+        }
+    ]
+}

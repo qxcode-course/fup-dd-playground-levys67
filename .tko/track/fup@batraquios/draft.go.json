@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_12-29-35",
+            "content": "@@ -41,314 +41,35 @@\n     \n-tam1 := 0%0A    fmt.Scan(&tam1)%0A    vetor1 := make(%5B%5Dint, tam1)%0A    for i := 0; i %3C tam1; i++ %7B%0A        fmt.Scan(vetor1%5Bi%5D)%0A    %7D%0A    tam2 := 0%0A    fmt.Scan(&tam2)%0A    vetor2 := make(%5B%5Dint, tam2)%0A    for i := 0; i %3C= tam2; i++%7B%0A        fmt.Scan(vetor2%5Bi%5D)%0A    %7D%0A    fmt.Println(vetor1)%0A    fmt.Println(vetor2\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-08_12-46-42",
+            "content": "@@ -246,24 +246,25 @@\n  i := 0; i %3C\n+=\n  tam2; i++%7B%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_12-46-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    tam1 := 0\n    fmt.Scan(&tam1)\n    vetor1 := make([]int, tam1)\n    for i := 0; i < tam1; i++ {\n        fmt.Scan(vetor1[i])\n    }\n    tam2 := 0\n    fmt.Scan(&tam2)\n    vetor2 := make([]int, tam2)\n    for i := 0; i < tam2; i++{\n        fmt.Scan(vetor2[i])\n    }\n    fmt.Println(vetor1)\n    fmt.Println(vetor2)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

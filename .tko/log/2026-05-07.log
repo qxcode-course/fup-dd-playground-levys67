@@ -145,3 +145,5 @@
 2026-05-07 12:58:54, SELF, v:1, k:fup@repetidos, self:1, rate:100, study:15
 2026-05-07 12:59:19, SELF, v:1, k:fup@repetidos, self:1, rate:100, study:15, debug:1
 2026-05-07 12:59:27, SELF, v:1, k:fup@repetidos, self:1, rate:100, study:15, debug:1
+2026-05-07 12:57:52, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-05-07 12:57:57, MOVE, v:1, k:fup@repetidos, mode:EDIT
