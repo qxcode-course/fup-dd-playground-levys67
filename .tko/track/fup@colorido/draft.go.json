@@ -67,8 +67,63 @@
         },
         {
             "label": "2026-05-12_13-03-41",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    pedra := 0\n    pe := \"\"\n    fmt.Scan(&pedra, &pe)\n    fmt.Print(\"[\")\n    //localdapedra := 0\n    if pe == \"d\" {\n        for i := 0; i <= 10; i++ {\n            if i != pedra && i % 2 != 0 {\n                fmt.Printf(\" %de\", i)\n            } else if i != pedra && i % 2 == 0 && i != 10{\n                fmt.Printf(\" %dd\", i)\n            }\n            if i == pedra {\n                break\n            }\n        }\n        for i := 0; i <= 10; i ++{\n            if i > pedra && i % 2 != 0{\n                fmt.Printf(\" %dd\", i)\n            } else if i > pedra && i % 2 == 0 && i != 10{\n                fmt.Printf(\" %de\", i)\n            }\n        }\n        for i := 0; i <= 10; i++{\n            if i == 10 {\n                fmt.Print(\" ceu\")\n            }\n        }\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "content": "@@ -10,46 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22crypto/elliptic%22%0A%09\n %22fmt%22%0A\n-)%0A\n func\n@@ -803,164 +803,8 @@\n   %7D%0A\n-    %7D else if pe == %22e%22 %7B%0A        for i := 0; i %3C= 10; i++ %7B%0A            if i != pedra && i %25 2 != 0 %7B%0A                //parei aqui%0A            %7D%0A        %7D%0A\n     \n",
             "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-23-33",
+            "content": "@@ -17,16 +17,33 @@\n port (%0A%09\n+%22crypto/elliptic%22\n %0A%09%22fmt%22%0A\n@@ -943,37 +943,28 @@\n         \n-fmt.Printf(%22 %25de%22, i)\n+//parei aqui\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-12_16-25-45",
+            "content": "@@ -952,105 +952,8 @@\n  i)%0A\n-            %7D else if i != pedra && i %25 2 ==0 && i != 10 %7B%0A                fmt.Printf(%22 %25dd%22, i)%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-12_16-28-06",
+            "content": "@@ -1063,203 +1063,8 @@\n   %7D%0A\n-            if i == pedra %7B%0A                break%0A            %7D%0A        %7D%0A        for i := 0; i %3C= 10; i++%7B%0A            if i %3E pedra && i %25 2 != 0 %7B%0A                fmt.Printf(%22 %22)%0A            %7D%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-12_16-31-40",
+            "content": "@@ -21,29 +21,14 @@\n  (%0A%09\n+%0A%09\n %22fmt\n-%22%0A%09%22runtime/debug\n %22%0A)%0A\n@@ -1229,39 +1229,33 @@\n    fmt.Printf(%22 \n-%25dd%22, i\n+%22\n )%0A            %7D \n@@ -1253,17 +1253,16 @@\n        %7D\n- \n %0A       \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-12_16-32-50",
+            "content": "@@ -23,16 +23,33 @@\n %0A%09%22fmt%22%0A\n+%09%22runtime/debug%22%0A\n )%0Afunc m\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-12_16-33-05",
+            "content": "@@ -931,33 +931,33 @@\n  fmt.Printf(%22 %25d\n-d\n+e\n %22, i)%0A          \n@@ -1028,33 +1028,33 @@\n  fmt.Printf(%22 %25d\n-e\n+d\n %22, i)%0A          \n@@ -1229,33 +1229,33 @@\n  fmt.Printf(%22 %25d\n-e\n+d\n %22, i)%0A          \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-12_16-33-58",
+            "content": "@@ -1262,42 +1262,8 @@\n   %7D \n-else if i %3E pedra && i %25 2 == 0 &&\n %0A   \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-12_16-37-21",
+            "content": "@@ -1296,70 +1296,8 @@\n 0 &&\n- i != 10 %7B%0A                fmt.Printf(%22 %25dd%22, i)%0A            %7D\n %0A   \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-12_16-38-31",
+            "content": "@@ -1369,126 +1369,8 @@\n   %7D%0A\n-        for i := 0; i %3C= 10; i++ %7B%0A            if i == 10 %7B%0A                fmt.Print(%22 ceu%22)%0A            %7D%0A        %7D%0A\n     \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-12_16-40-38",
+            "content": "@@ -1427,22 +1427,8 @@\n  10 \n-&& i != pedra \n %7B%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-12_16-41-11",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\nfunc main() {\n    pedra := 0\n    pe := \"\"\n    fmt.Scan(&pedra, &pe)\n    fmt.Print(\"[\")\n    //localdapedra := 0\n    if pe == \"d\" {\n        for i := 0; i <= 10; i++ {\n            if i != pedra && i % 2 != 0 {\n                fmt.Printf(\" %de\", i)\n            } else if i != pedra && i % 2 == 0 && i != 10{\n                fmt.Printf(\" %dd\", i)\n            }\n            if i == pedra {\n                break\n            }\n        }\n        for i := 0; i <= 10; i ++{\n            if i > pedra && i % 2 != 0{\n                fmt.Printf(\" %dd\", i)\n            } else if i > pedra && i % 2 == 0 && i != 10{\n                fmt.Printf(\" %de\", i)\n            }\n        }\n        for i := 0; i <= 10; i++{\n            if i == 10 {\n                fmt.Print(\" ceu\")\n            }\n        }\n    } else if pe == \"e\" {\n        for i := 0; i <= 10; i++ {\n            if i != pedra && i % 2 != 0 {\n                fmt.Printf(\" %dd\", i)\n            } else if i != pedra && i % 2 ==0 && i != 10 {\n                fmt.Printf(\" %de\", i)\n            }\n            if i == pedra {\n                break\n            }\n        }\n        for i := 0; i <= 10; i++{\n            if i > pedra && i % 2 != 0 {\n                fmt.Printf(\" %de\", i)\n            } else if i > pedra && i % 2 == 0 && i != 10 {\n                fmt.Printf(\" %dd\", i)\n            }\n        }\n        for i := 0; i <= 10; i++ {\n            if i == 10 && i != pedra {\n                fmt.Print(\" ceu\")\n            }\n        }\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "60"
         }
     ]
 }

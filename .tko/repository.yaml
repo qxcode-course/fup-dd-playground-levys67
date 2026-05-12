@@ -22,18 +22,18 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if2
+- fup@string
 - fup@for2
+- fup@if1
+- fup@if2
 - fup@list
 - fup@base
-- fup@string
-- fup@if1
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@colorido
-selected_index: 46
+selected: fup@substring
+selected_index: 110

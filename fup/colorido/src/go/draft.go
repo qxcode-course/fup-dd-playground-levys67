@@ -1,7 +1,6 @@
 package main
 
 import (
-	"crypto/elliptic"
 	"fmt"
 )
 func main() {
@@ -36,7 +35,24 @@ func main() {
     } else if pe == "e" {
         for i := 0; i <= 10; i++ {
             if i != pedra && i % 2 != 0 {
-                //parei aqui
+                fmt.Printf(" %dd", i)
+            } else if i != pedra && i % 2 ==0 && i != 10 {
+                fmt.Printf(" %de", i)
+            }
+            if i == pedra {
+                break
+            }
+        }
+        for i := 0; i <= 10; i++{
+            if i > pedra && i % 2 != 0 {
+                fmt.Printf(" %de", i)
+            } else if i > pedra && i % 2 == 0 && i != 10 {
+                fmt.Printf(" %dd", i)
+            }
+        }
+        for i := 0; i <= 10; i++ {
+            if i == 10 && i != pedra {
+                fmt.Print(" ceu")
             }
         }
     }

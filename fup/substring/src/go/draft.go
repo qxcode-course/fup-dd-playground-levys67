@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+    "strconv"
 )
 func main() {
     var text string
@@ -12,17 +13,18 @@ func main() {
     scanner := bufio.NewScanner(os.Stdin)
     scanner.Scan()
     text = scanner.Text()
-    fmt.Scan(&ind, &qtd)
+    indt := scanner.Text()
+    ind, _ = strconv.Atoi(indt)
+
     listtexto := []rune(text)
-    caracteres := 0
-    for i := 0; i <= len(text)-1; i++{
-        if i >= ind {
-            fmt.Printf("%c", listtexto[i])
-        }
-        caracteres += 1
-        if caracteres > qtd{
-            break
-        }
+    //caracteres := 0
+    for i := 0; i < len(text); i++{
+        fmt.Printf("%c", listtexto[i])
     }
     fmt.Println()
+    for i := 0; i < qtd; i++{
+        fmt.Printf("%c", listtexto[i])
+    }
+    fmt.Println(ind)
+    fmt.Println(qtd)
 }

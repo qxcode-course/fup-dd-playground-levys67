@@ -67,8 +67,68 @@
         },
         {
             "label": "2026-05-12_11-34-26",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    var text string\n    ind := 0\n    qtd := 0\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    text = scanner.Text()\n    fmt.Scan(&ind, &qtd)\n    listtexto := []rune(text)\n    caracteres := 0\n    for i := 0; i <= len(text)-1; i++{\n        if i >= ind {\n            fmt.Printf(\"%c\", listtexto[i])\n        }\n        caracteres += 1\n        if caracteres > qtd{\n            break\n        }\n    }\n    fmt.Println()\n}\n",
+            "content": "@@ -279,20 +279,27 @@\n  := \n-ind\n+0\n ; i %3C\n- qtd\n+= len(text)-1\n ; i+\n",
             "lines": "28"
+        },
+        {
+            "label": "2026-05-12_17-59-23",
+            "content": "@@ -250,10 +250,8 @@\n     \n-//\n cara\n@@ -365,24 +365,105 @@\n )%0A        %7D%0A\n+        caracteres += 1%0A        if caracteres %3E qtd%7B%0A            break%0A        %7D%0A\n     %7D%0A    fm\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-12_17-59-50",
+            "content": "@@ -300,24 +300,37 @@\n ++%7B%0A        \n+if i %3E= ind %7B\n %0A           \n@@ -369,16 +369,17 @@\n         \n+%7D\n %0A    %7D%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_18-00-17",
+            "content": "@@ -300,24 +300,37 @@\n ++%7B%0A        \n+%0A            \n fmt.Printf(%22\n@@ -348,16 +348,25 @@\n xto%5Bi%5D)%0A\n+        %0A\n     %7D%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_18-02-54",
+            "content": "@@ -281,24 +281,20 @@\n  := \n-0\n+ind\n ; i %3C \n-len(text)\n+qtd\n ; i+\n@@ -363,83 +363,6 @@\n n()%0A\n-    for i := ind; i %3C qtd; i++%7B%0A        fmt.Printf(%22%25c%22, listtexto%5Bi%5D)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-12_18-09-03",
+            "content": "@@ -381,33 +381,27 @@\n := ind; i %3C \n-len(text)\n+qtd\n ; i++%7B%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_18-11-04",
+            "content": "@@ -380,18 +380,26 @@\n  := \n-0\n+ind\n ; i %3C \n-qtd\n+len(text)\n ; i+\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_18-11-59",
+            "content": "@@ -442,48 +442,6 @@\n   %7D%0A\n-    fmt.Println(ind)%0A    fmt.Println(qtd)%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_18-14-14",
+            "content": "@@ -204,31 +204,18 @@\n can(&ind\n-)%0A    fmt.Scan(\n+, \n &qtd)%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-12_18-15-03",
+            "content": "@@ -195,42 +195,41 @@\n     \n-ind = int(scanner.Bytes()%5B4%5D)%0A    \n+fmt.Scan(&ind)%0A    fmt.Scan(&qtd)\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-12_18-18-50",
+            "content": "@@ -221,12 +221,16 @@\n s()%5B\n-1\n+4\n %5D)%0A\n+    \n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-12_18-19-06",
+            "content": "@@ -42,22 +42,8 @@\n os%22%0A\n-    %22strconv%22%0A\n )%0Afu\n@@ -198,21 +198,23 @@\n  ind\n-t := \n+ = int(\n scanner.\n Text\n@@ -213,45 +213,18 @@\n ner.\n-Text()%0A    ind, _ = strconv.Atoi(indt\n+Bytes()%5B1%5D\n )%0A%0A \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-12_18-24-13",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n    \"strconv\"\n)\nfunc main() {\n    var text string\n    ind := 0\n    qtd := 0\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    text = scanner.Text()\n    indt := scanner.Text()\n    ind, _ = strconv.Atoi(indt)\n\n    listtexto := []rune(text)\n    //caracteres := 0\n    for i := 0; i < len(text); i++{\n        fmt.Printf(\"%c\", listtexto[i])\n    }\n    fmt.Println()\n    for i := 0; i < qtd; i++{\n        fmt.Printf(\"%c\", listtexto[i])\n    }\n    fmt.Println(ind)\n    fmt.Println(qtd)\n}\n",
+            "lines": "30"
         }
     ]
 }
