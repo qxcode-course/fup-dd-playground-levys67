@@ -1,0 +1,124 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_11-39-45",
+            "content": "@@ -41,177 +41,35 @@\n     \n-dia := 0%0A    hora := 0%0A    fmt.Scan(&dia, &hora)%0A    if (dia %3C= 2 %7C%7C dia %3E= 6) && (hora %3E= 8 %7C%7C hora %3C= 11 %7C%7C hora %3E= 14 %7C%7C hora %3C= 17) %7B%0A        fmt.Println(%22SIM%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-12_11-47-10",
+            "content": "@@ -206,48 +206,8 @@\n M%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-12_11-48-31",
+            "content": "@@ -130,10 +130,11 @@\n ra %3E\n- 7\n+= 8\n  %7C%7C \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-50-37",
+            "content": "@@ -142,11 +142,12 @@\n ra %3C\n+=\n  1\n-2\n+1\n  %7C%7C \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-50-54",
+            "content": "@@ -155,11 +155,12 @@\n ra %3E\n+=\n  1\n-3\n+4\n  %7C%7C \n@@ -169,11 +169,12 @@\n ra %3C\n+=\n  1\n-8\n+7\n ) %7B%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-51-28",
+            "content": "@@ -99,18 +99,19 @@\n f (dia %3C\n- 1\n+= 2\n  %7C%7C dia \n@@ -111,18 +111,19 @@\n %7C%7C dia %3E\n- 7\n+= 6\n ) && (ho\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-52-17",
+            "content": "@@ -127,18 +127,18 @@\n ora %3E 7 \n-&&\n+%7C%7C\n  hora %3C \n@@ -153,18 +153,18 @@\n ra %3E 13 \n-&&\n+%7C%7C\n  hora %3C \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-53-22",
+            "content": "@@ -103,23 +103,21 @@\n ia %3C\n-= 2 &&\n+ 1 %7C%7C\n  dia %3E\n-= 6\n+ 7\n ) &&\n@@ -128,11 +128,10 @@\n ra %3E\n-= 8\n+ 7\n  && \n@@ -140,12 +140,11 @@\n ra %3C\n-=\n  1\n-1\n+2\n  %7C%7C \n@@ -153,12 +153,11 @@\n ra %3E\n-=\n  1\n-4\n+3\n  && \n@@ -166,12 +166,11 @@\n ra %3C\n-=\n  1\n-7\n+8\n ) %7B%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-55-05",
+            "content": "@@ -98,17 +98,17 @@\n if (dia \n-%3E\n+%3C\n = 2 && d\n@@ -110,17 +110,17 @@\n  && dia \n-%3C\n+%3E\n = 6) && \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_11-58-15",
+            "content": "@@ -217,103 +217,9 @@\n lse \n-if (dia == 1 %7C%7C dia == 7) && (hora %3E= 8 && hora %3C= 11)%7B%0A        fmt.Println(%22SIM%22)%0A    %7D else (\n+%7B\n %0A   \n@@ -246,12 +246,12 @@\n O%22)%0A    \n-)\n+%7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_12-00-48",
+            "content": "@@ -307,17 +307,17 @@\n  %7D else \n-%7B\n+(\n %0A       \n@@ -340,12 +340,12 @@\n O%22)%0A    \n-%7D\n+)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_12-01-09",
+            "content": "@@ -147,14 +147,12 @@\n = 11\n-)\n  %7C%7C \n-(\n hora\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_12-07-24",
+            "content": "@@ -313,59 +313,8 @@\n lse \n-if (dia == 1 %7C%7C dia ==7) && (hora %3C 8 %7C%7C hora %3E 11)\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_12-09-40",
+            "content": "@@ -393,125 +393,8 @@\n O%22)%0A\n-    %7D else if (dia %3E=2 && dia %3C= 6) && (hora %3C 8 %7C%7C hora %3E 11 && hora %3C 14 %7C%7C hora %3E 17)%7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_12-13-31",
+            "content": "@@ -225,16 +225,28 @@\n  (dia ==\n+ 1 %7C%7C dia ==\n  7) && (\n@@ -312,24 +312,25 @@\n else if \n+(\n dia == 1\n %7B%0A      \n@@ -321,16 +321,55 @@\n dia == 1\n+ %7C%7C dia ==7) && (hora %3C 8 %7C%7C hora %3E 11)\n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_12-15-08",
+            "content": "@@ -97,17 +97,340 @@\n  if \n+(\n dia \n-== 1 \n+%3E= 2 && dia %3C= 6) && (hora %3E= 8 && hora %3C= 11) %7C%7C (hora %3E= 14 && hora %3C= 17) %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else if (dia == 7) && (hora %3E= 8 && hora %3C= 11)%7B%0A        fmt.Println(%22SIM%22)%0A    %7D else if dia == 1%7B%0A        fmt.Println(%22NAO%22)%0A    %7D else if (dia %3E=2 && dia %3C= 6) && (hora %3C 8 %7C%7C hora %3E 11 && hora %3C 14 %7C%7C hora %3E 17)\n %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_12-16-53",
+            "content": "@@ -135,131 +135,8 @@\n O%22)%0A\n-    %7D else if (dia %3E 1 && dia %3C 7) && (hora %3E= 8 && hora %3C= 11) %7C%7C (hora %3E= 14 && hora %3C= 17) %7B%0A        fmt.Println(%22SIM%22)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-12_12-19-45",
+            "content": "@@ -258,129 +258,8 @@\n M%22)%0A\n-    %7D else if dia == 7 && (hora %3E= 8 && hora %3C= 11) %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_12-21-51",
+            "content": "@@ -339,86 +339,8 @@\n M%22)%0A\n-    %7D else if dia == 7 && (hora %3C 8 && hora %3E 11)%7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_12-24-00",
+            "content": "@@ -331,20 +331,138 @@\n ntln(%22SIM%22)%0A\n+    %7D else if dia == 7 && (hora %3C 8 && hora %3E 11)%7B%0A        fmt.Println(%22NAO%22)%0A    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_12-26-01",
+            "content": "@@ -344,86 +344,7 @@\n    %7D\n- else if dia == 7 && (hora %3C 8 && hora %3E 11)%7B%0A        fmt.Println(%22NAO%22)%0A    %7D \n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_12-26-31",
+            "content": "@@ -423,46 +423,7 @@\n   %7D \n-else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_12-26-56",
+            "content": "@@ -327,32 +327,110 @@\n .Println(%22SIM%22)%0A\n+    %7D else if dia == 7 && (hora %3C 8 && hora %3E 11)%7B%0A        fmt.Println(%22NAO%22)%0A\n     %7D else %7B%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_12-27-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    dia := 0\n    hora := 0\n    fmt.Scan(&dia, &hora)\n    if dia == 1 {\n        fmt.Println(\"NAO\")\n    } else if (dia > 1 && dia < 7) && (hora >= 8 && hora <= 11) || (hora >= 14 && hora <= 17) {\n        fmt.Println(\"SIM\")\n    } else if dia == 7 && (hora >= 8 && hora <= 11) {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

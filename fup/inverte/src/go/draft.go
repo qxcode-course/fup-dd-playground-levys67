@@ -13,6 +13,7 @@ func main() {
 }
 func invert(car string) string {
     runes := []rune(car)[0]
+    
     if unicode.IsLower(runes){
     return string(unicode.ToUpper(runes))
     }

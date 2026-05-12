@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_12-30-11",
+            "content": "@@ -41,284 +41,34 @@\n     \n-pedra := 0%0A    pe := %22%22%0A    fmt.Scan(&pedra, &pe)%0A    fmt.Print(%22%5B%22)%0A    //localdapedra := 0%0A    if pe == %22d%22 %7B%0A        for i := 0; i %3C= 11; i++ %7B%0A            if i != pedra && i %25 2 != 0 %7B%0A                fmt.Printf(%22 %25dd%22, i)%0A            %7D%0A        %7D%0A    %7D%0A    fmt.Println(%22 %5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-12_12-44-40",
+            "content": "@@ -175,17 +175,17 @@\n ; i %3C= 1\n-0\n+1\n ; i++ %7B%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-12_12-45-20",
+            "content": "@@ -268,95 +268,8 @@\n  i)%0A\n-            %7D else if i != pedra && i %25 2 == 0 %7B%0A                fmt.Printf(%22 %25de%22, i)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-12_12-46-47",
+            "content": "@@ -315,18 +315,8 @@\n = 0 \n-&& i != 10\n %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_12-47-58",
+            "content": "@@ -389,124 +389,8 @@\n   %7D%0A\n-        for i := 0; i %3C= 10; i++%7B%0A            if i == 10 %7B%0A                fmt.Print(%22ceu%22)%0A            %7D%0A        %7D%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_12-49-06",
+            "content": "@@ -471,17 +471,16 @@\n .Print(%22\n- \n ceu%22)%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_12-49-15",
+            "content": "@@ -257,17 +257,17 @@\n ntf(%22 %25d\n-e\n+d\n %22, i)%0A  \n@@ -346,33 +346,33 @@\n  fmt.Printf(%22 %25d\n-d\n+e\n %22, i)%0A          \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_12-49-52",
+            "content": "@@ -379,209 +379,8 @@\n   %7D%0A\n-            if i == pedra %7B%0A                break%0A            %7D%0A        %7D%0A        for i := 0; i %3C= 10; i ++%7B%0A            if i %3C pedra && i %25 2 != 0%7B%0A                fmt.Printf(%22 %25dd%22, i)%0A            %7D%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_13-00-45",
+            "content": "@@ -518,17 +518,17 @@\n & i %25 2 \n-=\n+!\n = 0%7B%0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-12_13-01-40",
+            "content": "@@ -505,9 +505,9 @@\n f i \n-%3E\n+%3C\n  ped\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-12_13-01-52",
+            "content": "@@ -518,17 +518,17 @@\n & i %25 2 \n-!\n+=\n = 0%7B%0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-12_13-02-01",
+            "content": "@@ -566,93 +566,8 @@\n  i)%0A\n-            %7D else if i %3E pedra && i %25 2 == 0%7B%0A                fmt.Printf(%22 %25de%22, i)%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-12_13-03-22",
+            "content": "@@ -603,35 +603,24 @@\n & i %25 2 == 0\n- && i != 10\n %7B%0A          \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_13-03-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    pedra := 0\n    pe := \"\"\n    fmt.Scan(&pedra, &pe)\n    fmt.Print(\"[\")\n    //localdapedra := 0\n    if pe == \"d\" {\n        for i := 0; i <= 10; i++ {\n            if i != pedra && i % 2 != 0 {\n                fmt.Printf(\" %de\", i)\n            } else if i != pedra && i % 2 == 0 && i != 10{\n                fmt.Printf(\" %dd\", i)\n            }\n            if i == pedra {\n                break\n            }\n        }\n        for i := 0; i <= 10; i ++{\n            if i > pedra && i % 2 != 0{\n                fmt.Printf(\" %dd\", i)\n            } else if i > pedra && i % 2 == 0 && i != 10{\n                fmt.Printf(\" %de\", i)\n            }\n        }\n        for i := 0; i <= 10; i++{\n            if i == 10 {\n                fmt.Print(\" ceu\")\n            }\n        }\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "34"
+        }
+    ]
+}
