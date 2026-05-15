@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-14_10-48-14",
+            "content": "@@ -41,292 +41,35 @@\n     \n-var1 := 0%0A    var2 := 0%0A    var3 := 0%0A    fmt.Scan(&var1, &var2, &var3)%0A    soma1 := var1 + var2//3%0A    soma2 := var1 + var3//2%0A    soma3 := var2 + var3//1%0A    if var1 %3E soma3 %7C%7C var2 %3E soma2 %7C%7C var3 %3E soma1 %7B%0A        fmt.Println(%22False%22)%0A    %7D else %7B%0A        fmt.Println(%22True%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-14_11-00-14",
+            "content": "@@ -205,17 +205,17 @@\n if var1 \n-%3C\n+%3E\n  soma3 %7C\n@@ -221,17 +221,17 @@\n %7C%7C var2 \n-%3C\n+%3E\n  soma2 %7C\n@@ -241,9 +241,9 @@\n ar3 \n-%3C\n+%3E\n  som\n@@ -272,11 +272,12 @@\n ln(%22\n-Tru\n+Fals\n e%22)%0A\n@@ -302,32 +302,31 @@\n    fmt.Println(%22\n-Fals\n+Tru\n e%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-14_11-04-41",
+            "content": "@@ -205,17 +205,17 @@\n if var1 \n-%3E\n+%3C\n  soma3 %7C\n@@ -221,17 +221,17 @@\n %7C%7C var2 \n-%3E\n+%3C\n  soma2 %7C\n@@ -241,9 +241,9 @@\n ar3 \n-%3E\n+%3C\n  som\n@@ -272,12 +272,11 @@\n ln(%22\n-Fals\n+Tru\n e%22)%0A\n@@ -301,31 +301,32 @@\n    fmt.Println(%22\n-Tru\n+Fals\n e%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-14_11-05-43",
+            "content": "@@ -197,25 +197,8 @@\n //1%0A\n-    tri := false%0A\n     \n@@ -251,100 +251,8 @@\n 1 %7B%0A\n-        tri = false%0A    %7D else %7B%0A        tri = true%0A    %7D%0A    switch tri %7B%0A    case true :%7B%0A\n     \n@@ -272,11 +272,12 @@\n ln(%22\n-Tru\n+Fals\n e%22)%0A\n@@ -285,25 +285,14 @@\n    %7D\n-%0A    case fa\n+ e\n lse \n-:\n %7B%0A  \n@@ -314,24 +314,14 @@\n ln(%22\n-False%22)%0A    %7D   \n+True%22)\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-14_11-10-04",
+            "content": "@@ -222,18 +222,17 @@\n if var1 \n-%3C=\n+%3E\n  soma3 %7C\n@@ -238,18 +238,17 @@\n %7C%7C var2 \n-%3C=\n+%3E\n  soma2 %7C\n@@ -258,10 +258,9 @@\n ar3 \n-%3C=\n+%3E\n  som\n@@ -278,19 +278,20 @@\n   tri = \n-tru\n+fals\n e%0A    %7D \n@@ -307,28 +307,27 @@\n       tri = \n-fals\n+tru\n e%0A    %7D%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-14_11-15-04",
+            "content": "@@ -222,17 +222,18 @@\n if var1 \n-%3E\n+%3C=\n  soma3 %7C\n@@ -239,17 +239,18 @@\n %7C%7C var2 \n-%3E\n+%3C=\n  soma2 %7C\n@@ -260,9 +260,10 @@\n ar3 \n-%3E\n+%3C=\n  som\n@@ -281,20 +281,19 @@\n   tri = \n-fals\n+tru\n e%0A    %7D \n@@ -309,27 +309,28 @@\n       tri = \n-tru\n+fals\n e%0A    %7D%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-14_11-15-52",
+            "content": "@@ -129,19 +129,19 @@\n  var\n-2\n+1\n  + var\n-3//1\n+2//3\n %0A   \n@@ -192,12 +192,29 @@\n  var\n-1//3\n+3//1%0A    tri := false\n %0A   \n@@ -232,12 +232,12 @@\n soma\n-1 &&\n+3 %7C%7C\n  var\n@@ -250,10 +250,10 @@\n ma2 \n-&&\n+%7C%7C\n  var\n@@ -260,17 +260,17 @@\n 3 %3E soma\n-3\n+1\n  %7B%0A     \n@@ -276,43 +276,186 @@\n     \n-fmt.Println(%22True%22)%0A    %7D %0A    %0A    \n+tri = false%0A    %7D else %7B%0A        tri = true%0A    %7D%0A    switch tri %7B%0A    case true :%7B%0A        fmt.Println(%22True%22)%0A    %7D%0A    case false :%7B%0A        fmt.Println(%22False%22)%0A    %7D   %0A    %7D\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-15_10-53-28",
+            "content": "@@ -285,49 +285,8 @@\n   %7D \n-else %7B%0A        fmt.Println(%22False%22)%0A    %7D\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-15_10-54-05",
+            "content": "@@ -326,16 +326,17 @@\n    %7D%0A   \n+ \n %0A    %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_10-57-01",
+            "content": "@@ -129,24 +129,27 @@\n  var2 + var3\n+//1\n %0A    soma2 :\n@@ -161,16 +161,19 @@\n 1 + var3\n+//2\n %0A    som\n@@ -189,16 +189,19 @@\n 2 + var1\n+//3\n %0A    if \n@@ -267,17 +267,22 @@\n Println(\n-1\n+%22True%22\n )%0A    %7D \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_10-58-34",
+            "content": "@@ -200,41 +200,41 @@\n ar1 \n-%3C\n+%3E\n  soma1 \n-%7C%7C\n+&&\n  var2 \n-%3C\n+%3E\n  soma2 \n-%7C%7C\n+&&\n  var3 \n-%3C\n+%3E\n  som\n@@ -262,15 +262,9 @@\n tln(\n-%22False%22\n+1\n )%0A  \n@@ -299,11 +299,12 @@\n ln(%22\n-Tru\n+Fals\n e%22)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-00-12",
+            "content": "@@ -291,10 +291,8 @@\n     \n-//\n  fmt\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-00-29",
+            "content": "@@ -282,24 +282,27 @@\n lse %7B%0A      \n+ //\n  fmt.Println\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-00-50",
+            "content": "@@ -282,24 +282,8 @@\n lse \n-if var1 %3E= soma1\n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-01-42",
+            "content": "@@ -298,42 +298,8 @@\n oma1\n- && var2 %3E= soma2 && var3 %3E= soma3\n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-02-27",
+            "content": "@@ -282,11 +282,8 @@\n lse \n-%7B//\n if v\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-06-27",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var1 := \n@@ -47,17 +47,20 @@\n r1 := 0%0A\n-%09\n+    \n var2 := \n@@ -61,17 +61,20 @@\n r2 := 0%0A\n-%09\n+    \n var3 := \n@@ -75,17 +75,20 @@\n r3 := 0%0A\n-%09\n+    \n fmt.Scan\n@@ -109,18 +109,20 @@\n  &var3)%0A\n-%0A%09\n+    \n soma1 :=\n@@ -130,25 +130,28 @@\n var2 + var3%0A\n-%09\n+    \n soma2 := var\n@@ -159,17 +159,20 @@\n  + var3%0A\n-%09\n+    \n soma3 :=\n@@ -179,27 +179,29 @@\n  var\n-1\n+2\n  + var\n-2%0A%0A%09\n+1%0A    \n if var1 \n %3E so\n@@ -196,17 +196,17 @@\n if var1 \n-%3E\n+%3C\n  soma1 %7C\n@@ -212,17 +212,17 @@\n %7C%7C var2 \n-%3E\n+%3C\n  soma2 %7C\n@@ -232,9 +232,9 @@\n ar3 \n-%3E\n+%3C\n  som\n@@ -238,18 +238,24 @@\n soma3 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -271,17 +271,20 @@\n e%22)%0A\n-%09\n+    \n %7D else %7B\n %0A%09%09f\n@@ -283,11 +283,69 @@\n se %7B\n-%0A%09%09\n+//if var1 %3E= soma1 && var2 %3E= soma2 && var3 %3E= soma3%7B%0A       \n fmt.\n@@ -364,9 +364,21 @@\n e%22)%0A\n-%09%7D\n+    %7D%0A   %0A    \n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-13-39",
+            "content": "@@ -99,16 +99,17 @@\n  &var3)%0A\n+%0A\n %09soma1 :\n@@ -166,16 +166,17 @@\n  + var2%0A\n+%0A\n %09if var1\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-15_11-14-13",
+            "content": "@@ -175,17 +175,16 @@\n f var1 %3E\n-=\n  soma1 %7C\n@@ -191,17 +191,16 @@\n %7C var2 %3E\n-=\n  soma2 %7C\n@@ -207,17 +207,16 @@\n %7C var3 %3E\n-=\n  soma3 %7B\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-15_11-16-11",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar1 := 0\n\tvar2 := 0\n\tvar3 := 0\n\tfmt.Scan(&var1, &var2, &var3)\n\tsoma1 := var2 + var3\n\tsoma2 := var1 + var3\n\tsoma3 := var1 + var2\n\tif var1 >= soma1 || var2 >= soma2 || var3 >= soma3 {\n\t\tfmt.Println(\"False\")\n\t} else {\n\t\tfmt.Println(\"True\")\n\t}\n}\n",
+            "lines": "18"
+        }
+    ]
+}

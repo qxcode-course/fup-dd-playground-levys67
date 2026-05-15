@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-14_11-19-15",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -41,373 +41,35 @@\n     \n-var1 := 0.0%0A    var2 := 0.0%0A    var3 := 0.0%0A    fmt.Scan(&var1, &var2, &var3)%0A    delta := math.Pow(var2, 2) - 4 * var1 * var3%0A    bhask1 := (-var2 + math.Sqrt(delta))/2 * var1%0A    bhask2 := (-var2 - math.Sqrt(delta))/2 * var1%0A    if delta %3C 0%7B%0A        fmt.Println(%22nao ha raiz real%22)%0A    %7D else if delta %3E 0 %7B%0A        fmt.Printf(%22%25.2f%5Cn%25.2f%5Cn%22,bhask1, bhask2)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-14_11-37-12",
+            "content": "@@ -416,57 +416,8 @@\n k2)%0A\n-    %7D else %7B%0A        fmt.Printf(%22%25.2f%5Cn%22,bhask1)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-14_11-38-38",
+            "content": "@@ -182,31 +182,8 @@\n ar3%0A\n-    fmt.Println(delta)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-14_11-41-38",
+            "content": "@@ -186,10 +186,8 @@\n     \n-//\n fmt.\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-14_11-42-22",
+            "content": "@@ -51,17 +51,20 @@\n ) %7B%0A    \n-a\n+var1\n  := 0.0%0A\n@@ -67,17 +67,20 @@\n 0.0%0A    \n-b\n+var2\n  := 0.0%0A\n@@ -83,17 +83,20 @@\n 0.0%0A    \n-c\n+var3\n  := 0.0%0A\n@@ -146,48 +146,50 @@\n  := \n-b*b - 4*a*c%0A    if  delta %3C 0 %7B%0A  \n+math.Pow(var2, 2) - 4 * var1 * var3%0A\n     \n-  \n+//\n fmt.\n@@ -200,47 +200,35 @@\n tln(\n-%22nao ha raiz real%22)%0A    %7D%0A    x\n+delta)%0A    bhask\n 1 := (-\n-b\n+var2\n  + m\n@@ -247,28 +247,38 @@\n ta))\n- / 2*a%0A    x\n+/2 * var1%0A    bhask\n 2 := (-\n-b\n+var2\n  - m\n@@ -297,14 +297,17 @@\n ta))\n- / 2*a\n+/2 * var1\n %0A   \n@@ -320,13 +320,11 @@\n lta \n-==\n+%3C\n  0\n- \n %7B%0A  \n@@ -342,22 +342,29 @@\n rint\n-f(%22%25.2f%5Cn%22, x1\n+ln(%22nao ha raiz real%22\n )%0A  \n@@ -425,15 +425,71 @@\n %5Cn%22,\n- x1, x2\n+bhask1, bhask2)%0A    %7D else %7B%0A        fmt.Printf(%22%25.2f%5Cn%22,bhask1\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-15_11-31-16",
+            "content": "@@ -104,17 +104,26 @@\n an(&\n-a, &b, &c\n+var1, &var2, &var3\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-15_11-31-37",
+            "content": "@@ -200,23 +200,8 @@\n l%22)%0A\n-        return%0A\n     \n@@ -242,13 +242,11 @@\n ) / \n-(\n 2*a\n-)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-15_11-37-06",
+            "content": "@@ -291,29 +291,27 @@\n t(delta)) / \n-(\n 2*a\n-)\n %0A    if delt\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-15_11-42-21",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    a := 0.0\n    b := 0.0\n    c := 0.0\n    fmt.Scan(&a, &b, &c)\n    delta := b*b - 4*a*c\n    if  delta < 0 {\n        fmt.Println(\"nao ha raiz real\")\n        return\n    }\n    x1 := (-b + math.Sqrt(delta)) / (2*a)\n    x2 := (-b - math.Sqrt(delta)) / (2*a)\n    if delta == 0 {\n        fmt.Printf(\"%.2f\\n\", x1)\n    } else if delta > 0 {\n        fmt.Printf(\"%.2f\\n%.2f\\n\", x1, x2)\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}
