@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-09-24",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-09-48",
+            "content": "@@ -42,307 +42,35 @@\n     \n-h := 0%0A    p := 0%0A    f := 0%0A    d := 0 // -1 para horaria e 1 para anti horaria%0A    fmt.Scan(&h, &p, &f, &d)%0A    if d %3E 0%7B%0A        for i := f; i %3C=  15; i++ %7B%0A            if i == h %7B%0A                fmt.Println(%22S%22)%0A            %7D else %7B%0A                fmt.Println(%22N%22)%0A            %7D%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-19_17-30-55",
+            "content": "@@ -255,38 +255,16 @@\n ln(%22S%22)%0A\n-                break%0A\n         \n@@ -313,30 +313,8 @@\n N%22)%0A\n-                break%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_17-31-18",
+            "content": "@@ -300,18 +300,8 @@\n lse \n-if i == p \n %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-19_17-31-55",
+            "content": "@@ -391,144 +391,8 @@\n   %7D%0A\n-    %7D else if d %3C 0 %7B%0A        for i := f; i %3E= 15; i--%7B%0A            if i == h%7B%0A                fmt.Println(%22S%22)%0A            %7D%0A        %7D%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-19_17-37-00",
+            "content": "@@ -503,72 +503,8 @@\n S%22)%0A\n-            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-37-58",
+            "content": "@@ -456,33 +456,32 @@\n        if i == h\n- \n %7B%0A              \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-19_17-38-09",
+            "content": "@@ -161,12 +161,11 @@\n f d \n-%3C\n+%3E\n  0\n- \n %7B%0A  \n@@ -188,17 +188,20 @@\n ; i \n-%3E= 0\n+%3C=  15\n ; i++\n+ \n %7B%0A  \n@@ -271,21 +271,323 @@\n     \n-%7D%0A        %7D %0A\n+    break%0A            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A                break%0A            %7D%0A        %7D%0A    %7D else if d %3C 0 %7B%0A        for i := f; i %3E= 15; i--%7B%0A            if i == h %7B%0A                fmt.Println(%22S%22)%0A            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A            %7D%0A    \n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-19_17-55-56",
+            "content": "@@ -196,10 +196,10 @@\n 0; i\n---\n+++\n %7B%0A  \n@@ -288,11 +288,12 @@\n   %7D%0A    \n+%7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-19_17-56-12",
+            "content": "@@ -257,72 +257,8 @@\n S%22)%0A\n-            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-19_17-57-37",
+            "content": "@@ -253,38 +253,16 @@\n ln(%22S%22)%0A\n-                break%0A\n         \n@@ -321,30 +321,8 @@\n N%22)%0A\n-                break%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-19_17-58-06",
+            "content": "@@ -186,18 +186,8 @@\n = f;\n-i %3C= 15 &&\n  i %3E\n@@ -375,17 +375,16 @@\n       %7D%0A\n-%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_17-58-59",
+            "content": "@@ -389,70 +389,8 @@\n   %7D%0A\n-            if i == 0 %7B%0A                continue%0A            %7D\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-19_18-01-08",
+            "content": "@@ -389,76 +389,8 @@\n   %7D%0A\n-            %0A        %7D %0A        for i := 0; i %3C= 15 && i %3E= 0; i--%7B%0A\n     \n@@ -397,33 +397,33 @@\n         if i == \n-h\n+0\n  %7B%0A             \n@@ -429,112 +429,41 @@\n     \n-fmt.Println(%22S%22)%0A            %7D else if i == p %7B%0A                fmt.Println(%22n%22)%0A            %7D%0A        %7D\n+continue%0A            %7D%0A        %7D \n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_18-03-48",
+            "content": "@@ -510,38 +510,16 @@\n ln(%22S%22)%0A\n-                break%0A\n         \n@@ -574,38 +574,16 @@\n ln(%22n%22)%0A\n-                break%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-19_18-04-09",
+            "content": "@@ -432,14 +432,26 @@\n = 0;\n+ \n i %3C\n- f \n+= 15 && i %3E= 0\n ; i-\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-19_18-05-01",
+            "content": "@@ -441,10 +441,10 @@\n  ; i\n-++\n+--\n %7B%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-19_18-05-41",
+            "content": "@@ -167,31 +167,8 @@\n 0 %7B%0A\n-        valor := false%0A\n     \n@@ -206,16 +206,16 @@\n 0; i--%7B%0A\n+\n         \n@@ -267,37 +267,8 @@\n S%22)%0A\n-                valor = true%0A\n     \n@@ -353,37 +353,8 @@\n N%22)%0A\n-                valor = true%0A\n     \n@@ -413,31 +413,8 @@\n  %7D %0A\n-        if !valor%7B%0A    \n     \n@@ -445,36 +445,32 @@\n ++%7B%0A            \n-    \n if i == h %7B%0A    \n@@ -457,36 +457,32 @@\n     if i == h %7B%0A\n-    \n                 \n@@ -510,38 +510,30 @@\n             \n-    \n break%0A\n-    \n             \n@@ -559,36 +559,32 @@\n                 \n-    \n fmt.Println(%22n%22)\n@@ -592,36 +592,32 @@\n                 \n-   \n- \n break%0A          \n@@ -624,22 +624,8 @@\n   %7D%0A\n-        %7D    %0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-19_18-07-44",
+            "content": "@@ -205,16 +205,26 @@\n  i := f;\n+i %3C= 15 &&\n  i %3E= 0;\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-08-38",
+            "content": "@@ -751,25 +751,12 @@\n    %7D\n-%7Delse if valor %7B%0A\n+    \n %0A   \n@@ -766,16 +766,17 @@\n   %7D%0A    \n+%7D%0A\n     \n-%7D\n %0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-12-17",
+            "content": "@@ -686,33 +686,33 @@\n    fmt.Println(%22\n-N\n+n\n %22)%0A             \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-12-32",
+            "content": "@@ -165,18 +165,32 @@\n %3C 0 \n-&& f %3C p %7B\n+%7B%0A        valor := false\n %0A   \n@@ -276,16 +276,45 @@\n ln(%22S%22)%0A\n+                valor = true%0A\n         \n@@ -391,16 +391,45 @@\n ln(%22N%22)%0A\n+                valor = true%0A\n         \n@@ -483,21 +483,312 @@\n   %7D %0A       \n-%0A\n+ if !valor%7B%0A            for i := 0;i %3C f ; i++%7B%0A                if i == h %7B%0A                    fmt.Println(%22S%22)%0A                    break%0A                %7D else if i == p %7B%0A                    fmt.Println(%22N%22)%0A                    break%0A            %7D%0A        %7D%7Delse if valor %7B%0A%0A        %7D%0A    \n     %7D%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-14-30",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    h := 0\n    p := 0\n    f := 0\n    d := 0 // -1 para horaria e 1 para anti horaria\n    fmt.Scan(&h, &p, &f, &d)\n    if d < 0 && f < p {\n        for i := f; i >= 0; i--{\n            if i == h {\n                fmt.Println(\"S\")\n                break\n            } else if i == p {\n                fmt.Println(\"N\")\n                break\n            }\n            \n        } \n       \n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}

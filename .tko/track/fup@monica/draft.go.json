@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_16-46-16",
+            "content": "@@ -41,210 +41,35 @@\n     \n-idamae := 0%0A    idafi1 := 0%0A    idafi2 := 0%0A    fmt.Scan(&idamae, &idafi1, &idafi2)%0A    idafi3 := (idafi1 + idafi2) - idamae%0A    if idafi3 %3E idafi1 && idafi3 %3E idafi2 %7B%0A        fmt.Println(idafi3)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_16-53-01",
+            "content": "@@ -166,17 +166,69 @@\n mae%0A    \n-p\n+if idafi3 %3E idafi1 && idafi3 %3E idafi2 %7B%0A        fmt.P\n rintln(i\n@@ -233,12 +233,18 @@\n (idafi3)\n+%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-19_16-53-49",
+            "content": "@@ -40,18 +40,16 @@\n %0A    ida\n-de\n mae := 0\n@@ -56,18 +56,18 @@\n %0A    ida\n-de\n+fi\n 1 := 0%0A \n@@ -72,18 +72,18 @@\n %0A    ida\n-de\n+fi\n 2 := 0%0A \n@@ -98,18 +98,16 @@\n can(&ida\n-de\n mae, &id\n@@ -111,39 +111,40 @@\n &ida\n-de\n+fi\n 1, &ida\n-de\n+fi\n 2)%0A    \n-total\n+idafi3\n  := (ida\n de1 \n@@ -143,22 +143,30 @@\n (ida\n-de\n+fi\n 1 + ida\n-de\n+fi\n 2) \n+- idamae\n %0A   \n@@ -178,13 +178,14 @@\n tln(\n-total\n+idafi3\n )%0A%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_16-55-38",
+            "content": "@@ -161,39 +161,8 @@\n 2) %0A\n-    idade3 := total - idademae%0A\n     \n@@ -173,14 +173,13 @@\n tln(\n-idade3\n+total\n )%0A%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_16-56-29",
+            "content": "@@ -171,24 +171,32 @@\n ade3 := \n+total - \n idademae\n  - total\n@@ -191,16 +191,8 @@\n emae\n- - total\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-19_16-57-55",
+            "content": "@@ -33,28 +33,24 @@\n ain() %7B%0A    \n-var \n idademae int\n@@ -50,50 +50,44 @@\n mae \n-int \n+:= 0\n %0A    \n-var \n idade1 \n-int\n+:= 0\n %0A    \n-var \n idade2 \n-int\n+:= 0\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-19_17-04-34",
+            "content": "@@ -206,13 +206,9 @@\n     \n-fmt.P\n+p\n rint\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-19_17-04-56",
+            "content": "@@ -206,10 +206,8 @@\n     \n-//\n fmt.\n@@ -225,206 +225,8 @@\n de3)\n-%0A    if idade3 %3E idade1 && idade3 %3E idade2 %7B%0A        fmt.Println(idade3)%0A    %7D else if idade3 %3C idade2 && idade2 %3E idade1 %7B%0A        fmt.Println(idade2)%0A    %7D else %7B%0A        fmt.Println(idade1)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-19_17-07-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var idademae int \n    var idade1 int\n    var idade2 int\n    fmt.Scan(&idademae, &idade1, &idade2)\n    total := (idade1 + idade2) \n    idade3 := idademae - total\n    //fmt.Println(idade3)\n    if idade3 > idade1 && idade3 > idade2 {\n        fmt.Println(idade3)\n    } else if idade3 < idade2 && idade2 > idade1 {\n        fmt.Println(idade2)\n    } else {\n        fmt.Println(idade1)\n    }\n\n}\n",
+            "lines": "19"
+        }
+    ]
+}
