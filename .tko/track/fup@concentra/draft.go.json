@@ -12,8 +12,23 @@
         },
         {
             "label": "2026-05-14_11-54-37",
-            "content": " package main\nimport \"fmt\"\nfunc main() {\n    var1 := 0\n    var2 := 0\n    fmt.Scan(&var1, &var2)\n    for i := var1 ; i <= var2 ; i++{\n        fmt.Print(i)\n    }\n}\n",
+            "content": "@@ -93,27 +93,8 @@\n r2)%0A\n-    fmt.Print(%22%5B%22)%0A\n     \n@@ -123,12 +123,8 @@\n ar2 \n-* 2 \n ; i+\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-05-19_10-42-07",
+            "content": "@@ -121,19 +121,16 @@\n or i\n-, j\n  := var1\n , va\n@@ -129,14 +129,8 @@\n var1\n-, var2\n  ; i\n@@ -146,104 +146,40 @@\n * 2 \n-&& j %3E= var1; i, j = i + 1, j - 1%7B%0A        fmt.Printf(%22 %25d %25d%22, i, j)%0A    %7D%0A    fmt.Println(%22 %5D%22)\n+; i++%7B%0A        fmt.Print(i)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_10-55-49",
+            "content": "@@ -147,16 +147,20 @@\n %3C= var2 \n+* 2 \n && j %3E= \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-19_10-58-01",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n    var1 := 0\n    var2 := 0\n    fmt.Scan(&var1, &var2)\n    fmt.Print(\"[\")\n    for i, j := var1, var2 ; i <= var2 && j >= var1; i, j = i + 1, j - 1{\n        fmt.Printf(\" %d %d\", i, j)\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "12"
         }
     ]
 }

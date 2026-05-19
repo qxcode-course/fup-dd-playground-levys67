@@ -1,0 +1,44 @@
+2026-05-19 10:42:04, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-05-19 10:42:07, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:11
+2026-05-19 10:42:07, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-19 10:51:04, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-19 10:55:49, EXEC, v:1, k:fup@concentra, mode:FULL, rate:100, size:12
+2026-05-19 10:55:40, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-19 10:55:49, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-19 10:56:15, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-05-19 10:56:23, MOVE, v:1, k:fup@colorido, mode:PICK
+2026-05-19 10:56:23, EXEC, v:1, k:fup@colorido, mode:FULL, rate:100
+2026-05-19 10:57:46, MOVE, v:1, k:fup@colorido, mode:BACK
+2026-05-19 10:57:48, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-05-19 10:57:49, EXEC, v:1, k:fup@concentra, mode:FULL, rate:100
+2026-05-19 10:58:01, EXEC, v:1, k:fup@concentra, mode:FULL, rate:100, size:12
+2026-05-19 10:58:15, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-05-19 11:00:32, SELF, v:1, k:fup@concentra, self:1, rate:100, study:30, concept:1, problem:1
+2026-05-19 11:00:34, MOVE, v:1, k:fup@zigzag, mode:PICK
+2026-05-19 11:00:35, EXEC, v:1, k:fup@zigzag, mode:FULL, rate:100
+2026-05-19 11:00:55, MOVE, v:1, k:fup@zigzag, mode:BACK
+2026-05-19 10:56:23, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-19 10:58:01, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-19 10:57:59, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-19 11:00:35, MOVE, v:1, k:fup@zigzag, mode:EDIT
+2026-05-19 11:01:18, MOVE, v:1, k:fup@batraquios, mode:PICK
+2026-05-19 11:01:19, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0
+2026-05-19 11:01:28, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0
+2026-05-19 11:01:28, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:01:27, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:16:06, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:18:55, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:19
+2026-05-19 11:19:55, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:20
+2026-05-19 11:19:50, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:19:55, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:30:57, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:32:54, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:57, size:32
+2026-05-19 11:32:51, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:32:54, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:41:06, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:46:06, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:49:24, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:100, size:39
+2026-05-19 11:49:18, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:49:24, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-19 11:51:53, MOVE, v:1, k:fup@batraquios, mode:BACK
+2026-05-19 11:52:22, SELF, v:1, k:fup@batraquios, self:1, rate:100, study:75, problem:1, code:1

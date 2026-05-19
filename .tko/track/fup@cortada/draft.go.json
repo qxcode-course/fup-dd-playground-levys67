@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-05-14_11-43-01",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,97 +37,8 @@\n ) %7B%0A\n-    com := 160%0A    alt := 70%0A    cor1 := 0%0A    cor2 := 0%0A    fmt.Scan(&cor1, &cor2)%0A    %0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-18_17-10-04",
+            "content": "@@ -125,247 +125,40 @@\n     \n-//original := com * alt%0A    base1 := com - cor1%0A    topo1:= com - cor2%0A    base2 := cor1%0A    topo2 := cor2%0A    area1 := (base1 + topo1) * alt / (2)%0A    area2 := (base2 + topo2) * alt / (2)%0A    if area1 %3E area2 %7B%0A        fmt.Println(1)%0A    %7D\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-18_17-31-53",
+            "content": "@@ -353,17 +353,17 @@\n Println(\n-2\n+1\n )%0A    %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-18_17-32-38",
+            "content": "@@ -360,61 +360,8 @@\n (2)%0A\n-    %7D else if area2 %3E area1 %7B%0A        fmt.Println(1)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-18_17-33-18",
+            "content": "@@ -413,44 +413,8 @@\n (1)%0A\n-    %7D else %7B%0A        fmt.Println(0)%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_17-33-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    com := 160\n    alt := 70\n    cor1 := 0\n    cor2 := 0\n    fmt.Scan(&cor1, &cor2)\n    //original := com * alt\n    base1 := com - cor1\n    topo1:= com - cor2\n    base2 := cor1\n    topo2 := cor2\n    area1 := (base1 + topo1) * alt / (2)\n    area2 := (base2 + topo2) * alt / (2)\n    if area1 > area2 {\n        fmt.Println(2)\n    } else if area2 > area1 {\n        fmt.Println(1)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "23"
         }
     ]
 }

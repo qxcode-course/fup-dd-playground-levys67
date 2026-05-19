@@ -1,0 +1,33 @@
+2026-05-18 16:28:42, MOVE, v:1, k:fup@varetas, mode:PICK
+2026-05-18 16:28:46, EXEC, v:1, k:fup@varetas, mode:FULL, rate:100
+2026-05-18 16:29:41, MOVE, v:1, k:fup@varetas, mode:BACK
+2026-05-18 16:29:56, MOVE, v:1, k:fup@bhaskara, mode:PICK
+2026-05-18 16:29:57, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:100
+2026-05-18 16:32:36, MOVE, v:1, k:fup@bhaskara, mode:BACK
+2026-05-18 16:32:56, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-05-18 16:33:28, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-05-18 16:33:46, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-05-18 16:33:55, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0
+2026-05-18 16:33:54, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 16:48:39, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 16:49:16, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 17:03:39, MOVE, v:1, k:fup@cortada, mode:BACK
+2026-05-18 17:03:48, MOVE, v:1, k:fup@apertada, mode:PICK
+2026-05-18 17:03:49, EXEC, v:1, k:fup@apertada, mode:FULL, rate:100
+2026-05-18 17:03:49, MOVE, v:1, k:fup@apertada, mode:EDIT
+2026-05-18 17:09:54, MOVE, v:1, k:fup@apertada, mode:BACK
+2026-05-18 17:10:04, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-05-18 17:10:04, EXEC, v:1, k:fup@cortada, mode:FULL, size:11, fail:COMP
+2026-05-18 17:10:18, MOVE, v:1, k:fup@cortada, mode:BACK
+2026-05-18 17:10:19, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-05-18 17:17:22, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 17:21:14, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 17:28:42, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 17:31:53, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0, size:19
+2026-05-18 17:32:38, EXEC, v:1, k:fup@cortada, mode:FULL, rate:45, size:19
+2026-05-18 17:33:18, EXEC, v:1, k:fup@cortada, mode:FULL, rate:84, size:21
+2026-05-18 17:33:40, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 17:33:41, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-05-18 17:33:42, EXEC, v:1, k:fup@cortada, mode:FULL, rate:100, size:23
+2026-05-18 17:33:46, MOVE, v:1, k:fup@cortada, mode:BACK
+2026-05-18 17:33:59, SELF, v:1, k:fup@cortada, self:1, rate:100, study:60
