@@ -112,8 +112,18 @@
         },
         {
             "label": "2026-05-19_18-14-30",
-            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    h := 0\n    p := 0\n    f := 0\n    d := 0 // -1 para horaria e 1 para anti horaria\n    fmt.Scan(&h, &p, &f, &d)\n    if d < 0 && f < p {\n        for i := f; i >= 0; i--{\n            if i == h {\n                fmt.Println(\"S\")\n                break\n            } else if i == p {\n                fmt.Println(\"N\")\n                break\n            }\n            \n        } \n       \n    }\n}\n",
+            "content": "@@ -161,12 +161,21 @@\n f d \n-== 1\n+%3C 0 && f %3C p \n %7B%0A  \n@@ -202,14 +202,13 @@\n %3E= 0\n- \n ; i\n-++\n+--\n %7B%0A  \n@@ -221,39 +221,18 @@\n     \n-switch i %7B%0A            case\n+if i ==\n  h \n-:\n %7B%0A  \n@@ -301,29 +301,24 @@\n    %7D\n-%0A            case\n+ else if i ==\n  p \n-:\n %7B%0A  \n@@ -409,23 +409,18 @@\n     \n-    %7D%0A        %7D\n+%7D %0A       \n %0A   \n",
             "lines": "23"
+        },
+        {
+            "label": "2026-05-25_17-05-48",
+            "content": "@@ -197,10 +197,10 @@\n  ; i\n---\n+++\n %7B%0A  \n@@ -402,16 +402,28 @@\n       %7D%0A\n+            \n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-25_17-06-13",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    h := 0\n    p := 0\n    f := 0\n    d := 0 // -1 para horaria e 1 para anti horaria\n    fmt.Scan(&h, &p, &f, &d)\n    if d == 1{\n        for i := f; i >= 0 ; i--{\n            switch i {\n            case h :{\n                fmt.Println(\"S\")\n                break\n            }\n            case p :{\n                fmt.Println(\"N\")\n                break\n            }\n\n            }\n        }\n    }\n}\n",
+            "lines": "25"
         }
     ]
 }
