@@ -1,11 +1,16 @@
  package main
 import "fmt"
 func main() {
-    amarelinha := []int(1,2,3,4,5,6,7,8,9,10)
-    n := 0
-    fmt.Scan(&n)
-    switch amarelinha{
-        case n == 0 
-        fmt.Println(1)
-    }
+    pedra := 0
+    fmt.Scan(&pedra)
+    fmt.Print("[")
+    for i := 0; i <= 10; i++ {
+        if i != pedra && i != 10 {
+            fmt.Printf(" %d", i)
+        }
+        if i == 10 && i != pedra{
+            fmt.Print(" ceu")
+        }
+    }    
+    fmt.Println(" ]")
 }

@@ -19,9 +19,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@for2
-- fup@if2
 - fup@list
+- fup@for_extra
+- eval1@eval1
 flags:
   inbox: all
   panel: skills
@@ -29,5 +29,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@drone
-selected_index: 10
+selected: fup@for_extra
+selected_index: 7
