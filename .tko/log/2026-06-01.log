@@ -1,0 +1,37 @@
+2026-06-01 16:46:46, MOVE, v:1, k:fup@teleferico, mode:DOWN
+2026-06-01 16:46:47, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-06-01 16:46:49, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0, size:5
+2026-06-01 16:46:50, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0
+2026-06-01 16:47:38, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-06-01 16:48:05, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-06-01 16:48:06, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0
+2026-06-01 16:48:04, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 16:46:46, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 16:48:06, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 16:52:22, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-06-01 16:52:58, MOVE, v:1, k:fup@dindin, mode:PICK
+2026-06-01 16:52:59, EXEC, v:1, k:fup@dindin, mode:FULL, rate:100
+2026-06-01 16:53:40, MOVE, v:1, k:fup@dindin, mode:BACK
+2026-06-01 16:53:46, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-06-01 16:53:47, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0
+2026-06-01 16:52:59, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-06-01 16:53:47, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 16:55:47, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 17:00:28, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 17:03:50, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 17:11:10, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-06-01 17:11:14, MOVE, v:1, k:fup@goiabas, mode:DOWN
+2026-06-01 17:11:14, MOVE, v:1, k:fup@goiabas, mode:PICK
+2026-06-01 17:11:15, EXEC, v:1, k:fup@goiabas, mode:FULL, rate:0, size:5
+2026-06-01 17:14:05, MOVE, v:1, k:fup@goiabas, mode:BACK
+2026-06-01 17:14:08, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-06-01 17:14:09, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:0, size:8
+2026-06-01 17:11:14, MOVE, v:1, k:fup@goiabas, mode:EDIT
+2026-06-01 17:11:14, MOVE, v:1, k:fup@goiabas, mode:EDIT
+2026-06-01 17:11:15, MOVE, v:1, k:fup@goiabas, mode:EDIT
+2026-06-01 17:14:08, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-06-01 17:23:55, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-06-01 17:24:00, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-06-01 17:24:01, EXEC, v:1, k:sandbox@user_001, mode:FULL, size:17, fail:COMP
+2026-06-01 17:24:02, EXEC, v:1, k:sandbox@user_001, mode:FULL, fail:COMP
+2026-06-01 17:24:32, MOVE, v:1, k:sandbox@user_001, mode:EDIT

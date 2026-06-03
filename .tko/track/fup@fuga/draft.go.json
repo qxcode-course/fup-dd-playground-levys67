@@ -122,8 +122,103 @@
         },
         {
             "label": "2026-05-25_17-06-13",
-            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    h := 0\n    p := 0\n    f := 0\n    d := 0 // -1 para horaria e 1 para anti horaria\n    fmt.Scan(&h, &p, &f, &d)\n    if d == 1{\n        for i := f; i >= 0 ; i--{\n            switch i {\n            case h :{\n                fmt.Println(\"S\")\n                break\n            }\n            case p :{\n                fmt.Println(\"N\")\n                break\n            }\n\n            }\n        }\n    }\n}\n",
+            "content": "@@ -213,18 +213,39 @@\n     \n-if i ==\n+switch i %7B%0A            case\n  h \n+:\n %7B%0A  \n@@ -291,23 +291,137 @@\n     \n-%7D%0A%0A            \n+    break%0A            %7D%0A            case p :%7B%0A                fmt.Println(%22N%22)%0A                break%0A            %7D%0A%0A            %7D\n %0A   \n",
             "lines": "25"
+        },
+        {
+            "label": "2026-05-26_16-27-37",
+            "content": "@@ -258,30 +258,8 @@\n S%22)%0A\n-                break%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-26_16-28-11",
+            "content": "@@ -293,72 +293,8 @@\n    %7D\n- else if i == p %7B%0A                fmt.Println(%22N%22)%0A            %7D\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-26_16-28-52",
+            "content": "@@ -340,38 +340,16 @@\n ln(%22N%22)%0A\n-                break%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-26_16-29-05",
+            "content": "@@ -254,9 +254,9 @@\n ln(%22\n-N\n+S\n %22)%0A \n@@ -328,33 +328,33 @@\n    fmt.Println(%22\n-S\n+N\n %22)%0A             \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_16-29-32",
+            "content": "@@ -404,149 +404,8 @@\n   %7D%0A\n-    %7D else if d == -1 %7B%0A        for i := f ; i %3C= 15 ; i++%7B%0A            if i == h %7B%0A                fmt.Println(%22N%22)%0A            %7D%0A        %7D%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_16-32-51",
+            "content": "@@ -505,33 +505,33 @@\n    fmt.Println(%22\n-S\n+N\n %22)%0A            %7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-26_16-33-30",
+            "content": "@@ -521,72 +521,8 @@\n S%22)%0A\n-            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-26_16-34-14",
+            "content": "@@ -517,38 +517,16 @@\n ln(%22S%22)%0A\n-                break%0A\n         \n@@ -581,38 +581,16 @@\n ln(%22N%22)%0A\n-                break%0A\n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_16-34-29",
+            "content": "@@ -159,16 +159,275 @@\n  if d ==\n+ 1%7B%0A        for i := f; i %3E= 0 ; i--%7B%0A            if i == h %7B%0A                fmt.Println(%22N%22)%0A                break%0A            %7D else if i == p %7B%0A                fmt.Println(%22S%22)%0A                break%0A            %7D%0A%0A            %0A        %7D%0A    %7D else if d ==\n  -1 %7B%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-26_16-36-47",
+            "content": "@@ -192,18 +192,19 @@\n ; i \n-%3E= 0\n+%3C= 15\n  ; i\n---\n+++\n %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-26_16-39-32",
+            "content": "@@ -169,31 +169,8 @@\n 1 %7B%0A\n-        encontrado := %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-26_16-42-02",
+            "content": "@@ -173,18 +173,16 @@\n         \n-//\n encontra\n@@ -191,13 +191,8 @@\n  := \n-false\n %0A   \n@@ -380,32 +380,32 @@\n           break%0A\n+\n             %7D el\n@@ -405,224 +405,8 @@\n    %7D\n- else if i == 0 %7B%0A                break%0A            %7D%0A            for i := 15; i %3C= 0; i-- %7B%0A                if i == h %7B%0A                    fmt.Println(%22S%22)%0A                    break%0A                %7D%0A            %7D \n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-26_16-47-39",
+            "content": "@@ -462,30 +462,24 @@\n       %7D%0A    \n-    %7D%0A\n         for \n@@ -505,32 +505,36 @@\n - %7B%0A            \n+    \n if i == h %7B%0A    \n@@ -521,32 +521,36 @@\n     if i == h %7B%0A\n+    \n                 \n@@ -558,32 +558,36 @@\n mt.Println(%22S%22)%0A\n+    \n                 \n@@ -596,32 +596,36 @@\n eak%0A            \n+    \n %7D%0A        %7D %0A   \n@@ -618,18 +618,32 @@\n         \n-%7D \n+    %7D %0A        %7D\n %0A    %7D%0A%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_16-51-58",
+            "content": "@@ -387,32 +387,85 @@\n           break%0A\n+            %7D else if i == 0 %7B%0A                break%0A\n             %7D%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-02_11-12-39",
+            "content": "@@ -537,94 +537,8 @@\n eak%0A\n-            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A                break%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-02_11-14-38",
+            "content": "@@ -442,17 +442,17 @@\n = 15; i \n-%3E\n+%3C\n = 0; i--\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-02_11-17-27",
+            "content": "@@ -156,31 +156,20 @@\n     \n-switch d %7B%0A    case -1:\n+if d == -1 %7B\n %0A   \n@@ -165,32 +165,34 @@\n == -1 %7B%0A        \n+//\n encontrado := fa\n@@ -217,16 +217,17 @@\n := f\n+ \n ; i %3E= 0\n ; i-\n@@ -226,14 +226,14 @@\n %3E= 0\n+ \n ; i--\n- \n %7B%0A  \n@@ -291,42 +291,8 @@\n S%22)%0A\n-                encontrado = true%0A\n     \n@@ -377,42 +377,8 @@\n N%22)%0A\n-                encontrado = true%0A\n     \n@@ -409,17 +409,16 @@\n       %7D%0A\n-%0A\n         \n@@ -431,50 +431,21 @@\n     \n-if !encontrado %7B%0A            for j\n+for i\n  := 15; \n j %3E \n@@ -444,25 +444,22 @@\n 15; \n-j %3E f; j\n+i %3E= 0; i\n -- %7B%0A\n-    \n     \n@@ -473,17 +473,17 @@\n  if \n-j\n+i\n  == h %7B%0A\n     \n@@ -470,36 +470,32 @@\n     if i == h %7B%0A\n-    \n                 \n@@ -519,36 +519,32 @@\n                 \n-    \n break%0A          \n@@ -537,36 +537,32 @@\n eak%0A            \n-    \n %7D else if j == p\n@@ -559,17 +559,17 @@\n  if \n-j\n+i\n  == p %7B%0A\n     \n@@ -556,36 +556,32 @@\n lse if i == p %7B%0A\n-    \n                 \n@@ -617,36 +617,14 @@\n     \n-    \n break%0A\n-                %7D%0A\n     \n@@ -625,32 +625,32 @@\n k%0A            %7D%0A\n-\n         %7D%0A    %7D%0A\n@@ -638,21 +638,22 @@\n  %7D%0A        %7D\n+ \n %0A    %7D%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-02_11-36-33",
+            "content": "@@ -798,713 +798,8 @@\n     \n-case 1:%0A        encontrado := false %0A        for i := f; i %3C= 15; i++ %7B%0A            if i == h %7B%0A                fmt.Println(%22S%22)%0A                encontrado = true%0A                break%0A            %7D else if i == p %7B%0A                fmt.Println(%22N%22)%0A                encontrado = true %0A                break%0A            %7D %0A        %7D%0A        if !encontrado %7B%0A            for j := 0; j %3C f; j++ %7B%0A                if j == h %7B%0A                    fmt.Println(%22S%22)%0A                    encontrado = true%0A                    break%0A                %7D else if j == p %7B%0A                    fmt.Println(%22N%22)%0A                    encontrado = true%0A                    break%0A                %7D%0A            %7D%0A        %7D%0A    %7D \n+%7D\n %0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_11-44-10",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    h := 0\n    p := 0\n    f := 0\n    d := 0 // -1 para horaria e 1 para anti horaria\n    fmt.Scan(&h, &p, &f, &d)\n    switch d {\n    case -1:\n        encontrado := false\n        for i := f; i >= 0; i-- {\n            if i == h {\n                fmt.Println(\"S\")\n                encontrado = true\n                break\n            } else if i == p {\n                fmt.Println(\"N\")\n                encontrado = true\n                break\n            }\n\n        }\n        if !encontrado {\n            for j := 15; j > f; j-- {\n                if j == h {\n                    fmt.Println(\"S\")\n                    break\n                } else if j == p {\n                    fmt.Println(\"N\")\n                    break\n                }\n            }\n        }\n    case 1:\n        encontrado := false \n        for i := f; i <= 15; i++ {\n            if i == h {\n                fmt.Println(\"S\")\n                encontrado = true\n                break\n            } else if i == p {\n                fmt.Println(\"N\")\n                encontrado = true \n                break\n            } \n        }\n        if !encontrado {\n            for j := 0; j < f; j++ {\n                if j == h {\n                    fmt.Println(\"S\")\n                    encontrado = true\n                    break\n                } else if j == p {\n                    fmt.Println(\"N\")\n                    encontrado = true\n                    break\n                }\n            }\n        }\n    } \n}\n",
+            "lines": "63"
         }
     ]
 }

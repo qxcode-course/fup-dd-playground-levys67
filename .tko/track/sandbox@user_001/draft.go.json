@@ -122,8 +122,23 @@
         },
         {
             "label": "2026-04-27_17-58-16",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    \n}\nfunc mostrarvetores (arr []int, )\n",
+            "content": "@@ -28,690 +28,54 @@\n unc \n-filtrar_impares(nums %5B%5Dint) %5B%5Dint%7B%0A%09impares := make(%5B%5Dint,0 ,len(nums))%0A%09for _, valor := range nums %7B%0A%09%09if valor %25 2 == 1%7B%0A%09%09%09impares := append(impares, valor)%0A%09%09%7D%0A%09%7D%0A%09return impares%0A%7D%0Afunc index (nums %5B%5Dint,valor int)int %7B%0A    for i, elem := range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09return i%0A%09%09%7D%0A    %7D%0A%09return -1%0A%7D%0Afunc contain (nums %5B%5Dint, valor int)bool %7B%0A%09for _, elem := range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D%0Afunc count (nums %5B%5Dint, valor int) int%7B%0A    contador := 0%0A    for _, elem := range nums %7B%0A%09    if elem == valor %7B%0A%09%09    contador += 1%0A%09    %7D%0A    %7D%0Areturn contador%0A%7D%0Afunc separar_figurinhas (montante%5B%5Dint) (%5B%5Dint, %5B%5Dint)%0A%0Afunc main() %7B%0A    %0A%7D%0A\n+main() %7B%0A    %0A%7D%0Afunc mostrarvetores (arr %5B%5Dint, )\n %0A\n",
             "lines": "6"
+        },
+        {
+            "label": "2026-05-26_17-01-07",
+            "content": "@@ -23,422 +23,695 @@\n mt%22%0A\n-// 0 %22ouros%22, 1 %22copas%22, 2 %22paus%22, 3 %22espadas%22%0Atype Carta struct %7B%0A%09numero int%0A%09naipe  int\n+func filtrar_impares(nums %5B%5Dint) %5B%5Dint%7B%0A%09impares := make(%5B%5Dint,0 ,len(nums))%0A%09for _, valor := range nums %7B%0A%09%09if valor %25 2 == 1%7B%0A%09%09%09impares := append(impares, valor)%0A%09%09%7D%0A%09%7D%0A%09return impares\n %0A%7D%0A\n-%0A\n func \n-toString(carta Carta) string %7B // Carta%7B1, 1%7D -%3E A%E2%99%A5%0A%09var ouros_sy\n+index (nums %5B%5Dint,valor int)int %7B%0A    for i, elem := range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09return i%0A%09%09%7D%0A    %7D%0A%09return -1%0A%7D%0Afunc contain (nums %5B%5Dint, valor int)bool %7B%0A%09for _, ele\n m \n+:\n = \n-%22%E2%99%A6%22%0A%09var paus_sym = %22%E2%99%A3%22%0A%09var espadas_sym = %22%E2%99%A0%22%0A%09var copas_sym = %22%E2%99%A5%22%0A%09var ouros_val = 0%0A%09var copas_val = 1%0A%09var paus_val = 2%0A%09var espadas_val = 3%0A%09return fmt.Sprintf(%22%25s%25s%22, carta.numero, carta.naipe)%0A%7D%0A%0Afunc main() %7B%0A%09fmt.Println(%22Hello, Worldi!%22)\n+range nums %7B%0A%09%09if elem == valor %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D%0Afunc count (nums %5B%5Dint, valor int) int%7B%0A    contador := 0%0A    for _, elem := range nums %7B%0A%09    if elem == valor %7B%0A%09%09    contador += 1%0A%09    %7D%0A    %7D%0Areturn contador%0A%7D%0Afunc separar_figurinhas (montante%5B%5Dint) (%5B%5Dint, %5B%5Dint)%0A%0Afunc main() %7B%0A    \n %0A%7D%0A\n+%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-26_17-01-53",
+            "content": "@@ -179,29 +179,164 @@\n var \n-symbols = %5B%5Dstring%7B%7D%0A\n+ouros_sym = %22%E2%99%A6%22%0A%09var paus_sym = %22%E2%99%A3%22%0A%09var espadas_sym = %22%E2%99%A0%22%0A%09var copas_sym = %22%E2%99%A5%22%0A%09var ouros_val = 0%0A%09var copas_val = 1%0A%09var paus_val = 2%0A%09var espadas_val = 3\n %0A%09re\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-01_17-24-01",
+            "content": "package main\nimport \"fmt\"\n// 0 \"ouros\", 1 \"copas\", 2 \"paus\", 3 \"espadas\"\ntype Carta struct {\n\tnumero int\n\tnaipe  int\n}\n\nfunc toString(carta Carta) string { // Carta{1, 1} -> A\u2665\n\tvar symbols = []string{}\n\n\treturn fmt.Sprintf(\"%s%s\", carta.numero, carta.naipe)\n}\n\nfunc main() {\n\tfmt.Println(\"Hello, Worldi!\")\n}\n",
+            "lines": "17"
         }
     ]
 }

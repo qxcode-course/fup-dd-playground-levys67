@@ -1,3 +1,29 @@
 {
-    "patches": []
+    "patches": [
+        {
+            "label": "2026-05-26_16-14-09",
+            "content": "@@ -41,262 +41,35 @@\n     \n-a := 0%0A    b := 0%0A    c := 0%0A    h := 0%0A    l := 0%0A    fmt.Scan(&a, &b, &c, &h, &l)%0A    face1 := a * b%0A    face2 := a * c %0A    face3 := b * c%0A    janela := h * l%0A    if janela %3C= face1 %7C%7C janela %3C= face2 %7C%7C janela %3C= face3 %7B%0A        fmt.Println(%22S%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_16-23-45",
+            "content": "@@ -217,9 +217,9 @@\n ela \n-%3E\n+%3C\n = fa\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_16-24-32",
+            "content": "@@ -228,25 +228,25 @@\n 1 %7C%7C janela \n-%3E\n+%3C\n = face2 %7C%7C j\n@@ -247,25 +247,25 @@\n 2 %7C%7C janela \n-%3E\n+%3C\n = face3 %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_16-24-45",
+            "content": "@@ -291,46 +291,8 @@\n S%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22N%22)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_16-25-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    a := 0\n    b := 0\n    c := 0\n    h := 0\n    l := 0\n    fmt.Scan(&a, &b, &c, &h, &l)\n    face1 := a * b\n    face2 := a * c \n    face3 := b * c\n    janela := h * l\n    if janela >= face1 || janela >= face2 || janela >= face3 {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
 }

@@ -7,8 +7,43 @@
         },
         {
             "label": "2026-05-12_17-08-14",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    figdoalbum := 0\n    figtotal := 0\n    inteiros := 0\n    fmt.Scan(&figdoalbum, &figtotal)\n    lista := make([]int, figtotal)\n    for i := 0; i < figtotal; i++{\n        fmt.Scan(inteiros)\n    }\n    fmt.Print(lista)\n}\n",
+            "content": "@@ -23,38 +23,8 @@\n mt%22%0A\n-%0Afunc criarepreenchervetor()%0A%0A\n func\n@@ -85,24 +85,24 @@\n teiros := 0%0A\n-\n     fmt.Scan\n@@ -126,10 +126,134 @@\n gtotal)%0A\n+    lista := make(%5B%5Dint, figtotal)%0A    for i := 0; i %3C figtotal; i++%7B%0A        fmt.Scan(inteiros)%0A    %7D%0A    fmt.Print(lista)%0A\n %7D%0A\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-06-03_11-10-30",
+            "content": "@@ -50,132 +50,9 @@\n tor(\n-n int) %5B%5Dint %7B%0A    lista := make(%5B%5Dint, n)%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    return lista%0A%7D\n+)\n %0A%0Afu\n@@ -109,10 +109,8 @@\n     \n-//\n inte\n@@ -158,75 +158,8 @@\n otal\n-, )%0A    lista := criarepreenchervetor(figtotal)%0A    fmt.Print(lista\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-03_11-22-45",
+            "content": "@@ -176,75 +176,8 @@\n %0A%7D%0A%0A\n-func contarrepetidos(lista %5B%5Dint) int %7B%0A    repetidos := 0%0A    %0A%7D%0A%0A\n func\n@@ -331,18 +331,16 @@\n al)%0A    \n-//\n fmt.Prin\n@@ -348,11 +348,10 @@\n (lista)%0A\n-%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-03_11-31-00",
+            "content": "@@ -202,26 +202,24 @@\n ista %5B%5Dint) \n-%5B%5D\n int %7B%0A    va\n@@ -220,12 +220,8 @@\n     \n-var \n repe\n@@ -230,243 +230,17 @@\n dos \n-%5B%5Dint%0A    for i := 0; i %3C len(lista); i++ %7B%0A        for j := i + 1; j %3C len(lista); j++ %7B%0A            if lista%5Bi%5D == lista%5Bj%5D %7B%0A                repetidos = append(repetidos, lista%5Bi%5D)%0A            %7D%0A        %7D%0A    %7D%0A    return repetidos%0A\n+:= 0%0A    \n %0A%7D%0A%0A\n@@ -421,73 +421,7 @@\n ta)%0A\n-    repetidos := contarrepetidos(lista)%0A    fmt.Println(repetidos)\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_12-00-49",
+            "content": "@@ -288,16 +288,25 @@\n     \n-i\n f\n+or j :=\n  i + 1\n+; j\n  %3C l\n@@ -318,11 +318,30 @@\n sta)\n- &&\n+; j++ %7B%0A            if\n  lis\n@@ -359,15 +359,17 @@\n sta%5B\n-i+1\n+j\n %5D %7B%0A\n+    \n     \n@@ -428,19 +428,17 @@\n         \n-i++\n+%7D\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-03_12-15-46",
+            "content": "@@ -272,10 +272,8 @@\n sta)\n--1\n ; i+\n@@ -286,16 +286,38 @@\n       if\n+ i + 1 %3C len(lista) &&\n  lista%5Bi\n@@ -546,24 +546,26 @@\n m, &figtotal\n+, \n )%0A    lista \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_12-19-02",
+            "content": "@@ -362,24 +362,40 @@\n , lista%5Bi%5D)%0A\n+            i++%0A\n         %7D%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-03_12-25-06",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarepreenchervetor(n int) []int {\n    lista := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\nfunc contarrepetidos(lista []int) []int {\n    var repetidos []int\n    for i := 0; i < len(lista)-1; i++ {\n        if lista[i] == lista[i+1] {\n            repetidos = append(repetidos, lista[i])\n        }\n    }\n    return repetidos\n\n}\n\nfunc main() {\n    figdoalbum := 0\n    figtotal := 0\n    //inteiros := 0\n    fmt.Scan(&figdoalbum, &figtotal)\n    lista := criarepreenchervetor(figtotal)\n    //fmt.Print(lista)\n    repetidos := contarrepetidos(lista)\n    fmt.Println(repetidos)\n}\n",
+            "lines": "32"
         }
     ]
 }

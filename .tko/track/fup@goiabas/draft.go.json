@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-11-15",
+            "content": "@@ -41,211 +41,35 @@\n     \n-cap := 0%0A    ban := 0%0A    goi := 0%0A    man := 0%0A    fmt.Scan(&cap, &ban, &goi, &man)%0A    tot := ban + goi + man%0A    time := 0%0A    for i := tot; i %3E 0; i -= cap %7B%0A        time++%0A    %7D%0A    fmt.Println(time\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-02_11-05-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    cap := 0\n    ban := 0\n    goi := 0\n    man := 0\n    fmt.Scan(&cap, &ban, &goi, &man)\n    tot := ban + goi + man\n    time := 0\n    for i := tot; i > 0; i -= cap {\n        time++\n    }\n    fmt.Println(time)\n}\n",
+            "lines": "15"
+        }
+    ]
+}
