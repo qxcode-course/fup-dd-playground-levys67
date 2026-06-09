@@ -19,20 +19,20 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@for2
 - fup@if2
-- fup@list
 - fup@struct
 - fup@string
-- fup@for_extra
-- sandbox@sandbox
 - eval1@eval1
+- fup@games
+- fup@list
+- fup@for2
+- sandbox@sandbox
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'false'
+  panel: skills
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@baruel
-selected_index: 46
+selected: fup@salario
+selected_index: 16

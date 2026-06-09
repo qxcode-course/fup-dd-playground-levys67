@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_11-35-19",
+            "content": "@@ -37,105 +37,8 @@\n ) %7B%0A\n-    pre%C3%A7oreal := 0%0A    chute1 := 0%0A    chute2 := 0%0A    fmt.Scan(&pre%C3%A7oreal,&chute1,&chute2)%0A    %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_11-37-56",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -133,205 +133,40 @@\n     \n-dif1 := math.Abs(float64(pre%C3%A7oreal - chute1))%0A    dif2 := math.Abs(float64(pre%C3%A7oreal - chute2))%0A    if dif1 %3C dif2 %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else %7B%0A        fmt.Println(%22segundo%22)%0A    %7D\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-09_11-42-59",
+            "content": "@@ -307,23 +307,8 @@\n lse \n-if dif2 %3C dif1 \n %7B%0A  \n@@ -340,51 +340,8 @@\n o%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22empate%22)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-09_11-43-58",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    pre\u00e7oreal := 0\n    chute1 := 0\n    chute2 := 0\n    fmt.Scan(&pre\u00e7oreal,&chute1,&chute2)\n    dif1 := math.Abs(float64(pre\u00e7oreal - chute1))\n    dif2 := math.Abs(float64(pre\u00e7oreal - chute2))\n    if dif1 < dif2 {\n        fmt.Println(\"primeiro\")\n    } else if dif2 < dif1 {\n        fmt.Println(\"segundo\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

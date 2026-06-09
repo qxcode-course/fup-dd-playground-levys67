@@ -52,3 +52,19 @@
 2026-06-03 12:25:05, MOVE, v:1, k:fup@baruel, mode:EDIT
 2026-06-03 12:25:06, MOVE, v:1, k:fup@baruel, mode:EDIT
 2026-06-03 12:42:43, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-06-03 17:27:15, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-03 17:27:23, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0
+2026-06-03 17:27:24, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0
+2026-06-03 17:27:24, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0
+2026-06-03 17:27:55, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-06-03 17:28:01, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-03 17:28:01, EXEC, v:1, k:fup@baruel, mode:FULL, size:34, fail:COMP
+2026-06-03 17:29:24, EXEC, v:1, k:fup@baruel, mode:FULL, size:36, fail:COMP
+2026-06-03 17:29:25, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-06-03 17:29:27, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-03 17:27:24, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-03 17:29:13, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-03 17:53:54, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-06-03 17:54:03, MOVE, v:1, k:fup@apertada, mode:PICK
+2026-06-03 17:54:04, EXEC, v:1, k:fup@apertada, mode:FULL, rate:100
+2026-06-03 17:54:04, MOVE, v:1, k:fup@apertada, mode:EDIT
