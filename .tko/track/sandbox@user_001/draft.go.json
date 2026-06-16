@@ -137,8 +137,18 @@
         },
         {
             "label": "2026-06-01_17-24-01",
-            "content": "package main\nimport \"fmt\"\n// 0 \"ouros\", 1 \"copas\", 2 \"paus\", 3 \"espadas\"\ntype Carta struct {\n\tnumero int\n\tnaipe  int\n}\n\nfunc toString(carta Carta) string { // Carta{1, 1} -> A\u2665\n\tvar symbols = []string{}\n\n\treturn fmt.Sprintf(\"%s%s\", carta.numero, carta.naipe)\n}\n\nfunc main() {\n\tfmt.Println(\"Hello, Worldi!\")\n}\n",
+            "content": "@@ -19,16 +19,252 @@\n t %22fmt%22%0A\n+// 0 %22ouros%22, 1 %22copas%22, 2 %22paus%22, 3 %22espadas%22%0Atype Carta struct %7B%0A%09numero int%0A%09naipe  int%0A%7D%0A%0Afunc toString(carta Carta) string %7B // Carta%7B1, 1%7D -%3E A%E2%99%A5%0A%09var symbols = %5B%5Dstring%7B%7D%0A%0A%09return fmt.Sprintf(%22%25s%25s%22, carta.numero, carta.naipe)%0A%7D%0A%0A\n func mai\n@@ -268,18 +268,16 @@\n main() %7B\n-%0A%09\n %0A%09fmt.Pr\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-06-15_16-47-05",
+            "content": "@@ -38,163 +38,38 @@\n  %7B%0A%09\n-nomes := make(map%5Bstring%5Dint)%0A%0A%09for %7B%0A%09%09palavra := %22%22%0A%09%09fmt.Scan(&palavra)%0A%09%09if palavra == %22pare%22%7B%0A%09%09%09break%0A%09%09%7D%0A%09%09nomes%5Bpalavra%5D += 1%0A%09%7D%0Afmt.Println(nomes)%09\n+%0A%09fmt.Println(%22Hello, Worldi!%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-15_17-39-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tnomes := make(map[string]int)\n\n\tfor {\n\t\tpalavra := \"\"\n\t\tfmt.Scan(&palavra)\n\t\tif palavra == \"pare\"{\n\t\t\tbreak\n\t\t}\n\t\tnomes[palavra] += 1\n\t}\nfmt.Println(nomes)\t\n}\n",
+            "lines": "15"
         }
     ]
 }

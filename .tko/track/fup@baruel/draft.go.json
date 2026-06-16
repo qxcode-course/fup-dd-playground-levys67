@@ -122,8 +122,48 @@
         },
         {
             "label": "2026-06-09_11-27-38",
-            "content": "package main\nimport \"fmt\"\n\nfunc criarepreenchervetor(n int) []int {\n    lista := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\nfunc contarrepetidos(lista []int) []int {\n    var repetidos []int\n    for i := 0; i < len(lista)-1; i++ {\n        if lista[i] == lista[i+1] {\n            repetidos = append(repetidos, lista[i])\n        }\n        \n    }\n    return repetidos\n}\n\nfunc criaralbum(lista []int,repetidos []int) []int {\n    var album []int\n    for i := 0; i < len(lista); i++ {\n        rep := false\n        for j := 0; j < len(repetidos); j++ {\n            if lista[i] == repetidos[j] {\n                rep = true\n                break\n            }\n        }\n        if !rep {\n            album = append(album, lista[i])\n        }\n    }\n    return album\n}\n\nfunc main() {\n    figdoalbum := 0\n    figtotal := 0\n    fmt.Scan(&figdoalbum, &figtotal)\n    lista := criarepreenchervetor(figtotal)\n    fmt.Println(lista)\n    repetidos := contarrepetidos(lista)\n    fmt.Println(repetidos)\n    album := criaralbum(lista, repetidos)\n    fmt.Println(album)\n}\n",
+            "content": "@@ -181,15 +181,23 @@\n unc \n-existe \n+contarrepetidos\n (lis\n@@ -205,55 +205,44 @@\n a %5B%5D\n- \n int\n-, valor int) bool %7B%0A    //contrado := false\n+) %5B%5Dint %7B%0A    var repetidos %5B%5Dint\n %0A   \n@@ -260,37 +260,40 @@\n ; i %3C len(lista)\n+-1\n ; i++\n+ \n %7B%0A        if lis\n@@ -305,13 +305,18 @@\n  == \n-valor\n+lista%5Bi+1%5D\n  %7B%0A \n@@ -332,17 +332,45 @@\n   re\n-turn true\n+petidos = append(repetidos, lista%5Bi%5D)\n %0A   \n@@ -368,32 +368,41 @@\n a%5Bi%5D)%0A        %7D%0A\n+        %0A\n     %7D%0A    return\n@@ -406,29 +406,30 @@\n urn \n-false\n+repetidos\n %0A%7D%0A\n+%0A\n func \n-preenche\n+cria\n ralb\n@@ -443,134 +443,166 @@\n a %5B%5D\n- \n int,\n- cap int)(\n+repetidos\n  %5B%5D\n- \n int\n+)\n  \n-,\n %5B%5D\n- \n int\n-)\n+ \n %7B%0A    \n+var \n album\n-:= make(%5B%5Dint,cap)%0A\n+ %5B%5Dint%0A    for i := 0; i %3C len(lista); i++ %7B%0A  \n     \n+  \n rep\n-et:= make(%5B%5Dint,cap)%0A\n+ := false%0A \n     \n+   \n for \n-i\n+j\n  := 0; \n-i\n+j\n  %3C len(\n-lista); i\n+repetidos); j\n ++\n+ \n %7B%0A\n+    \n     \n@@ -612,116 +612,124 @@\n  if \n-!existe(album,lista%5Bi%5D)%7B%0A            album = append(album,lista%5Bi%5D)%0A        %7D else if existe(album,lista%5Bi%5D)\n+lista%5Bi%5D == repetidos%5Bj%5D %7B%0A                rep = true%0A                break%0A            %7D%0A        %7D%0A        if !rep \n %7B%0A  \n@@ -738,21 +738,21 @@\n         \n-repet\n+album\n  = appen\n@@ -753,21 +753,21 @@\n  append(\n-repet\n+album\n , lista%5B\n@@ -806,15 +806,8 @@\n lbum\n-, repet\n %0A%7D%0A%0A\n@@ -883,16 +883,17 @@\n doalbum,\n+ \n &figtota\n@@ -899,26 +899,21 @@\n al)%0A    \n-figurinhas\n+lista\n  := cria\n@@ -959,19 +959,145 @@\n tln(\n-figurinhas)%0A\n+lista)%0A    repetidos := contarrepetidos(lista)%0A    fmt.Println(repetidos)%0A    album := criaralbum(lista, repetidos)%0A    fmt.Println(album)\n %0A%7D%0A\n",
             "lines": "50"
+        },
+        {
+            "label": "2026-06-16_12-49-33",
+            "content": "@@ -870,18 +870,18 @@\n tal)%0A   \n-//\n+ f\n mt.Print\n@@ -899,101 +899,7 @@\n as)%0A\n-    album, repetidos:= preencheralbum(figurinhas,figdoalbum)%0A    fmt.Println(album, repetidos)\n %0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-16_12-51-24",
+            "content": "@@ -392,24 +392,33 @@\n bum(lista %5B%5D\n+ int, cap\n  int)( %5B%5D in\n@@ -448,25 +448,27 @@\n  make(%5B%5Dint,\n-0\n+cap\n )%0A    repet:\n@@ -480,17 +480,19 @@\n e(%5B%5Dint,\n-0\n+cap\n )%0A    fo\n@@ -939,24 +939,35 @@\n m(figurinhas\n+,figdoalbum\n )%0A    fmt.Pr\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-16_12-52-19",
+            "content": "@@ -949,121 +949,27 @@\n rint\n-(%22%5B%22)%0A    for i := 0; i %3C len(repetidos) ; i++%7B%0A        fmt.Printf(%22 %25d%22,repetidos%5Bi%5D)%0A    %7D%0A    fmt.Println(%22 %5D%22\n+ln(album, repetidos\n )%0A%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-16_12-56-31",
+            "content": "@@ -719,228 +719,8 @@\n et%0A%7D\n-%0Afunc faltam(lista %5B%5Dint) %5B%5Dint %7B%0A    faltam := make(%5B%5Dint,0)%0A    for i := 0; i %3C len(lista); i++%7B%0A        if(lista%5Bi+1%5D - lista%5Bi%5D)%3E 1%7B%0A            faltam = append(faltam, lista%5Bi%5D+1)%0A        %7D%0A    %7D%0A    return faltam%0A%7D\n %0A%0Afu\n@@ -1064,57 +1064,6 @@\n %5D%22)%0A\n-    faltam := faltam(album)%0A    fmt.Print(faltam)%0A%0A\n %7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-16_13-06-36",
+            "content": "@@ -715,16 +715,236 @@\n  repet%0A%7D\n+%0Afunc faltam(lista %5B%5Dint) %5B%5Dint %7B%0A    faltam := make(%5B%5Dint,0)%0A    for i := 0; i %3C len(lista); i++%7B%0A        if(lista%5Bi+1%5D - lista%5Bi%5D)%3E 1%7B%0A            faltam = append(faltam, lista%5Bi%5D+1)%0A        %7D%0A    %7D%0A    return faltam%0A%7D\n %0A%0Afunc m\n@@ -1298,144 +1298,21 @@\n  := \n-make(%5B%5Dint, 0)%0A    for i := 0; i %3C= figdoalbum; i++%7B%0A        if !existe(album,i)%7B%0A            faltam = append(faltam, i)%0A        %7D%0A    %7D\n+faltam(album)\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-16_13-22-11",
+            "content": "@@ -1106,9 +1106,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-16_13-22-33",
+            "content": "@@ -1229,114 +1229,14 @@\n int(\n-%22%5B%22)%0A    for i := 0; i %3C len(faltam); i++%7B%0A        fmt.Printf(%22 %25d%22, faltam%5Bi%5D)%0A    %7D%0A    fmt.Println(%22 %5D%22\n+faltam\n )%0A%0A%7D\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-16_13-24-49",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarepreenchervetor(n int) []int {\n    lista := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\nfunc existe (lista [] int, valor int) bool {\n    //contrado := false\n    for i := 0; i < len(lista); i++{\n        if lista[i] == valor {\n            return true\n        }\n    }\n    return false\n}\nfunc preencheralbum(lista [] int)( [] int ,[] int){\n    album:= make([]int,0)\n    repet:= make([]int,0)\n    for i := 0; i < len(lista); i++{\n        if !existe(album,lista[i]){\n            album = append(album,lista[i])\n        } else if existe(album,lista[i]){\n            repet = append(repet, lista[i])\n        }\n    }\n    return album, repet\n}\n\nfunc main() {\n    figdoalbum := 0\n    figtotal := 0\n    fmt.Scan(&figdoalbum,&figtotal)\n    figurinhas := criarepreenchervetor(figtotal)\n   //mt.Println(figurinhas)\n    album, repetidos:= preencheralbum(figurinhas)\n    fmt.Print(\"[\")\n    for i := 0; i < len(repetidos) ; i++{\n        fmt.Printf(\" %d\",repetidos[i])\n    }\n    fmt.Println(\" ]\")\n    faltam := make([]int, 0)\n    for i := 1; i <= figdoalbum; i++{\n        if !existe(album,i){\n            faltam = append(faltam, i)\n        }\n    }\n    fmt.Print(\"[\")\n    for i := 0; i < len(faltam); i++{\n        fmt.Printf(\" %d\", faltam[i])\n    }\n    fmt.Println(\" ]\")\n\n}\n",
+            "lines": "58"
         }
     ]
 }

@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_16-37-00",
+            "content": "@@ -23,212 +23,53 @@\n mt%22%0A\n-%0A//func criarepreecheroibus(cap int) %5B%5D int%7B%0A%0A%0A%0Afunc main() %7B%0A    c := 0%0A    fmt.Scan(&c)%0A    onibus := make(%5B%5Dint, c)%0A    for i := 0; i %3C c; i++%7B%0A        fmt.Scan(&onibus%5Bi%5D)%0A    %7D%0A    fmt.Println(onibus\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-09_16-47-36",
+            "content": "@@ -205,18 +205,16 @@\n   %7D%0A    \n-//\n fmt.Prin\n@@ -229,257 +229,6 @@\n us)%0A\n-    for _, pessoas; range onibus %7B%0A        qtd := 0%0A        if qtd == 0 %7B%0A            fmt.Println(%22vazio%22)%0A        %7D else if qtd %3E 0 && qtd %3C c %7B%0A            fmt.Println(%22ainda cabe%22)%0A        %7D else %7B%0A            fmt.Println(%22lotado%22)%0A        %7D%0A    %7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-09_16-59-42",
+            "content": "@@ -245,19 +245,17 @@\n  pessoas\n- :=\n+;\n  range o\n@@ -476,17 +476,8 @@\n   %7D%0A\n-        %0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-09_17-00-19",
+            "content": "@@ -486,22 +486,8 @@\n     \n-qtd += pessoas\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-00-51",
+            "content": "@@ -239,27 +239,34 @@\n for \n-i := 0 ; i %3C c; i++\n+_, pessoas := range onibus\n  %7B%0A \n@@ -489,25 +489,23 @@\n  qtd += \n-onibus%5Bi%5D\n+pessoas\n %0A    %7D%0A%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-02-55",
+            "content": "@@ -239,34 +239,27 @@\n for \n-_, pessoas := range onibus\n+i := 0 ; i %3C c; i++\n  %7B%0A \n@@ -486,15 +486,17 @@\n  += \n-pessoas\n+onibus%5Bi%5D\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-04-22",
+            "content": "@@ -235,17 +235,17 @@\n     for \n-i\n+_\n , pessoa\n@@ -279,25 +279,17 @@\n  qtd := \n-onibus%5Bi%5D\n+0\n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-06-03",
+            "content": "@@ -348,26 +348,8 @@\n o%22)%0A\n-            break%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-17-32",
+            "content": "@@ -232,24 +232,33 @@\n s)%0A    for i\n+, pessoas\n  := range on\n@@ -340,24 +340,42 @@\n ln(%22vazio%22)%0A\n+            break%0A\n         %7D el\n@@ -515,25 +515,23 @@\n  qtd += \n-onibus%5Bi%5D\n+pessoas\n %0A    %7D%0A%7D\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-09_17-19-33",
+            "content": "@@ -244,31 +244,20 @@\n  := \n-0;i %3C len(onibus) ; i++\n+range onibus\n  %7B%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-21-44",
+            "content": "@@ -20,16 +20,18 @@\n  %22fmt%22%0A%0A\n+//\n func cri\n@@ -60,178 +60,19 @@\n nt) \n-(\n %5B%5D int\n-, int)%7B%0A    varia := 0%0A    lista := make(%5B%5Dint, cap)%0A    for i := 0; i %3C cap; i++%7B%0A        fmt.Scan(lista%5Bi%5D)%0A        varia ++%0A    %7D%0A    return lista, varia%0A%7D\n+%7B\n %0A%0A%0A%0A\n-%0A\n func\n@@ -123,51 +123,96 @@\n ibus\n-, varia := criarepreechero\n+ := make(%5B%5Dint, c)%0A    for i := 0; i %3C c; i++%7B%0A        fmt.Scan(&on\n ibus\n-(c\n+%5Bi%5D\n )%0A    \n+%7D\n %0A    \n+//\n fmt.\n@@ -229,14 +229,8 @@\n ibus\n-,varia\n )%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_17-33-24",
+            "content": "@@ -78,20 +78,16 @@\n    varia\n-%C3%A7oes\n  := 0%0A  \n@@ -184,20 +184,16 @@\n    varia\n-%C3%A7oes\n  ++%0A    \n@@ -221,12 +221,8 @@\n aria\n-%C3%A7oes\n %0A%7D%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-09_17-45-19",
+            "content": "@@ -24,124 +24,248 @@\n t%22%0A%0A\n-%0A%0A\n func \n-main() %7B%0A   cap := 0%0A   mov := 0%0A   fmt.Scan(&cap)%0A   passageiros := 0%0A   //ibu :=s make(%5B%5Dint, cap)%0A   for %7B\n+criarepreecheroibus(cap int) (%5B%5D int, int)%7B%0A    varia%C3%A7oes := 0%0A    lista := make(%5B%5Dint, cap)%0A    for i := 0; i %3C cap; i++%7B%0A        fmt.Scan(lista%5Bi%5D)%0A        varia%C3%A7oes ++%0A    %7D%0A    return lista, varia%C3%A7oes%0A%7D%0A%0A%0A%0A%0Afunc main() %7B%0A    c := 0\n %0A   \n@@ -279,66 +279,60 @@\n an(&\n-mov\n+c\n )%0A    \n-passageiros += mov%0A    if passageiros == 0 %7B\n+onibus, varia := criarepreecheroibus(c)\n %0A    \n+%0A\n     \n@@ -347,70 +347,112 @@\n tln(\n-%22vazio%22)%0A    %7D else if passageiros %3E 0 && passageiros %3C cap %7B%0A\n+onibus,varia)%0A    for i := 0;i %3C len(onibus) ; i++ %7B%0A        qtd := onibus%5Bi%5D%0A        if qtd == 0 %7B%0A    \n     \n@@ -472,21 +472,20 @@\n ln(%22\n-ainda cabe%22)%0A\n+vazio%22)%0A    \n     \n@@ -498,174 +498,152 @@\n  if \n-passageiros %3E= cap && passageiros %3C cap / 2%7B%0A        fmt.Println(%22lotado%22)%0A    %7D else if passageiros %3E= cap%7B%0A        fmt.Println(%22hora de partir%22)%0A        break%0A    %7D\n+qtd %3E 0 && qtd %3C c %7B%0A            fmt.Println(%22ainda cabe%22)%0A        %7D else %7B%0A            fmt.Println(%22lotado%22)%0A        %7D%0A        qtd += onibus%5Bi%5D\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-16_12-15-29",
+            "content": "@@ -446,10 +446,8 @@\n  cap\n-/2\n %7B%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-16_12-15-50",
+            "content": "@@ -370,25 +370,27 @@\n geiros %3C cap\n-*\n+ / \n 2%7B%0A        f\n@@ -446,9 +446,9 @@\n  cap\n-*\n+/\n 2%7B%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-16_12-16-43",
+            "content": "@@ -94,24 +94,54 @@\n geiros := 0%0A\n+   //ibu :=s make(%5B%5Dint, cap)%0A\n    for %7B%0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-16_12-16-59",
+            "content": "package main\nimport \"fmt\"\n\n\n\nfunc main() {\n   cap := 0\n   mov := 0\n   fmt.Scan(&cap)\n   passageiros := 0\n   for {\n    fmt.Scan(&mov)\n    passageiros += mov\n    if passageiros == 0 {\n        fmt.Println(\"vazio\")\n    } else if passageiros > 0 && passageiros < cap {\n        fmt.Println(\"ainda cabe\")\n    } else if passageiros >= cap && passageiros < cap*2{\n        fmt.Println(\"lotado\")\n    } else if passageiros >= cap*2{\n        fmt.Println(\"hora de partir\")\n        break\n    }\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

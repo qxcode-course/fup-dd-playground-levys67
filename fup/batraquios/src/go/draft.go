@@ -9,6 +9,7 @@ func criarvetor(tam int) []int {
     return lista
 }
 
+
 func main() {
     tam1 := 0
     tam2 := 0

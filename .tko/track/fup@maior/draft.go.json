@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_17-49-57",
+            "content": "@@ -37,46 +37,8 @@\n ) %7B%0A\n-    chute := 0%0A    dire%C3%A7ao := %22%22%0A    %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_11-29-19",
+            "content": "@@ -43,26 +43,24 @@\n   chute := 0\n-.0\n %0A    dire%C3%A7ao\n@@ -74,136 +74,40 @@\n     \n-valor := 0.0%0A    fmt.Scan(&chute,&dire%C3%A7ao,&valor)%0A    if dire%C3%A7ao == %22M%22 && chute %3E valor %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D%0A\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-16_11-35-29",
+            "content": "@@ -158,43 +158,8 @@\n te %3E\n- valor %7C%7C dire%C3%A7ao == %22m%22 && chute %3C\n  val\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-16_11-36-55",
+            "content": "@@ -239,122 +239,8 @@\n    %7D\n- else if dire%C3%A7ao == %22M%22 && chute %3C valor %7C%7C dire%C3%A7ao == %22m%22 && chute %3E valor %7B%0A        fmt.Println(%22segundo%22)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-16_11-38-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    chute := 0.0\n    dire\u00e7ao := \"\"\n    valor := 0.0\n    fmt.Scan(&chute,&dire\u00e7ao,&valor)\n    if dire\u00e7ao == \"M\" && chute > valor || dire\u00e7ao == \"m\" && chute < valor {\n        fmt.Println(\"primeiro\")\n    } else if dire\u00e7ao == \"M\" && chute < valor || dire\u00e7ao == \"m\" && chute > valor {\n        fmt.Println(\"segundo\")\n    }\n\n}\n",
+            "lines": "14"
+        }
+    ]
+}

@@ -9,42 +9,50 @@ func criarepreenchervetor(n int) []int {
     return lista
 }
 
-func contarrepetidos(lista []int) []int {
-    var repetidos []int
-    for i := 0; i < len(lista)-1; i++ {
-        if lista[i] == lista[i+1] {
-            repetidos = append(repetidos, lista[i])
+func existe (lista [] int, valor int) bool {
+    //contrado := false
+    for i := 0; i < len(lista); i++{
+        if lista[i] == valor {
+            return true
         }
-        
     }
-    return repetidos
+    return false
 }
-
-func criaralbum(lista []int,repetidos []int) []int {
-    var album []int
-    for i := 0; i < len(lista); i++ {
-        rep := false
-        for j := 0; j < len(repetidos); j++ {
-            if lista[i] == repetidos[j] {
-                rep = true
-                break
-            }
-        }
-        if !rep {
-            album = append(album, lista[i])
+func preencheralbum(lista [] int)( [] int ,[] int){
+    album:= make([]int,0)
+    repet:= make([]int,0)
+    for i := 0; i < len(lista); i++{
+        if !existe(album,lista[i]){
+            album = append(album,lista[i])
+        } else if existe(album,lista[i]){
+            repet = append(repet, lista[i])
         }
     }
-    return album
+    return album, repet
 }
 
 func main() {
     figdoalbum := 0
     figtotal := 0
-    fmt.Scan(&figdoalbum, &figtotal)
-    lista := criarepreenchervetor(figtotal)
-    fmt.Println(lista)
-    repetidos := contarrepetidos(lista)
-    fmt.Println(repetidos)
-    album := criaralbum(lista, repetidos)
-    fmt.Println(album)
+    fmt.Scan(&figdoalbum,&figtotal)
+    figurinhas := criarepreenchervetor(figtotal)
+   //mt.Println(figurinhas)
+    album, repetidos:= preencheralbum(figurinhas)
+    fmt.Print("[")
+    for i := 0; i < len(repetidos) ; i++{
+        fmt.Printf(" %d",repetidos[i])
+    }
+    fmt.Println(" ]")
+    faltam := make([]int, 0)
+    for i := 1; i <= figdoalbum; i++{
+        if !existe(album,i){
+            faltam = append(faltam, i)
+        }
+    }
+    fmt.Print("[")
+    for i := 0; i < len(faltam); i++{
+        fmt.Printf(" %d", faltam[i])
+    }
+    fmt.Println(" ]")
+
 }

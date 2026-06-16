@@ -32,8 +32,23 @@
         },
         {
             "label": "2026-06-09_12-19-05",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    salario := 0\n    fmt.Scan(&salario)\n    aumento1 := (salario * 20) / 100\n    aumento2 := (salario * 15) / 100\n    if salario <= 1000 {\n        fmt.Printf(\"%.2f\\n\",float64(salario + aumento1))\n    } else if salario > 1000 && salario <= 1500 {\n        fmt.Printf(\"%.2f\\n\",float32(salario + aumento2))\n    }\n}\n",
+            "content": "@@ -53,10 +53,8 @@\n := 0\n-.0\n %0A   \n@@ -192,32 +192,40 @@\n Printf(%22%25.2f%5Cn%22,\n+float64(\n salario + aument\n@@ -227,16 +227,17 @@\n umento1)\n+)\n %0A    %7D e\n@@ -307,16 +307,24 @@\n %25.2f%5Cn%22,\n+float32(\n salario \n@@ -334,16 +334,17 @@\n umento2)\n+)\n %0A    %7D%0A%7D\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-06-16_11-22-23",
+            "content": "@@ -153,45 +153,8 @@\n 100%0A\n-    aumento3 := (salario * 10) / 100%0A\n     \n@@ -324,106 +324,8 @@\n o2)%0A\n-    %7D else if salario %3E 1500 && salario %3C= 2000 %7B%0A        fmt.Printf(%22%25.2f%5Cn%22,salario + aumento3)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-16_11-25-21",
+            "content": "@@ -190,44 +190,8 @@\n 100%0A\n-    aumento4 := (salario * 5) / 100%0A\n     \n@@ -464,74 +464,7 @@\n    %7D\n- else%7B%0A        fmt.Printf(%22%25.2f%5Cn%22,salario + aumento4)%0A    %7D %0A%0A    \n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-16_11-28-35",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    salario := 0.0\n    fmt.Scan(&salario)\n    aumento1 := (salario * 20) / 100\n    aumento2 := (salario * 15) / 100\n    aumento3 := (salario * 10) / 100\n    aumento4 := (salario * 5) / 100\n    if salario <= 1000 {\n        fmt.Printf(\"%.2f\\n\",salario + aumento1)\n    } else if salario > 1000 && salario <= 1500 {\n        fmt.Printf(\"%.2f\\n\",salario + aumento2)\n    } else if salario > 1500 && salario <= 2000 {\n        fmt.Printf(\"%.2f\\n\",salario + aumento3)\n    } else{\n        fmt.Printf(\"%.2f\\n\",salario + aumento4)\n    } \n\n    \n}\n",
+            "lines": "21"
         }
     ]
 }

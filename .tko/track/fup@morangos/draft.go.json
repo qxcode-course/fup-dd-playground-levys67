@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_11-40-49",
+            "content": "@@ -41,262 +41,35 @@\n     \n-comp1 := 0%0A    larg1 := 0%0A    comp2 := 0%0A    larg2 := 0%0A    fmt.Scan(&comp1, &larg1, &comp2, &larg2)%0A    area1 := comp1 * larg1%0A    area2 := comp2 * larg2%0A    if area1 %3E area2 %7B%0A        fmt.Println(area1)%0A    %7D else %7B%0A        fmt.Println(area2)%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_11-51-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    comp1 := 0\n    larg1 := 0\n    comp2 := 0\n    larg2 := 0\n    fmt.Scan(&comp1, &larg1, &comp2, &larg2)\n    area1 := comp1 * larg1\n    area2 := comp2 * larg2\n    if area1 > area2 {\n        fmt.Println(area1)\n    } else {\n        fmt.Println(area2)\n    }\n    \n}\n",
+            "lines": "17"
+        }
+    ]
+}
