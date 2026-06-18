@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-06-16_12-21-26",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,51 +37,8 @@\n ) %7B%0A\n-    numero := 0%0A    fmt.Scan(&numero)%0A    %0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-18_11-38-12",
+            "content": "@@ -10,38 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22strconv%22%0A)%0A\n func\n@@ -79,213 +79,40 @@\n     \n-texto := strconv.Itoa(numero)%0A    textoinvertido := %22%22%0A    for i := len(texto) -1; i %3E= 0; i--%7B%0A        textoinvertido += string(texto%5Bi%5D)%0A    %7D%0A    if texto == textoinvertido %7B%0A        fmt.Println(1)%0A    %7D\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-18_11-45-17",
+            "content": "@@ -297,44 +297,8 @@\n (1)%0A\n-    %7D else %7B%0A        fmt.Println(0)%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-18_11-45-54",
+            "content": "@@ -23,16 +23,27 @@\n %0A%09%22fmt%22%0A\n+%09%22strconv%22%0A\n )%0Afunc m\n@@ -105,18 +105,20 @@\n  := \n-fmt.Sprint\n+strconv.Itoa\n (num\n@@ -126,22 +126,29 @@\n ro)%0A    \n+texto\n inver\n-s\n+tid\n o := %22%22%0A\n@@ -186,17 +186,16 @@\n = 0; i--\n- \n %7B%0A      \n@@ -196,22 +196,29 @@\n         \n+texto\n inver\n-s\n+tid\n o += str\n@@ -257,14 +257,21 @@\n  == \n+texto\n inver\n-s\n+tid\n o %7B%0A\n@@ -336,10 +336,9 @@\n %0A    %7D%0A%7D\n- \n %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-18_11-53-16",
+            "content": "@@ -81,12 +81,232 @@\n ro)%0A    \n+texto := fmt.Sprint(numero)%0A    inverso := %22%22%0A    for i := len(texto) -1; i %3E= 0; i-- %7B%0A        inverso += string(texto%5Bi%5D)%0A    %7D%0A    if texto == inverso %7B%0A        fmt.Println(1)%0A    %7D else %7B%0A        fmt.Println(0)%0A    %7D\n %0A%7D %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_12-11-02",
+            "content": "@@ -85,228 +85,8 @@\n     \n-texto := fmt.Sprint(numero)%0A    inverso := %22%22%0A    for i := len(texto) -1; i %3E= 0; i-- %7B%0A        inverso += string(texto%5Bi%5D)%0A    %7D%0A    if texto == inverso %7B%0A        fmt.Println(1)%0A    %7D else %7B%0A        fmt.Println(0)%0A    %7D\n %0A%7D %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-18_12-14-32",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\nfunc main() {\n    numero := 0\n    fmt.Scan(&numero)\n    texto := fmt.Sprint(numero)\n    inverso := \"\"\n    for i := len(texto) -1; i >= 0; i-- {\n        inverso += string(texto[i])\n    }\n    if texto == inverso {\n        fmt.Println(1)\n    } else {\n        fmt.Println(0)\n    }\n} \n",
+            "lines": "19"
         }
     ]
 }

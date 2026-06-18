@@ -1,0 +1,17 @@
+{"ts":1781784947,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAHfhM2oC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1781785250,"hash":"5e8fd0013e4691391f3980b33342f6919b4f67d7392f45c5e6c05e9cf73f3254","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    \n"}]}
+{"ts":1781785270,"hash":"8105ff1c77fb16fd6594eb5dbe57ec036e0a8bc80d819aa448afa27467cce764","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    alcool := 0.0\n    gasolina:\n"}]}
+{"ts":1781785290,"hash":"bc60afbb406bf7364ceec2bc0fc2cc7783bda7ac7fa8123a4b9416c931282ad7","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"    gasolina := 0.0\n    rendimento := 0.0\n"}]}
+{"ts":1781785311,"hash":"130c1d2a77c9871fd7b74595cf5cbf83e6a80eeb9d6d5b79fda9bba8d2a20bb3","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    rendimento_a:= 0.0\n"}]}
+{"ts":1781785331,"hash":"ccc28415bfea53ec493b153adf0431256fb7dc4b5a5b250ba7efd5922996c822","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    rendimento_a := 0.0\nrendimento_\n"}]}
+{"ts":1781785410,"hash":"56f5aaf7d5fe47c4af76e7daf2ae03082bbdca599b598946387f635e094e43e4","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"    rendimento_g := 0.0\n    \n"}]}
+{"ts":1781785449,"hash":"f30698fc8a06c43a1dd29488c285bb293c1f9ddab93ba368cc9eeb91e4c0d71f","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    fmt.Scan(&alcool, &gasolina, &redimento_a, &rendimento_g\n"}]}
+{"ts":1781785469,"hash":"f25210f52d93063e896170bd4fb2448ddcd6ca4e5fb2099d8cf7b14882f33c16","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    fmt.Scan(&alcool, &gasolina, &rendimento_a, &rendimento_g)\n"}]}
+{"ts":1781785491,"hash":"a5232a8ef1549a3b9022fad795e6a62b48d0a51f845bcbe07436beac2acfd04b","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    eficacia_a := \n"}]}
+{"ts":1781785528,"hash":"97b0a46291573e4cd4569b17d2d185ee130b2838eb66b991bc1611ae465a980e","mode":"full","content":"H4sIALvjM2oC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAEFiTnJ+fo6Cla2CgZ4BWCQ9sTg/JzMvEVmsKDUvJTM3Na8kPx6XeDqyONAyveDkxDwNNYj5OgpqMGOBTGTTULnpmmDtmWkKXLVcAHjGTdLHAAAA"}
+{"ts":1781785550,"hash":"251edce4445fccc73bbf4a0af05ef76ee0eb873d4f5063d26bf80a00737db5cc","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    if rendimento_aO_a\n"}]}
+{"ts":1781785572,"hash":"9449801cc98063a4cb08684736462572c5f51b745efc86a643ae35ff5dcfc464","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    if rendimento_a > rendimento_g \n"}]}
+{"ts":1781785688,"hash":"ec0d7dc2d026ae0c7cd6953321e283768c7622f4e8609bbbd6d8d005455cbdf2","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    if rendimento_a > rendimento_g {\n        fmt.Println(\"G\")\n    }\n"}]}
+{"ts":1781785811,"hash":"a1995efeaaf078ce0a6bf03381bcb31779b8bfa739ac09691dbbd8c0473e534a","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"        fmt.Println(\"   \")\n"}]}
+{"ts":1781785831,"hash":"7527fcd0a37eab3b2c610d391257aa5349e9d610f08348675d9232471a6e3fd7","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"        fmt.Println(   \" A\")\n"}]}
+{"ts":1781785931,"hash":"43a07c32ca1bfb2a97246e2a7f82c915ab662b2cc9ff005ee91bb68c13a854e3","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"        fmt.Println(\"A\")\n    } else {\n        fmt.Println(\"G\")\n"}]}

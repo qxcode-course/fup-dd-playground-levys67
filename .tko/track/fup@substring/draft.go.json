@@ -127,8 +127,13 @@
         },
         {
             "label": "2026-05-12_18-24-13",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n    \"strconv\"\n)\nfunc main() {\n    var text string\n    ind := 0\n    qtd := 0\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    text = scanner.Text()\n    indt := scanner.Text()\n    ind, _ = strconv.Atoi(indt)\n\n    listtexto := []rune(text)\n    //caracteres := 0\n    for i := 0; i < len(text); i++{\n        fmt.Printf(\"%c\", listtexto[i])\n    }\n    fmt.Println()\n    for i := 0; i < qtd; i++{\n        fmt.Printf(\"%c\", listtexto[i])\n    }\n    fmt.Println(ind)\n    fmt.Println(qtd)\n}\n",
-            "lines": "30"
+            "content": "@@ -1,228 +1,519 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    var text string%0A    ind := 0%0A    qtd := 0%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    text = scanner.Text()%0A    fmt.Sscan(text, &ind, &\n+@@ -38,16 +38,30 @@%0A %2522%250A%2509%2522os%2522%250A%0A+    %2522strconv%2522%250A%0A )%250Afunc m%0A@@ -209,31 +209,327 @@%0A     %0A-fmt.Sscan(text, &ind, &%0A+indt := scanner.Text()%250A    ind, _ = strconv.Atoi(indt)%250A%250A    listtexto := %255B%255Drune(text)%250A    //caracteres := 0%250A    for i := 0; i %253C len(text); i++%257B%250A        fmt.Printf(%2522%2525c%2522, listtexto%255Bi%255D)%250A    %257D%250A    fmt.Println()%250A    for i := 0; i %253C qtd; i++%257B%250A        fmt.Printf(%2522%2525c%2522, listtexto%255Bi%255D)%250A    %257D%250A    fmt.Println(ind)%250A    fmt.Println(%0A \n qtd)%0A\n-%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-16_17-47-21",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    var text string\n    ind := 0\n    qtd := 0\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    text = scanner.Text()\n    fmt.Sscan(text, &ind, &qtd)\n}\n",
+            "lines": "16"
         }
     ]
 }

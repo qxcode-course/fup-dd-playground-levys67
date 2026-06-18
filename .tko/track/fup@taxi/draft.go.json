@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_16-28-24",
+            "content": "@@ -41,219 +41,35 @@\n     \n-alcool := 0.0%0A    gasolina := 0.0%0A    rendimento_a := 0.0%0A    rendimento_g := 0.0%0A    fmt.Scan(&alcool, &gasolina, &rendimento_a, &rendimento_g)%0A    if rendimento_a %3E rendimento_g %7B%0A        fmt.Println(%22G%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_12-28-10",
+            "content": "@@ -244,9 +244,9 @@\n ln(%22\n-A\n+G\n %22)%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-18_12-30-40",
+            "content": "@@ -248,46 +248,8 @@\n A%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22G%22)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-18_12-32-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    alcool := 0.0\n    gasolina := 0.0\n    rendimento_a := 0.0\n    rendimento_g := 0.0\n    fmt.Scan(&alcool, &gasolina, &rendimento_a, &rendimento_g)\n    if rendimento_a > rendimento_g {\n        fmt.Println(\"A\")\n    } else {\n        fmt.Println(\"G\")\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}

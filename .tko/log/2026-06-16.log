@@ -87,3 +87,34 @@
 2026-06-16 13:24:49, EXEC, v:1, k:fup@baruel, mode:FULL, rate:100, size:58
 2026-06-16 13:24:55, MOVE, v:1, k:fup@baruel, mode:BACK
 2026-06-16 13:25:36, SELF, v:1, k:fup@baruel, self:1, rate:100, study:270, guided:1
+2026-06-16 16:26:16, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-16 16:26:19, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-06-16 16:26:19, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-06-16 16:26:19, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:28:00, MOVE, v:1, k:fup@substring, mode:BACK
+2026-06-16 16:28:22, MOVE, v:1, k:fup@taxi, mode:DOWN
+2026-06-16 16:28:23, MOVE, v:1, k:fup@taxi, mode:PICK
+2026-06-16 16:28:24, EXEC, v:1, k:fup@taxi, mode:FULL, rate:0, size:5
+2026-06-16 16:28:22, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-16 16:28:22, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-16 16:28:22, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-16 16:28:23, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-06-16 16:35:53, MOVE, v:1, k:fup@taxi, mode:BACK
+2026-06-16 16:36:06, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-16 16:36:07, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-06-16 16:36:07, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 16:51:22, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 17:22:36, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 17:35:06, MOVE, v:1, k:fup@substring, mode:BACK
+2026-06-16 17:47:20, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-16 17:47:21, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:16
+2026-06-16 17:47:21, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:16
+2026-06-16 17:47:21, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:16
+2026-06-16 17:47:24, MOVE, v:1, k:fup@substring, mode:BACK
+2026-06-16 17:57:09, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-16 17:57:13, MOVE, v:1, k:fup@substring, mode:BACK
+2026-06-16 17:57:21, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-16 17:57:22, EXEC, v:1, k:fup@substring, mode:FULL, rate:0
+2026-06-16 17:57:22, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 17:57:39, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-16 17:59:56, MOVE, v:1, k:fup@substring, mode:BACK
