@@ -1,0 +1,2 @@
+{"ts":1781875457,"hash":"e9ae2ffab2e305f1878997df42a4f9a63c3dc292c2aff4cf906697cd3ac1d9f5","mode":"full","content":"H4sIAAJDNWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAEFeaW5qUb6Cla2CAZgPVKYHZwQUZeaV5ORpKHmk5uTk6yiE5xflpCgqaXLVcgEAJrkO1GQAAAA="}
+{"ts":1781875482,"hash":"380df3b71eb2f156de3dc9d0097933bcc4400672fb2a741a42c07f782b4d6806","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":6,"text":"    fmt.Scan(&numero)\n    \n"}]}

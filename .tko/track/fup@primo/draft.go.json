@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_13-26-09",
+            "content": "@@ -41,147 +41,35 @@\n     \n-numero := 0%0A    fmt.Scan(&numero)%0A    for i := 0; i %3C= numero; i++ %7B%0A        if numero %25 i == 0 %7B%0A            fmt.Println(1)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-19_13-32-14",
+            "content": "@@ -84,17 +84,17 @@\n or i := \n-1\n+0\n ; i %3C= n\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-19_13-32-39",
+            "content": "@@ -137,23 +137,8 @@\n = 0 \n-&& numero == i \n %7B%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-19_13-33-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    numero := 0\n    fmt.Scan(&numero)\n    for i := 1; i <= numero; i++ {\n        if numero % i == 0 && numero == i {\n            fmt.Println(1)\n        }\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_12-19-39",
+            "content": "@@ -41,152 +41,35 @@\n     \n-jog1 := 0%0A    jog2 := 0%0A    jog3 := 0%0A    fmt.Scan(&jog1, &jog2, &jog3)%0A    if jog1 == jog2 && jog2 == jog3 %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-19_12-23-01",
+            "content": "@@ -181,75 +181,8 @@\n e%22)%0A\n-    %7D else if jog1 != jog2 && jog1 != jog3 %7B%0A        fmt.Println()%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-19_12-24-43",
+            "content": "@@ -246,14 +246,8 @@\n tln(\n-%22jog1%22\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-19_12-24-58",
+            "content": "@@ -254,81 +254,8 @@\n 1%22)%0A\n-    %7D else if jog2 != jog1 && jog2 != jog3 %7B%0A        fmt.Println(%22jog2%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-19_12-26-07",
+            "content": "@@ -327,49 +327,8 @@\n 2%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22jog3%22)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-19_12-26-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    jog1 := 0\n    jog2 := 0\n    jog3 := 0\n    fmt.Scan(&jog1, &jog2, &jog3)\n    if jog1 == jog2 && jog2 == jog3 {\n        fmt.Println(\"empate\")\n    } else if jog1 != jog2 && jog1 != jog3 {\n        fmt.Println(\"jog1\")\n    } else if jog2 != jog1 && jog2 != jog3 {\n        fmt.Println(\"jog2\")\n    } else {\n        fmt.Println(\"jog3\")\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

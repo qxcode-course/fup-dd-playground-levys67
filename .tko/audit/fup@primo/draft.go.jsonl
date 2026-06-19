@@ -1,0 +1,11 @@
+{"ts":1781875567,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAHtDNWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1781875637,"hash":"e624bed5244281210979ffd93d5c2eb4173ed2cde55582103eca0657b44c62dc","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    numero ;= 0\n"}]}
+{"ts":1781875679,"hash":"144dda2f2783eb3ae541be71a6c76ee3afe13924827bc70bb4d3408edc48934c","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":5,"text":"    numero := 0\n    fmt.Scan(&numero)\n"}]}
+{"ts":1781875798,"hash":"380df3b71eb2f156de3dc9d0097933bcc4400672fb2a741a42c07f782b4d6806","mode":"diff","ops":[{"tag":"insert","a1":5,"a2":5,"text":"    \n"}]}
+{"ts":1781875818,"hash":"271061f8ae0e1fec8a50d951ff01030f05aac86bed3a1c5b5e630f072404e666","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    for i := 0; i <= numero\n"}]}
+{"ts":1781875854,"hash":"224874075e5f5665e2b6f3f9d1682dcb6cf69f638f13cef8c6e9f20d4abf1e9e","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    for i := 0; i <= numero; i++ {\n        if numero % i \n    }\n"}]}
+{"ts":1781875879,"hash":"f9cbf1843a2640eba8ad16d1720490c4a1d6bc37bb0b9ae2532428d6eeb664c2","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"        if numero % i == 0 && numero %\n"}]}
+{"ts":1781875907,"hash":"25d8b5133a0cb2398a14a195e7f728e025bcb4951a7bba80a26cbef5183e96dd","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"        if numero % i == 0 && numero % 1 == 0 {\n            fmt.Println(1)\n        }\n"}]}
+{"ts":1781875932,"hash":"2fa2dbcde81c3fa56b7bc97f6b973d5825492f029cc4abae827664c91e89d8c7","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"        if numero % i == 0 {\n"}]}
+{"ts":1781875958,"hash":"53dbaf182c32d96148fabafe6a44a7967312609ccc7e756901dff0011f7032a2","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    for i := 1; i <= numero; i++ {\n"}]}
+{"ts":1781875997,"hash":"38bc2263c43ba89e0c1b095eae0c0bb751c93e9efa6619aeec3ed0afa4a8406f","mode":"full","content":"H4sIAB9FNWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAEFeaW5qUb6Cla2CAZgPVKYXnJyYp6EGkdGEiOYXKWSCFBlaA2kbW6g2IEdbG2oQCGSmwcxTBSqzBZqpoKamgKQAZkNAUWZeSU6ehqEmXKqWC0LWcgEAHYcC5b8AAAA="}

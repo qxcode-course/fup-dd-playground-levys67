@@ -1,0 +1,4 @@
+{"ts":1781872062,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIANE1NWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1781872094,"hash":"5e8fd0013e4691391f3980b33342f6919b4f67d7392f45c5e6c05e9cf73f3254","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    \n"}]}
+{"ts":1781872119,"hash":"70638f193c48c894e8dd646f09e775ca6e67797027d6dbadf08b56d802598a75","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    numero := 0\n    fmt.Scan(&numero)\n    if numero % 2 =\n"}]}
+{"ts":1781872160,"hash":"c738179dac71006f97481317be0ff07de560f32868b343432d1931e363824b05","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":7,"text":"    if numero % 2 == 0 {\n        fmt.Println(\"PAR\")\n    } else \n"}]}

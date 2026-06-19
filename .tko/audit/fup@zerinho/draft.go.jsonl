@@ -1,0 +1,11 @@
+{"ts":1781871613,"hash":"07498fcc526f3fbe3e4d60179a294089e389cfa0f2a222e29719d7ee5b407d1b","mode":"full","content":"H4sIAAE0NWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFXLRcAk2NUei8AAAA="}
+{"ts":1781871633,"hash":"d739a2dbfe8bc079c3b1d92c75cf9e3bb06df20f666efce88cbd0f676f52ab4a","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    jog1 :=\n    \n    \n"}]}
+{"ts":1781871653,"hash":"07498fcc526f3fbe3e4d60179a294089e389cfa0f2a222e29719d7ee5b407d1b","mode":"diff","ops":[{"tag":"delete","a1":3,"a2":6,"text":""}]}
+{"ts":1781871676,"hash":"f0ff49607cb861ad05313516a6f9a3901baf28841dfda4aa7eedb98b5ddc642b","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    jog1 := 0\n    jog1\n"}]}
+{"ts":1781871716,"hash":"a77f8ac7b0460231991416b65e38cc15d135fe8dea0dc879734b61c6a7c538d0","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"    jog2 := 0\n    jog3 := 0\n    fmt.Scan(&jog1, &jog2, &jog3)\n    \n"}]}
+{"ts":1781871737,"hash":"74eb8c53aa310f0c3b54d4248da151467d85b8d8bf17bda348d77d2045ee2eea","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    if jog1 == jog2 \n"}]}
+{"ts":1781871777,"hash":"c9abc8121a227c60c17e764fdf70dd858c9d5a5e03b6c03c2779d7acac0560b6","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    if jog1 == jog2 && jog2 == jog3 {\n        fmt.Println(\"empate\")\n    }\n"}]}
+{"ts":1781871835,"hash":"9b73029be1ab2a5814c10d6474883fdb8cb7e839c7eb9bd133495c66b5818d2e","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    } else if jog1 != jog2 && jog\n"}]}
+{"ts":1781871893,"hash":"41e4f68dfabed16b113efc1ed84a965d4980635dc7f5f9f507f30cbe39d95c0a","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    } else if jog1 != jog2 && jog1 != jog3 {\n        fmt.Println(\"jog1\")\n    }\n"}]}
+{"ts":1781871938,"hash":"5ff36842b0d4988489edb56a4ded18c361ad5ddcac25a8a54af53cd64e26f964","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    } else if jog2 != jog1 &\n"}]}
+{"ts":1781871980,"hash":"0a7bfc660ebe2dd44c80a1857405f06c5834fdf0b61762990ea4baae24233791","mode":"full","content":"H4sIAG01NWoC/4XOQQrDIBAF0L2nmLoQA6U0uivkDoWeQESDbTQhtauSuzdmYoqQUjfDlz9PB6UfqjXglQvE+aEfI1DrIyX2FfRyzSt4E5jPvW9ruDRwzkkUSX7TDJxuWgXO0s4R0hA4ZLU0nEWuaRBiDCdmub6YrevoQuwCp8YPKhqKxgSme5qNOhRUzj+p1NmDxLpYb3/6D4kS2i1igUzkA3pN1CRzAQAA"}

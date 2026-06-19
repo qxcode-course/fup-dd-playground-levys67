@@ -2,8 +2,68 @@
     "patches": [
         {
             "label": "2026-05-26_11-24-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,456 +41,35 @@\n     \n-profundidade := 0%0A    salto := 0%0A    escorrego := 0%0A    fmt.Scan(&profundidade, &salto, &escorrego)%0A    altura := 0%0A    for %7B%0A        fmt.Printf(%22%25d %22, altura)%0A        altura += salto%0A        fmt.Println(altura)%0A        altura -= escorrego%0A        salto -= 10%0A        if altura == profundidade %7B%0A            fmt.Println(%22saiu%22)%0A            break%0A        %7D%0A        if altura %3E 0 %7B%0A            fmt.Println(%22morreu%22)%0A            break%0A        %7D%0A%0A%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-19_12-45-58",
+            "content": "@@ -415,9 +415,9 @@\n ura \n-%3C\n+%3E\n  0 %7B\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-46-31",
+            "content": "@@ -319,9 +319,9 @@\n ura \n-%3E\n+=\n = pr\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-47-05",
+            "content": "@@ -221,16 +221,92 @@\n = salto%0A\n+        fmt.Println(altura)%0A        altura -= escorrego%0A        salto -= 10%0A\n         \n@@ -483,83 +483,9 @@\n   %7D%0A\n-        fmt.Println(altura)%0A        altura -= escorrego%0A        salto -= 10\n+%0A\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-48-43",
+            "content": "@@ -345,104 +345,8 @@\n 0 %7B%0A\n-            fmt.Println(altura)%0A            altura -= escorrego%0A            fmt.Println(altura)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-50-45",
+            "content": "@@ -341,16 +341,112 @@\n a %3C 0 %7B%0A\n+            fmt.Println(altura)%0A            altura -= escorrego%0A            fmt.Println(altura)%0A\n         \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_12-51-32",
+            "content": "@@ -225,36 +225,8 @@\n lto%0A\n-        fmt.Println(altura)%0A\n     \n@@ -395,32 +395,60 @@\n break%0A        %7D%0A\n+        fmt.Println(altura)%0A\n         altura -\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-52-38",
+            "content": "@@ -221,16 +221,44 @@\n = salto%0A\n+        fmt.Println(altura)%0A\n         \n@@ -435,36 +435,8 @@\n   %7D%0A\n-        fmt.Println(altura)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-53-34",
+            "content": "@@ -340,41 +340,13 @@\n ra %3C\n-=\n  0 %7B%0A\n-            fmt.Println(0)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-55-12",
+            "content": "@@ -342,16 +342,43 @@\n  %3C= 0 %7B%0A\n+            fmt.Println(0)%0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-19_12-56-01",
+            "content": "@@ -336,16 +336,17 @@\n altura %3C\n+=\n  0 %7B%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-56-22",
+            "content": "@@ -345,141 +345,8 @@\n 0 %7B%0A\n-            if altura == 0 %7B%0A                fmt.Println(altura)%0A                fmt.Printf(%22%25d %22, altura - escorrego)%0A            %7D%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-57-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    profundidade := 0\n    salto := 0\n    escorrego := 0\n    fmt.Scan(&profundidade, &salto, &escorrego)\n    altura := 0\n    for {\n        fmt.Printf(\"%d \", altura)\n        altura += salto\n        if altura >= profundidade {\n            fmt.Println(\"saiu\")\n            break\n        }\n        if altura < 0 {\n            if altura == 0 {\n                fmt.Println(altura)\n                fmt.Printf(\"%d \", altura - escorrego)\n            }\n            fmt.Println(\"morreu\")\n            break\n        }\n        fmt.Println(altura)\n        altura -= escorrego\n        salto -= 10\n    }\n}\n",
+            "lines": "28"
         }
     ]
 }

@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_12-27-44",
+            "content": "@@ -37,104 +37,8 @@\n ) %7B%0A\n-    numero := 0%0A    fmt.Scan(&numero)%0A    if numero %25 2 == 0 %7B%0A        fmt.Println(%22PAR%22)%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-19_12-29-00",
+            "content": "@@ -129,10 +129,43 @@\n )%0A    %7D%0A\n+    fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-19_12-29-11",
+            "content": "@@ -127,50 +127,8 @@\n R%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22IMPAR%22)%0A\n     \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-19_12-29-35",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    numero := 0\n    fmt.Scan(&numero)\n    if numero % 2 == 0 {\n        fmt.Println(\"PAR\")\n    } else {\n        fmt.Println(\"IMPAR\")\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}
