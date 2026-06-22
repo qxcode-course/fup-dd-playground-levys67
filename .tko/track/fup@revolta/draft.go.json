@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-08-32",
+            "content": "@@ -41,158 +41,35 @@\n     \n-tam := 0%0A    fmt.Scan(&tam)%0A    vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    fmt.Println(vetor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_17-12-14",
+            "content": "@@ -23,45 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarepreencher(tam int) %5B%5Dint%7B\n+main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)\n %0A   \n@@ -164,100 +164,14 @@\n i%5D)%0A\n+\n     %7D%0A\n-    return vetor%0A%7D%0A%0Afunc main() %7B%0A    tam := 0%0A    vetor := criarepreencher(tam)%0A    %0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-22_17-14-38",
+            "content": "@@ -24,55 +24,44 @@\n t%22%0A%0A\n-%0A%0A\n func \n-main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)\n+criarepreencher(tam int) %5B%5Dint%7B\n %0A   \n@@ -158,16 +158,102 @@\n )%0A    %7D%0A\n+    return vetor%0A%7D%0A%0Afunc main() %7B%0A    tam := 0%0A    vetor := criarepreencher(tam)%0A    %0A\n     fmt.\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-22_17-16-00",
+            "content": "@@ -24,155 +24,9 @@\n t%22%0A%0A\n-func criarvetor (tam int) %5B%5Dint%7B%0A     vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C tam; i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D\n %0A\n+\n %0Afun\n@@ -173,38 +173,8 @@\n   %7D%0A\n-    vetor2 := criarvetor(tam)%0A\n     \n@@ -194,16 +194,8 @@\n etor\n-, vetor2\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-18-57",
+            "content": "@@ -198,16 +198,132 @@\n := 0%0A   \n+ fmt.Scan(&tam)%0A    vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D\n %0A    vet\n@@ -361,16 +361,22 @@\n Println(\n+vetor,\n  vetor2)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-22_17-19-16",
+            "content": "@@ -53,24 +53,25 @@\n  %5B%5Dint%7B%0A    \n+ \n vetor := mak\n@@ -202,23 +202,8 @@\n %0A   \n- fmt.Scan(&tam)\n %0A   \n@@ -204,24 +204,25 @@\n   %0A    vetor\n+2\n  := criarvet\n@@ -245,17 +245,19 @@\n Println(\n+ \n vetor\n+2\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-22_17-22-00",
+            "content": "@@ -250,212 +250,25 @@\n     \n-soldados := 0%0A    rebeldes := 0%0A    for _, v := range vetor%7B%0A        if v %25 2 == 0 %7B%0A            rebeldes += v%0A        %7D else %7B%0A            soldados += v%0A        %7D%0A    %7D%0A    fmt.Println(soldados, rebeldes\n+fmt.Println(vetor\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-22_17-25-58",
+            "content": "@@ -424,10 +424,8 @@\n     \n-//\n fmt.\n@@ -456,72 +456,6 @@\n es)%0A\n-    if soldados == rebeldes %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-22_17-27-34",
+            "content": "@@ -518,76 +518,8 @@\n e%22)%0A\n-    %7D else if soldados %3E rebeldes %7B%0A        fmt.Println(%22soldados%22)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-22_17-28-34",
+            "content": "@@ -586,53 +586,8 @@\n s%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22rebeldes%22)%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-22_17-28-58",
+            "content": "@@ -176,46 +176,77 @@\n unc \n-contatrebeldes(vetor %5B%5Dint) (int,int)%7B\n+main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)\n %0A   \n@@ -424,152 +424,40 @@\n     \n-return soldados, rebeldes%0A%7D%0A%0Afunc main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)%0A    soldados ,rebeldes := contat\n+//fmt.Println(soldados, \n rebeldes\n (vet\n@@ -456,14 +456,8 @@\n ldes\n-(vetor\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-22_17-32-30",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (tam int) []int{\n    vetor := make([]int, tam)\n    for i := 0; i < tam; i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc contatrebeldes(vetor []int) (int,int){\n    soldados := 0\n    rebeldes := 0\n    for _, v := range vetor{\n        if v % 2 == 0 {\n            rebeldes += v\n        } else {\n            soldados += v\n        }\n    }\n    return soldados, rebeldes\n}\n\nfunc main() {\n    tam := 0\n    fmt.Scan(&tam)\n    vetor := criarvetor(tam)\n    soldados ,rebeldes := contatrebeldes(vetor)\n    if soldados == rebeldes {\n        fmt.Println(\"empate\")\n    } else if soldados > rebeldes {\n        fmt.Println(\"soldados\")\n    } else {\n        fmt.Println(\"rebeldes\")\n    }\n}\n",
+            "lines": "37"
+        }
+    ]
+}

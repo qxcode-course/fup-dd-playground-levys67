@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-33-40",
+            "content": "@@ -23,261 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (num int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint,  num)%0A    for i := 0; i %3C len(vetor); i++%7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    vetor := criarvetor(num)%0A    fmt.Println(vetor)%0A\n+Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_17-40-09",
+            "content": "@@ -104,19 +104,26 @@\n  0; i %3C \n-num\n+len(vetor)\n ; i++%7B%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-22_17-41-25",
+            "content": "@@ -131,17 +131,16 @@\n mt.Scan(\n-&\n vetor%5Bi%5D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-22_17-44-00",
+            "content": "@@ -253,97 +253,25 @@\n    f\n-or i, v := range vetor %7B%0A        if v == 1 %7B%0A            fmt.Println(%22A%22)%0A        %7D%0A    %7D\n+mt.Println(vetor)\n %0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-22_17-46-30",
+            "content": "@@ -256,9 +256,9 @@\n for \n-_\n+i\n , v \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-22_17-46-37",
+            "content": "@@ -248,27 +248,8 @@\n um)%0A\n-    fmt.Print(%22%5B%22)%0A\n     \n@@ -319,17 +319,16 @@\n rintln(%22\n- \n A%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-22_17-47-07",
+            "content": "@@ -342,65 +342,10 @@\n ln(%22\n+ \n A\n-%22)%0A        %7D else if v == 11 %7B%0A            fmt.Print(%22 J\n %22)%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-22_17-48-40",
+            "content": "@@ -334,16 +334,18 @@\n mt.Print\n+ln\n (%22A%22)%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-22_17-48-49",
+            "content": "@@ -395,115 +395,10 @@\n nt(%22\n+ \n J\n-%22)%0A        %7Delse if v == 12%7B%0A            fmt.Print(%22Q%22)%0A        %7Delse if v == 13%7B%0A            fmt.Print(%22K\n %22)%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-22_17-50-11",
+            "content": "@@ -505,50 +505,8 @@\n K%22)%0A\n-        %7D else %7B%0A            fmt.Print(v)%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-22_17-50-44",
+            "content": "@@ -271,18 +271,17 @@\n     for \n-if\n+_\n , v := r\n@@ -297,64 +297,8 @@\n r %7B%0A\n-        if i != 0 %7B%0A            fmt.Print(, )%0A        %7D%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-22_17-51-38",
+            "content": "@@ -272,16 +272,17 @@\n    for i\n+f\n , v := r\n@@ -340,12 +340,10 @@\n int(\n-%22\n , \n-%22\n )%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-22_17-52-04",
+            "content": "@@ -620,30 +620,8 @@\n    %7D\n-%0A    fmt.Println(%22 %5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-22_17-52-42",
+            "content": "@@ -634,15 +634,16 @@\n rintln(%22\n+ \n %5D%22)%0A%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-22_17-52-50",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int{\n    vetor := make([]int,  num)\n    for i := 0; i < num; i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vetor := criarvetor(num)\n    fmt.Print(\"[\")\n    for i, v := range vetor {\n        if i != 0 {\n            fmt.Print(\", \")\n        }\n        if v == 1 {\n            fmt.Print(\"A\")\n        } else if v == 11 {\n            fmt.Print(\"J\")\n        }else if v == 12{\n            fmt.Print(\"Q\")\n        }else if v == 13{\n            fmt.Print(\"K\")\n        } else {\n            fmt.Print(v)\n        }\n    }\n    fmt.Println(\"]\")\n\n}\n",
+            "lines": "36"
+        }
+    ]
+}

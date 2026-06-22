@@ -32,8 +32,13 @@
         },
         {
             "label": "2026-05-19_11-49-24",
-            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int {\n    lista := make([]int, tam)\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\nfunc main() {\n    tam1 := 0\n    tam2 := 0\n    fmt.Scan(&tam1)\n    vet1 := criarvetor(tam1)\n    fmt.Scan(&tam2)\n    vet2 := criarvetor(tam2)\n    //fmt.Print(vet1, vet2)\n    contido := true\n    for i := 0; i < tam1; i++ {\n        encontrado := false\n        for j := 0; j < tam2; j++{\n            if vet1[i] == vet2[j] {\n                encontrado = true\n                break\n            }\n            \n        }\n        if !encontrado {\n        contido = false\n        }\n    }\n    if contido {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "content": "@@ -168,17 +168,16 @@\n ista%0A%7D%0A%0A\n-%0A\n func mai\n",
             "lines": "39"
+        },
+        {
+            "label": "2026-06-22_17-16-10",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int {\n    lista := make([]int, tam)\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\n\nfunc main() {\n    tam1 := 0\n    tam2 := 0\n    fmt.Scan(&tam1)\n    vet1 := criarvetor(tam1)\n    fmt.Scan(&tam2)\n    vet2 := criarvetor(tam2)\n    //fmt.Print(vet1, vet2)\n    contido := true\n    for i := 0; i < tam1; i++ {\n        encontrado := false\n        for j := 0; j < tam2; j++{\n            if vet1[i] == vet2[j] {\n                encontrado = true\n                break\n            }\n            \n        }\n        if !encontrado {\n        contido = false\n        }\n    }\n    if contido {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "40"
         }
     ]
 }

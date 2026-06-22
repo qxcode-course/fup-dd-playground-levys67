@@ -115,3 +115,7 @@
 2026-06-19 13:35:11, MOVE, v:1, k:fup@sopa, mode:EDIT
 2026-06-19 13:35:11, MOVE, v:1, k:fup@sopa, mode:EDIT
 2026-06-19 13:38:38, MOVE, v:1, k:fup@sopa, mode:BACK
+2026-06-19 18:42:01, MOVE, v:1, k:fup@sopa, mode:PICK
+2026-06-19 18:42:07, EXEC, v:1, k:fup@sopa, mode:FULL, rate:0, size:5
+2026-06-19 18:42:08, EXEC, v:1, k:fup@sopa, mode:FULL, rate:0
+2026-06-19 18:42:08, EXEC, v:1, k:fup@sopa, mode:FULL, rate:0
