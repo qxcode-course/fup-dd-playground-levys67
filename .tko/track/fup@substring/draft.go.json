@@ -132,8 +132,38 @@
         },
         {
             "label": "2026-06-16_17-47-21",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    var text string\n    ind := 0\n    qtd := 0\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    text = scanner.Text()\n    fmt.Sscan(text, &ind, &qtd)\n}\n",
-            "lines": "16"
+            "content": "@@ -1,230 +1,34 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    var text string%0A    ind := 0%0A    qtd := 0%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    text = scanner.Text()%0A    fmt.Sscan(text, &ind, &qtd)%0A\n+@@ -223,55 +223,6 @@%0A td)%250A%0A-\n     \n@@ -40,21 +40,31 @@\n  := \n-%5B%5D\n+%255B%255D\n rune\n-%7B\n+%257B\n text\n-%7D%0A\n+%257D%250A\n     \n@@ -85,7 +85,16 @@\n nas)\n-%0A%7D\n+%250A%0A %257D%250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-06-23_17-38-12",
+            "content": "@@ -42,22 +42,8 @@\n os%22%0A\n-    %22strconv%22%0A\n )%0Afu\n@@ -195,184 +195,34 @@\n     \n-scanner.Scan()%0A    indt := %22%22%0A    qtdt := %22%22%0A    indt = scanner.Text()%0A    scanner.Scan()%0A    qtdt = scanner.Text()%0A    ind,_ = strconv.Atoi(indt)%0A    qtd,_ = strconv.Atoi(\n+fmt.Sscan(text, &ind, &\n qtd\n-t\n )%0A  \n@@ -242,14 +242,14 @@\n rune\n-(\n+%7B\n text\n-)\n+%7D\n %0A   \n@@ -270,16 +270,8 @@\n unas\n-,ind,qtd\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_17-47-01",
+            "content": "@@ -444,161 +444,6 @@\n td)%0A\n-    j := 0%0A    for i := ind ; i %3C len(text); i++ %7B%0A        if j == qtd %7B%0A            break%0A        %7D%0A        fmt.Printf(%22%25c%22, text%5Bi%5D)%0A        j ++%0A    %7D %0A\n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-23_17-50-50",
+            "content": "@@ -409,16 +409,47 @@\n e(text)%0A\n+    fmt.Println(runas,ind,qtd)%0A\n     j :=\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-23_17-50-59",
+            "content": "@@ -447,21 +447,20 @@\n i %3C len(\n-runas\n+text\n ); i++ %7B\n@@ -535,21 +535,20 @@\n f(%22%25c%22, \n-runas\n+text\n %5Bi%5D)%0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_17-51-20",
+            "content": "@@ -570,26 +570,6 @@\n  %7D %0A\n-    fmt.Println(%22%22)%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_17-51-37",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n    \"strconv\"\n)\nfunc main() {\n    var text string\n    ind := 0\n    qtd := 0\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    text = scanner.Text()\n    scanner.Scan()\n    indt := \"\"\n    qtdt := \"\"\n    indt = scanner.Text()\n    scanner.Scan()\n    qtdt = scanner.Text()\n    ind,_ = strconv.Atoi(indt)\n    qtd,_ = strconv.Atoi(qtdt)\n    runas := []rune(text)\n    j := 0\n    for i := ind ; i < len(runas); i++ {\n        if j == qtd {\n            break\n        }\n        fmt.Printf(\"%c\", runas[i])\n        j ++\n    } \n    fmt.Println(\"\")\n}\n",
+            "lines": "34"
         }
     ]
 }

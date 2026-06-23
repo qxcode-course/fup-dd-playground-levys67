@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_14-46-23",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -23,260 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (num int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, num)%0A    for i := 0; i %3C len(vetor); i++%7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    vetor := criaevetor(num)%0A    fmt.Println(vetor\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_14-51-39",
+            "content": "@@ -235,25 +235,25 @@\n etor := cria\n-r\n+e\n vetor(num)%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_14-51-50",
+            "content": "@@ -179,211 +179,8 @@\n %0A%7D%0A%0A\n-func contaradjacentes(vetor %5B%5Dint) int%7B%0A    cont := 0%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if i == 0 && vetor%5Bi+1%5D != 0 && vetor%5Bi%5D == 0%7B%0A            cont ++ %0A        %7D %0A    %7D%0A    return cont%0A%7D%0A%0A\n %0Afun\n@@ -278,72 +278,6 @@\n or)%0A\n-    contagem := contaradjacentes(vetor)%0A    fmt.Println(contagem)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_14-57-30",
+            "content": "@@ -287,17 +287,16 @@\n == 0 && \n-(\n vetor%5Bi+\n@@ -323,46 +323,8 @@\n == 0\n- %7C%7C vetor%5Bi+1%5D == 0 && vetor%5Bi%5D != 0 )\n %7B%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_15-00-23",
+            "content": "@@ -395,134 +395,8 @@\n   %7D \n-else if i == len(vetor) && (vetor%5Bi-1%5D == 0 && vetor%5Bi%5D != 0 %7C%7C vetor%5Bi-1%5D != 0 && vetor%5Bi%5D == 0) %7B%0A            cont%0A        %7D\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_15-03-58",
+            "content": "@@ -507,19 +507,16 @@\n     cont\n- ++\n %0A       \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_15-04-07",
+            "content": "@@ -418,11 +418,8 @@\n tor)\n- -1\n  && \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_15-06-42",
+            "content": "@@ -291,40 +291,212 @@\n  && \n-vetor%5Bi%5D == 1 && vetor%5Bi+1%5D == 0\n+(vetor%5Bi+1%5D != 0 && vetor%5Bi%5D == 0 %7C%7C vetor%5Bi+1%5D == 0 && vetor%5Bi%5D != 0 )%7B%0A            cont ++ %0A        %7D else if i == len(vetor) -1 && (vetor%5Bi-1%5D == 0 && vetor%5Bi%5D != 0 %7C%7C vetor%5Bi-1%5D != 0 && vetor%5Bi%5D == 0)\n  %7B%0A \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_15-18-03",
+            "content": "@@ -449,24 +449,47 @@\n rvetor(num)%0A\n+    fmt.Println(vetor)%0A\n     contagem\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_15-18-17",
+            "content": "@@ -346,103 +346,8 @@\n  ++%0A\n-        %7D else if i == len(vetor) -1 && vetor%5Bi%5D == 1 && vetor%5Bi-1%5D == 0 %7B%0A            cont ++%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-23_15-21-16",
+            "content": "@@ -291,33 +291,33 @@\n  && vetor%5Bi%5D == \n-0\n+1\n  && vetor%5Bi+1%5D !\n@@ -315,20 +315,20 @@\n or%5Bi+1%5D \n-!= 1\n+== 0\n  %7B%0A     \n@@ -390,25 +390,25 @@\n vetor%5Bi%5D == \n-0\n+1\n  && vetor%5Bi-\n@@ -414,12 +414,12 @@\n -1%5D \n-!= 1\n+== 0\n  %7B%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_15-22-47",
+            "content": "@@ -441,100 +441,8 @@\n  ++%0A\n-        %7D else if vetor%5Bi%5D == 0 && vetor%5Bi+1%5D == 0 && vetor%5Bi-1%5D == 0 %7B%0A            cont ++%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_15-26-50",
+            "content": "@@ -315,20 +315,20 @@\n or%5Bi+1%5D \n-== 0\n+!= 1\n  %7B%0A     \n@@ -402,36 +402,36 @@\n 0 && vetor%5Bi-1%5D \n-== 0\n+!= 1\n  %7B%0A            c\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_15-30-45",
+            "content": "@@ -191,11 +191,8 @@\n tara\n-nao\n djac\n@@ -458,35 +458,8 @@\n e if\n- i %3E 0 && i %3C len(vetor) &&\n  vet\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_15-34-30",
+            "content": "@@ -182,28 +182,28 @@\n %0Afunc contar\n+a\n nao\n-a\n djacentes(ve\n@@ -692,19 +692,16 @@\n = contar\n-nao\n adjacent\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_15-35-02",
+            "content": "@@ -457,16 +457,43 @@\n  else if\n+ i %3E 0 && i %3C len(vetor) &&\n  vetor%5Bi\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_15-37-27",
+            "content": " package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int{\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc contarnaoadjacentes(vetor []int) int{\n    cont := 0\n    for i := 0; i < len(vetor); i++{\n        if i == 0 && vetor[i] == 0 && vetor[i+1] == 0 {\n            cont ++\n        } else if i == len(vetor) -1 && vetor[i] == 0 && vetor[i-1] == 0 {\n            cont ++\n        } else if vetor[i] == 0 && vetor[i+1] == 0 && vetor[i-1] == 0 {\n            cont ++\n        }\n    }\n    return cont\n}\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vetor := criarvetor(num)\n    contagem := contarnaoadjacentes(vetor)\n    fmt.Println(contagem)\n}\n",
+            "lines": "33"
+        }
+    ]
+}

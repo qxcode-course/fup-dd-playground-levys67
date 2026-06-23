@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_17-52-21",
+            "content": "@@ -37,591 +37,8 @@\n ) %7B%0A\n-    N := 0%0A    V := 0%0A    fmt.Scan(&N)%0A    for i := 0; i %3C N ; i++%7B%0A        fmt.Scan(&V)%0A        switch V %7B%0A        case 1 :%0A            fmt.Println(%222 leds%22)%0A        case 2 :%0A            fmt.Println(%225 leds%22)%0A        case 3 :%0A            fmt.Println(%225 leds%22)%0A        case 4 :%0A            fmt.Println(%224 leds%22)%0A        case 5 :%0A            fmt.Println(%225 leds%22)%0A        case 6 :%0A            fmt.Println(%226 leds%22)%0A        case 7 :%0A            fmt.Println(%223 leds%22)%0A        case 8 :%0A            fmt.Println(%227 leds%22)%0A        case 9 :%0A            fmt.Println(%226 leds%22)%0A        %7D%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_18-05-25",
+            "content": "@@ -616,11 +616,43 @@\n %7D%0A    %7D%0A\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_18-05-33",
+            "content": "@@ -57,10 +57,9 @@\n  := \n-%22%22\n+0\n %0A   \n@@ -72,17 +72,16 @@\n can(&N)%0A\n-%0A\n     for \n@@ -97,25 +97,24 @@\n  %3C N ; i++%7B%0A\n-%0A\n         fmt.\n@@ -134,122 +134,19 @@\n     \n-runas := %5B%5Drune (V)%0A        soma := 0%0A        for j := 0; j %3C len(runas); j++%7B%0A%0A            switch runas%5Bj%5D %7B%0A    \n+switch V %7B%0A\n     \n@@ -174,26 +174,30 @@\n     \n-    soma += 2%0A    \n+fmt.Println(%222 leds%22)%0A\n     \n@@ -221,34 +221,38 @@\n         \n- \n-   soma += 5%0A    \n+fmt.Println(%225 leds%22)%0A\n         \n@@ -272,34 +272,38 @@\n         \n-    soma += 5%0A    \n+fmt.Println(%225 leds%22)%0A\n         \n@@ -327,26 +327,30 @@\n     \n-    soma += 4%0A    \n+fmt.Println(%224 leds%22)%0A\n     \n@@ -378,26 +378,30 @@\n     \n-    soma += 5%0A    \n+fmt.Println(%225 leds%22)%0A\n     \n@@ -425,34 +425,38 @@\n         \n-    soma += 6%0A    \n+fmt.Println(%226 leds%22)%0A\n         \n@@ -480,26 +480,30 @@\n     \n-    soma += 3%0A    \n+fmt.Println(%223 leds%22)%0A\n     \n@@ -531,26 +531,30 @@\n     \n-    soma += 7%0A    \n+fmt.Println(%227 leds%22)%0A\n     \n@@ -582,83 +582,39 @@\n     \n-    soma += 6%0A            %7D%0A        %7D%0A        fmt.Printf(%22%25d leds%5Cn%22,soma )\n+fmt.Println(%226 leds%22)%0A        %7D\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_18-16-35",
+            "content": "@@ -264,11 +264,9 @@\n ase \n-'1'\n+1\n  :%0A \n@@ -311,11 +311,9 @@\n ase \n-'2'\n+2\n  :%0A \n@@ -358,11 +358,9 @@\n ase \n-'3'\n+3\n  :%0A \n@@ -405,11 +405,9 @@\n ase \n-'4'\n+4\n  :%0A \n@@ -452,11 +452,9 @@\n ase \n-'5'\n+5\n  :%0A \n@@ -499,11 +499,9 @@\n ase \n-'6'\n+6\n  :%0A \n@@ -546,11 +546,9 @@\n ase \n-'7'\n+7\n  :%0A \n@@ -593,11 +593,9 @@\n ase \n-'8'\n+8\n  :%0A \n@@ -640,11 +640,9 @@\n ase \n-'9'\n+9\n  :%0A \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-23_18-17-17",
+            "content": "@@ -688,57 +688,8 @@\n = 6%0A\n-            case '0' :%0A                soma += 6%0A\n     \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-23_18-18-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    N := 0\n    V := \"\"\n    fmt.Scan(&N)\n\n    for i := 0; i < N ; i++{\n\n        fmt.Scan(&V)\n        runas := []rune (V)\n        soma := 0\n        for j := 0; j < len(runas); j++{\n\n            switch runas[j] {\n            case '1' :\n                soma += 2\n            case '2' :\n                soma += 5\n            case '3' :\n                soma += 5\n            case '4' :\n                soma += 4\n            case '5' :\n                soma += 5\n            case '6' :\n                soma += 6\n            case '7' :\n                soma += 3\n            case '8' :\n                soma += 7\n            case '9' :\n                soma += 6\n            case '0' :\n                soma += 6\n            }\n        }\n        fmt.Printf(\"%d leds\\n\",soma )\n    }\n\n}\n",
+            "lines": "41"
+        }
+    ]
+}

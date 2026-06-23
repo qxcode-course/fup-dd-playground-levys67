@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_16-59-06",
+            "content": "@@ -23,511 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor(qtd int) %5B%5Dfloat64 %7B%0A    vetor := make(%5B%5Dfloat64, qtd)%0A    for i := 0; i %3C len(vetor); i++%7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0Afunc criarvetor2(qtd int) %5B%5Dstring %7B%0A    vetor := make(%5B%5Dstring, qtd)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0A%0Afunc main() %7B%0A    qtd := 0%0A    fmt.Scan(&qtd)%0A    pre%C3%A7os := criarvetor(qtd)%0A    chutes1 := criarvetor(qtd)%0A    chutes2 := criarvetor2(qtd)%0A    fmt.Println(pre%C3%A7os,chutes1,chutes2\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_17-09-22",
+            "content": "@@ -347,389 +347,8 @@\n %0A%7D%0A%0A\n-func compararvetores1(vetor1, vetor2 %5B%5D float64) %5B%5Dstring %7B%0A    res := make(%5B%5Dstring, 0)%0A    for i := 0; i %3C len(vetor1); i++ %7B%0A        for j := 0; j %3C len(vetor2); j++ %7B%0A            if vetor2%5Bj%5D == vetor1%5Bi%5D %7B%0A                res = append(res, %22A%22)%0A            %7D else if vetor2%5Bj%5D %3E vetor1%5Bi%5D %7B%0A                res = append(res, %22M%22)%0A            %7D%0A        %7D%0A    %7D%0A    return res%0A%7D\n %0A%0Afu\n@@ -528,76 +528,6 @@\n s2)%0A\n-    result := compararvetores1(pre%C3%A7os,chutes1)%0A    fmt.Print(result)%0A%0A\n %7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-23_17-21-52",
+            "content": "@@ -682,68 +682,8 @@\n M%22)%0A\n-            %7D else %7B%0A                res = append(res, %22m%22)%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-23_17-23-14",
+            "content": "@@ -467,13 +467,37 @@\n or1)\n- && i\n+; i++ %7B%0A        for j := 0; j\n  %3C l\n@@ -508,21 +508,26 @@\n etor2); \n-i\n+j\n ++\n+ \n %7B%0A\n+    \n         \n@@ -534,19 +534,19 @@\n if vetor\n-1%5Bi\n+2%5Bj\n %5D == vet\n@@ -543,31 +543,35 @@\n %5Bj%5D == vetor\n-2\n+1\n %5Bi%5D %7B%0A\n+    \n             \n@@ -597,24 +597,28 @@\n A%22)%0A        \n+    \n %7D else if ve\n@@ -620,19 +620,19 @@\n if vetor\n-1%5Bi\n+2%5Bj\n %5D %3E veto\n@@ -636,15 +636,19 @@\n etor\n-2\n+1\n %5Bi%5D %7B%0A\n+    \n     \n@@ -682,24 +682,28 @@\n M%22)%0A        \n+  \n+  \n %7D else %7B%0A   \n@@ -699,16 +699,20 @@\n  else %7B%0A\n+    \n         \n@@ -738,16 +738,30 @@\n s, %22m%22)%0A\n+            %7D%0A\n         \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-23_17-30-50",
+            "content": "@@ -727,77 +727,8 @@\n %0A%7D%0A%0A\n-func quemganhou (result, chute %5B%5Dstring) (cont1,cont2 int)%7B%0A    %0A%7D%0A%0A%0A\n func\n@@ -858,24 +858,64 @@\n vetor2(qtd)%0A\n+    fmt.Println(pre%C3%A7os,chutes1,chutes2)%0A\n     result :\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-23_17-33-12",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(qtd int) []float64 {\n    vetor := make([]float64, qtd)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc criarvetor2(qtd int) []string {\n    vetor := make([]string, qtd)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc compararvetores1(vetor1, vetor2 [] float64) []string {\n    res := make([]string, 0)\n    for i := 0; i < len(vetor1) && i < len(vetor2); i++{\n        if vetor1[i] == vetor2[i] {\n            res = append(res, \"A\")\n        } else if vetor1[i] > vetor2[i] {\n            res = append(res, \"M\")\n        } else {\n            res = append(res, \"m\")\n        }\n    }\n    return res\n}\n\nfunc quemganhou (result, chute []string) (cont1,cont2 int){\n    \n}\n\n\nfunc main() {\n    qtd := 0\n    fmt.Scan(&qtd)\n    pre\u00e7os := criarvetor(qtd)\n    chutes1 := criarvetor(qtd)\n    chutes2 := criarvetor2(qtd)\n    result := compararvetores1(pre\u00e7os,chutes1)\n    fmt.Print(result)\n\n}\n",
+            "lines": "48"
+        }
+    ]
+}

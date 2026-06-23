@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_15-54-52",
+            "content": "@@ -23,258 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor(tam int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint,tam)%0A    for i := 0; i %3C len(vetor); i++\n+main() \n %7B%0A    \n- \n-   \n fmt.\n-Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)%0A    fmt.Println(vetor\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_16-01-13",
+            "content": "@@ -176,250 +176,8 @@\n %0A%7D%0A%0A\n-func separarfor%C3%A7as(vetor %5B%5Dint) (int,int) %7B%0A    jedi := 0%0A    sith := 0%0A    for i, v := range vetor %7B%0A        if i %3C= (len(vetor) -1) / 2 %7B%0A            jedi += v%0A        %7D else %7B%0A            sith += v%0A        %7D%0A    %7D%0A    return jedi, sith%0A%7D%0A%0A\n %0Afun\n@@ -275,71 +275,6 @@\n or)%0A\n-    jedi, sith := separarfor%C3%A7as(vetor%0A    fmt.Println(jedi,sith)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_16-11-45",
+            "content": "@@ -546,25 +546,24 @@\n for%C3%A7as(vetor\n-)\n %0A    fmt.Pri\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_16-11-57",
+            "content": "@@ -583,161 +583,6 @@\n th)%0A\n-    if jedi %3E sith %7B%0A        fmt.Println(%22jedi%22)%0A    %7D else if jedi == sith %7B%0A        fmt.Println(%22empate%22)%0A    %7D else %7B%0A        fmt.Println(%22sith%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_16-30-18",
+            "content": "@@ -486,24 +486,47 @@\n rvetor(tam)%0A\n+    fmt.Println(vetor)%0A\n     jedi, si\n@@ -548,24 +548,51 @@\n r%C3%A7as(vetor)%0A\n+    fmt.Println(jedi,sith)%0A\n     if jedi \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-23_16-30-33",
+            "content": "@@ -575,9 +575,9 @@\n ln(%22\n-J\n+j\n edi%22\n@@ -632,9 +632,9 @@\n ln(%22\n-E\n+e\n mpat\n@@ -671,17 +671,17 @@\n rintln(%22\n-S\n+s\n ith%22)%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-23_16-31-00",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int{\n    vetor := make([]int,tam)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc separarfor\u00e7as(vetor []int) (int,int) {\n    jedi := 0\n    sith := 0\n    for i, v := range vetor {\n        if i <= (len(vetor) -1) / 2 {\n            jedi += v\n        } else {\n            sith += v\n        }\n    }\n    return jedi, sith\n}\n\n\nfunc main() {\n    tam := 0\n    fmt.Scan(&tam)\n    vetor := criarvetor(tam)\n    jedi, sith := separarfor\u00e7as(vetor)\n    if jedi > sith {\n        fmt.Println(\"Jedi\")\n    } else if jedi == sith {\n        fmt.Println(\"Empate\")\n    } else {\n        fmt.Println(\"Sith\")\n    }\n}\n",
+            "lines": "38"
+        }
+    ]
+}
