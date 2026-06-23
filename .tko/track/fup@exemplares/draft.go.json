@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_12-32-29",
+            "content": "@@ -23,245 +23,53 @@\n mt%22%0A\n-%0Afunc criarvetor(tam int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, tam)%0A    for _, v := range vetor %7B%0A        fmt.Scan(&v)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)%0A    fmt.Println(vetor\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_12-38-48",
+            "content": "@@ -94,35 +94,27 @@\n for \n-i := 0; i %3C len(vetor); i++\n+_, v := range vetor\n  %7B%0A \n@@ -135,15 +135,8 @@\n n(&v\n-etor%5Bi%5D\n )%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_12-39-40",
+            "content": "@@ -178,400 +178,8 @@\n %0A%7D%0A%0A\n-func existe(vetor %5B%5Dint, numero int) bool%7B%0A    for _, v := range vetor %7B%0A        if v == numero %7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0Afunc contaranimais (vetor %5B%5Dint) %5B%5Dint %7B%0A    animais := make(%5B%5Dint, 0)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if !existe(animais, vetor%5Bi%5D) %7B%0A            animais = append(animais, vetor%5Bi%5D)%0A        %7D%0A    %7D%0A    return animais%0A%7D%0A%0A\n %0Afun\n@@ -277,69 +277,6 @@\n or)%0A\n-    animais := contaranimais(vetor)%0A    fmt.Println(animais)%0A%0A%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_12-50-01",
+            "content": "@@ -10,34 +10,20 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22\n-%0A%09%22sort%22%0A)\n %0A%0Afu\n@@ -705,31 +705,8 @@\n or)%0A\n-    sort.Ints(animais)%0A\n     \n@@ -727,10 +727,11 @@\n imais)%0A%0A\n+%0A\n %7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-23_12-53-58",
+            "content": "@@ -652,24 +652,47 @@\n rvetor(tam)%0A\n+    fmt.Println(vetor)%0A\n     animais \n@@ -742,69 +742,8 @@\n is)%0A\n-    for _, v := range animais %7B%0A        fmt.Println(v)%0A    %7D%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_12-55-26",
+            "content": "@@ -764,16 +764,18 @@\n mt.Print\n+ln\n (v)%0A    \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-23_12-55-35",
+            "content": "@@ -723,17 +723,17 @@\n     for \n-i\n+_\n , v := r\n@@ -751,64 +751,8 @@\n s %7B%0A\n-        if i != 0%7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-23_12-56-23",
+            "content": "@@ -829,12 +829,37 @@\n v)%0A    %7D\n+%0A    fmt.Println(animais)\n %0A%0A%7D%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-23_12-56-33",
+            "content": "@@ -834,26 +834,7 @@\n   %7D%0A\n-    fmt.Println(%22%22)\n %0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-23_12-56-54",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\nfunc criarvetor(tam int) []int{\n    vetor := make([]int, tam)\n    for i := 0; i < len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc existe(vetor []int, numero int) bool{\n    for _, v := range vetor {\n        if v == numero {\n            return true\n        }\n    }\n    return false\n}\n\nfunc contaranimais (vetor []int) []int {\n    animais := make([]int, 0)\n    for i := 0; i < len(vetor); i++{\n        if !existe(animais, vetor[i]) {\n            animais = append(animais, vetor[i])\n        }\n    }\n    return animais\n}\n\n\nfunc main() {\n    tam := 0\n    fmt.Scan(&tam)\n    vetor := criarvetor(tam)\n    animais := contaranimais(vetor)\n    sort.Ints(animais)\n    for i, v := range animais {\n        if i != 0{\n            fmt.Print(\" \")\n        }\n        fmt.Print(v)\n    }\n    fmt.Println(\"\")\n}\n",
+            "lines": "49"
+        }
+    ]
+}

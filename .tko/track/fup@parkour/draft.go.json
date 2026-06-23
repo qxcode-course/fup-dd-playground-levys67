@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_12-58-38",
+            "content": "@@ -23,260 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (tam int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)%0A    fmt.Println(vetor\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_13-05-35",
+            "content": "@@ -178,197 +178,8 @@\n %0A%7D%0A%0A\n-func fazendoparkour(vetor %5B%5Dint) int%7B%0A    pulos := 0%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if (vetor%5Bi+1%5D - vetor%5Bi%5D) %3E 1 %7B%0A            pulos ++%0A        %7D %0A    %7D%0A    return pulos%0A%7D%0A%0A\n %0Afun\n@@ -277,62 +277,6 @@\n or)%0A\n-    pulos := fazendoparkour(vetor)%0A    fmt.Print(pulos)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_13-10-39",
+            "content": "@@ -307,34 +307,8 @@\n %3E 1 \n-&& vetor%5Bi+1%5D %3C len(vetor)\n %7B%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_13-12-01",
+            "content": "@@ -313,16 +313,18 @@\n  vetor%5Bi\n++1\n %5D %3C len(\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_13-12-45",
+            "content": "@@ -279,78 +279,62 @@\n  if \n+(\n vetor%5Bi\n-%5D %3C len(vetor)%7B%0A            if vetor%5Bi+1%5D - vetor%5Bi%5D %3E 1 %7B%0A    \n++1%5D - vetor%5Bi%5D) %3E 1 && vetor%5Bi%5D %3C len(vetor)%7B%0A\n     \n@@ -350,20 +350,16 @@\n ulos ++%0A\n-    \n         \n@@ -359,34 +359,16 @@\n        %7D\n-%0A        %7D%0A       \n  %0A    %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_13-18-58",
+            "content": "@@ -261,17 +261,53 @@\n tor)\n--1\n ; i++%7B%0A\n+        if vetor%5Bi%5D %3C len(vetor)%7B%0A    \n     \n@@ -341,16 +341,20 @@\n %5D %3E 1 %7B%0A\n+    \n         \n@@ -366,16 +366,30 @@\n ulos ++%0A\n+            %7D%0A\n         \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_13-22-42",
+            "content": "@@ -307,38 +307,8 @@\n %3E 1 \n-%7C%7C vetor%5Bi+1%5D - vetor%5Bi%5D %3C -1 \n %7B%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_13-24-18",
+            "content": "@@ -473,24 +473,47 @@\n rvetor(tam)%0A\n+    fmt.Println(vetor)%0A\n     pulos :=\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_13-24-37",
+            "content": "@@ -529,10 +529,8 @@\n rint\n-ln\n (pul\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_13-24-47",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (tam int) []int{\n    vetor := make([]int, tam)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc fazendoparkour(vetor []int) int{\n    pulos := 0\n    for i := 0; i < len(vetor)-1; i++{\n        if vetor[i+1] - vetor[i] > 1 || vetor[i+1] - vetor[i] < -1 {\n            pulos ++\n        }\n        \n    }\n    return pulos\n}\n\n\nfunc main() {\n    tam := 0\n    fmt.Scan(&tam)\n    vetor := criarvetor(tam)\n    pulos := fazendoparkour(vetor)\n    fmt.Println(pulos)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+2026-06-23 11:20:21, MOVE, v:1, k:fup@fila, mode:DOWN
+2026-06-23 11:20:22, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-23 11:20:25, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:5
+2026-06-23 11:20:37, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-23 11:20:46, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-23 11:21:08, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-23 11:21:09, EXEC, v:1, k:fup@fila, mode:FULL, rate:0
+2026-06-23 11:21:09, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:25:58, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:26:52, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:18
+2026-06-23 11:27:05, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:18
+2026-06-23 11:30:55, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:27:05, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:33:43, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:33
+2026-06-23 11:34:13, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:32
+2026-06-23 11:35:58, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:34:13, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:39:32, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:43
+2026-06-23 11:40:20, EXEC, v:1, k:fup@fila, mode:FULL, rate:20, size:45
+2026-06-23 11:40:30, EXEC, v:1, k:fup@fila, mode:FULL, rate:80, size:45
+2026-06-23 11:40:29, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:40:30, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:41:44, EXEC, v:1, k:fup@fila, mode:FULL, rate:100, size:42
+2026-06-23 11:41:50, MOVE, v:1, k:fup@fila, mode:BACK
+2026-06-23 11:42:04, SELF, v:1, k:fup@fila, self:1, rate:100, study:30
+2026-06-23 11:42:18, MOVE, v:1, k:fup@troco, mode:DOWN
+2026-06-23 11:42:19, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-23 11:42:20, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:5
+2026-06-23 11:42:25, MOVE, v:1, k:fup@troco, mode:BACK
+2026-06-23 11:42:31, MOVE, v:1, k:fup@casais, mode:DOWN
+2026-06-23 11:42:31, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-23 11:42:32, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:5
+2026-06-23 11:41:42, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:41:44, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-23 11:42:18, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-23 11:42:20, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-23 11:42:31, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 11:42:32, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 11:55:58, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:18
+2026-06-23 11:55:57, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 11:55:58, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:00:59, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:02:47, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:34
+2026-06-23 12:04:28, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:02:47, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:07:16, MOVE, v:1, k:fup@casais, mode:BACK
+2026-06-23 12:07:20, MOVE, v:1, k:fup@batraquios, mode:PICK
+2026-06-23 12:07:21, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:100
+2026-06-23 12:10:50, MOVE, v:1, k:fup@batraquios, mode:BACK
+2026-06-23 12:10:55, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-23 12:10:56, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:47
+2026-06-23 12:10:32, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:07:21, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-06-23 12:10:55, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:12:29, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:48
+2026-06-23 12:13:51, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:48
+2026-06-23 12:13:49, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:13:51, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:17:39, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 12:31:53, MOVE, v:1, k:fup@casais, mode:BACK
+2026-06-23 12:32:07, MOVE, v:1, k:fup@exemplares, mode:DOWN
+2026-06-23 12:32:07, MOVE, v:1, k:fup@exemplares, mode:PICK
+2026-06-23 12:32:23, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-23 12:32:25, MOVE, v:1, k:fup@casais, mode:BACK
+2026-06-23 12:32:27, MOVE, v:1, k:fup@exemplares, mode:PICK
+2026-06-23 12:32:29, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:5
+2026-06-23 12:32:35, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0
+2026-06-23 12:32:34, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:37:18, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:38:48, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:18
+2026-06-23 12:39:40, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:18
+2026-06-23 12:42:22, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:39:40, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:47:21, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:50:01, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:41
+2026-06-23 12:49:59, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:50:01, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:53:58, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:45
+2026-06-23 12:55:26, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:47
+2026-06-23 12:55:35, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:47
+2026-06-23 12:56:23, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:50
+2026-06-23 12:56:33, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:0, size:49
+2026-06-23 12:56:54, EXEC, v:1, k:fup@exemplares, mode:FULL, rate:100, size:49
+2026-06-23 12:57:08, MOVE, v:1, k:fup@exemplares, mode:BACK
+2026-06-23 12:57:20, SELF, v:1, k:fup@exemplares, self:1, rate:100, study:27
+2026-06-23 12:56:52, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:56:53, MOVE, v:1, k:fup@exemplares, mode:EDIT
+2026-06-23 12:58:36, MOVE, v:1, k:fup@parkour, mode:DOWN
+2026-06-23 12:58:36, MOVE, v:1, k:fup@parkour, mode:PICK
+2026-06-23 12:58:38, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:5
+2026-06-23 12:58:36, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:02:20, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 12:58:38, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:05:35, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:18
+2026-06-23 13:07:23, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:05:35, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:10:39, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:30
+2026-06-23 13:12:01, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:30
+2026-06-23 13:11:58, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:12:01, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:12:45, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:30
+2026-06-23 13:17:13, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:12:45, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:18:58, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:33
+2026-06-23 13:22:23, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:18:58, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:22:42, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:31
+2026-06-23 13:24:18, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:31
+2026-06-23 13:24:37, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0, size:30
+2026-06-23 13:24:47, EXEC, v:1, k:fup@parkour, mode:FULL, rate:100, size:30
+2026-06-23 13:24:53, MOVE, v:1, k:fup@parkour, mode:BACK
+2026-06-23 13:25:02, SELF, v:1, k:fup@parkour, self:1, rate:100, study:40
+2026-06-23 13:24:45, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:24:46, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-06-23 13:27:40, MOVE, v:1, k:fup@fuga, mode:PICK
+2026-06-23 13:27:41, EXEC, v:1, k:fup@fuga, mode:FULL, rate:100
+2026-06-23 13:28:42, EXEC, v:1, k:fup@fuga, mode:FULL, rate:0, size:11
+2026-06-23 13:28:42, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-06-23 13:32:23, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-06-23 13:37:25, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-06-23 13:37:54, EXEC, v:1, k:fup@fuga, mode:FULL, rate:40, size:39
+2026-06-23 13:42:24, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-06-23 13:37:54, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-06-23 13:43:51, EXEC, v:1, k:fup@fuga, mode:FULL, rate:100, size:61
+2026-06-23 13:44:06, MOVE, v:1, k:fup@fuga, mode:BACK
+2026-06-23 13:44:51, SELF, v:1, k:fup@fuga, self:1, rate:100, study:196
+2026-06-23 13:46:10, MOVE, v:1, k:fup@fuga, mode:PICK
+2026-06-23 13:46:10, EXEC, v:1, k:fup@fuga, mode:FULL, rate:100
+2026-06-23 13:46:12, MOVE, v:1, k:fup@fuga, mode:BACK

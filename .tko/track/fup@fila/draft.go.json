@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_11-20-25",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -23,259 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (tam int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C len(vetor); i++%7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)%0A    fmt.Println(vetor\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_11-26-52",
+            "content": "@@ -138,17 +138,16 @@\n mt.Scan(\n-&\n vetor%5Bi%5D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_11-27-05",
+            "content": "@@ -179,310 +179,8 @@\n %0A%7D%0A%0A\n-func separarnumeros (vetor %5B%5Dint) (%5B%5Dint, %5B%5Dint) %7B%0A    impares := make(%5B%5Dint, 0)%0A    pares := make(%5B%5Dint, 0)%0A    for _, v := range vetor %7B%0A        if v %25 2 == 0%7B%0A            pares = append(pares, v)%0A        %7D else %7B%0A            impares = append(impares, v)%0A        %7D%0A    %7D%0A    return impares, pares%0A%7D%0A%0A\n %0Afun\n@@ -278,82 +278,6 @@\n or)%0A\n-    impares, pares := separarnumeros(vetor)%0A    fmt.Println(impares, pares)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_11-33-43",
+            "content": "@@ -549,24 +549,47 @@\n rvetor(tam)%0A\n+    fmt.Println(vetor)%0A\n     impares,\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_11-34-13",
+            "content": "@@ -605,10 +605,8 @@\n     \n-//\n fmt.\n@@ -633,258 +633,6 @@\n es)%0A\n-    fmt.Print(%22%5B %22)%0A    for i := 0; i %3C len(impares); i++%7B%0A        fmt.Printf(%22%25d %22, impares%5Bi%5D)%0A    %7D%0A    fmt.Println(%22%5D%22)%0A    for i := 0; i %3C len(pares); i++%7B%0A        if i != 0%7B%0A            fmt.Print(%22 %22)%0A        %7D %0A        fmt.Print(pares%5Bi%5D)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_11-39-32",
+            "content": "@@ -755,36 +755,16 @@\n ln(%22%5D%22)%0A\n-    fmt.Print(%22%5B %22)%0A\n     for \n@@ -883,31 +883,10 @@\n )%0A    %7D%0A\n-    fmt.Println(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-23_11-40-20",
+            "content": "@@ -920,15 +920,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_11-40-30",
+            "content": "@@ -815,10 +815,32 @@\n i++%7B\n- \n %0A\n+        if i != 0%7B%0A    \n     \n@@ -852,24 +852,51 @@\n mt.Print\n-f\n (%22\n-%25d %22,\n+ %22)%0A        %7D %0A        fmt.Print(\n pares%5Bi%5D\n@@ -916,18 +916,19 @@\n mt.Println(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_11-41-44",
+            "content": " package main\nimport \"fmt\"\n\nfunc criarvetor (tam int) []int{\n    vetor := make([]int, tam)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc separarnumeros (vetor []int) ([]int, []int) {\n    impares := make([]int, 0)\n    pares := make([]int, 0)\n    for _, v := range vetor {\n        if v % 2 == 0{\n            pares = append(pares, v)\n        } else {\n            impares = append(impares, v)\n        }\n    }\n    return impares, pares\n}\n\n\nfunc main() {\n    tam := 0\n    fmt.Scan(&tam)\n    vetor := criarvetor(tam)\n    impares, pares := separarnumeros(vetor)\n    //fmt.Println(impares, pares)\n    fmt.Print(\"[ \")\n    for i := 0; i < len(impares); i++{\n        fmt.Printf(\"%d \", impares[i])\n    }\n    fmt.Println(\"]\")\n    fmt.Print(\"[ \")\n    for i := 0; i < len(pares); i++{ \n        fmt.Printf(\"%d \",pares[i])\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "42"
+        }
+    ]
+}

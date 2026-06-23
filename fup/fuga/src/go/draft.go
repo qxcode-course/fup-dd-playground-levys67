@@ -8,13 +8,13 @@ func main() {
     d := 0 // -1 para horaria e 1 para anti horaria
     fmt.Scan(&h, &p, &f, &d)
     switch d {
-    case -1:
+    case 1 :
         encontrado := false
-        for i := f; i >= 0; i-- {
+        for i := f; i <= 15; i++{
             if i == h {
                 fmt.Println("S")
                 encontrado = true
-                break
+                break 
             } else if i == p {
                 fmt.Println("N")
                 encontrado = true
@@ -23,41 +23,39 @@ func main() {
 
         }
         if !encontrado {
-            for j := 15; j > f; j-- {
-                if j == h {
+            for i := 0; i < f; i++{
+                if i == h {
                     fmt.Println("S")
                     break
-                } else if j == p {
+                } else if i == p {
                     fmt.Println("N")
                     break
                 }
             }
         }
-    case 1:
-        encontrado := false 
-        for i := f; i <= 15; i++ {
+    case -1 :
+        encontrado := false
+        for i := f; i >= 0; i--{
             if i == h {
                 fmt.Println("S")
                 encontrado = true
                 break
             } else if i == p {
                 fmt.Println("N")
-                encontrado = true 
+                encontrado = true
                 break
-            } 
+            }
         }
         if !encontrado {
-            for j := 0; j < f; j++ {
-                if j == h {
+            for i := 15; i > f; i--{
+                if i == h {
                     fmt.Println("S")
-                    encontrado = true
                     break
-                } else if j == p {
+                } else if i == p {
                     fmt.Println("N")
-                    encontrado = true
                     break
                 }
             }
         }
-    } 
+    }
 }

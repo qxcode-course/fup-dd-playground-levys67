@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_11-42-32",
+            "content": "@@ -23,260 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor(tam int) %5B%5Dint %7B%0A    vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    tam := 0%0A    fmt.Scan(&tam)%0A    vetor := criarvetor(tam)%0A    fmt.Println(vetor\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-23_11-55-58",
+            "content": "@@ -178,302 +178,8 @@\n %0A%7D%0A%0A\n-func separarpares(vetor %5B%5Dint) (%5B%5Dint, %5B%5Dint) %7B%0A    machos := make(%5B%5Dint, 0)%0A    femeas := make(%5B%5Dint, 0)%0A    for _, v := range vetor%7B%0A        if v %3E 0 %7B%0A            machos = append(machos, v)%0A        %7D else %7B%0A            femeas = append(femeas, v)%0A        %7D%0A    %7D%0A    return machos, femeas%0A%7D%0A%0A\n %0Afun\n@@ -277,81 +277,6 @@\n or)%0A\n-    machos, femeas := separarpares(vetor)%0A    fmt.Println(machos, femeas)%0A%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_12-02-47",
+            "content": "@@ -472,247 +472,8 @@\n %0A%7D%0A%0A\n-func contarpares (machos,femeas %5B%5Dint) int %7B%0A    contagem := 0%0A    for _, v := range machos%7B%0A        for _, k := range femeas%7B%0A            if v * (-1) == k %7B%0A                contagem ++%0A            %7D%0A        %7D%0A    %7D%0A    return contagem%0A%7D%0A%0A\n %0Afun\n@@ -642,11 +642,10 @@\n emeas)%0A%0A\n-%0A\n %7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-23_12-10-56",
+            "content": "@@ -884,77 +884,8 @@\n as)%0A\n-    contagem := contarpares(machos, femeas)%0A    fmt.Println(contagem)\n %0A%0A%7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-23_12-12-29",
+            "content": "@@ -791,10 +791,8 @@\n     \n-//\n fmt.\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-23_12-13-51",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int {\n    vetor := make([]int, tam)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc separarpares(vetor []int) ([]int, []int) {\n    machos := make([]int, 0)\n    femeas := make([]int, 0)\n    for _, v := range vetor{\n        if v > 0 {\n            machos = append(machos, v)\n        } else {\n            femeas = append(femeas, v)\n        }\n    }\n    return machos, femeas\n}\n\nfunc contarpares (machos,femeas []int) int {\n    contagem := 0\n    for _, v := range machos{\n        for _, k := range femeas{\n            if v * (-1) == k {\n                contagem ++\n            }\n        }\n    }\n    return contagem\n}\n\n\nfunc main() {\n    tam := 0\n    fmt.Scan(&tam)\n    vetor := criarvetor(tam)\n    //fmt.Println(vetor)\n    machos, femeas := separarpares(vetor)\n    fmt.Println(machos, femeas)\n    contagem := contarpares(machos, femeas)\n    fmt.Println(contagem)\n\n}\n",
+            "lines": "48"
+        }
+    ]
+}
