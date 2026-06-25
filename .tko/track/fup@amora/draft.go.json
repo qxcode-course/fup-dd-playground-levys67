@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_12-32-36",
+            "content": "@@ -10,224 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    texto := %22%22%0A    sub := %22%22%0A    Scanner := bufio.NewScanner(os.Stdin)%0A    Scanner.Scan()%0A    texto = Scanner.Text()%0A    sub = Scanner.Text()%0A    fmt.Println(texto,sub\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-25_12-37-26",
+            "content": "@@ -172,35 +172,16 @@\n .Text()%0A\n-    Scanner.Scan()%0A\n     sub \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-25_12-40-05",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    fmt.Println(texto,sub)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

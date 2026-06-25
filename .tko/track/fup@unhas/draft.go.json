@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_11-29-12",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -23,208 +23,21 @@\n mt%22%0A\n-%0A\n func \n-criarvetor(qtd int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, qtd)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    qtd := 0%0A    fmt.Scan(&qtd)\n+main() %7B\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_11-32-23",
+            "content": "@@ -229,54 +229,35 @@\n     \n-vetor := criarvetor(qtd)%0A    fmt.Println(vetor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-24_11-33-02",
+            "content": "@@ -277,78 +277,6 @@\n or)%0A\n-    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Print(vetor%5Bi%5D)%0A    %7D %0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-24_11-34-14",
+            "content": "@@ -246,24 +246,47 @@\n rvetor(qtd)%0A\n+    fmt.Println(vetor)%0A\n     for i :=\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-24_11-35-46",
+            "content": "@@ -326,24 +326,6 @@\n  %7D %0A\n-    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-24_11-36-12",
+            "content": "@@ -291,76 +291,8 @@\n ++%7B%0A\n-        if i == 0 && vetor%5Bi%5D == 0 %7B%0A            continue%0A        %7D%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-24_11-41-23",
+            "content": "@@ -178,168 +178,8 @@\n %0A%7D%0A%0A\n-func igualazero (vetor %5B%5Dint) bool %7B%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if vetor%5Bi%5D != 0%7B%0A            return false%0A        %7D%0A    %7D%0A    return true%0A%7D%0A%0A\n %0Afun\n@@ -254,75 +254,8 @@\n td)%0A\n-    if igualazero(vetor) %7B%0A        fmt.Println(0)%0A    %7D else %7B%0A    \n     \n@@ -412,14 +412,6 @@\n n()%0A\n-%0A    %7D%0A%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-24_11-53-05",
+            "content": " package main\nimport \"fmt\"\n\nfunc criarvetor(qtd int) []int{\n    vetor := make([]int, qtd)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc igualazero (vetor []int) bool {\n    for i := 0; i < len(vetor); i++{\n        if vetor[i] != 0{\n            return false\n        }\n    }\n    return true\n}\n\n\nfunc main() {\n    qtd := 0\n    fmt.Scan(&qtd)\n    vetor := criarvetor(qtd)\n    if igualazero(vetor) {\n        fmt.Println(0)\n    } else {\n        for i := 0; i < len(vetor); i++{\n        if i == 0 && vetor[i] == 0 {\n            continue\n        }\n        fmt.Print(vetor[i])\n    } \n    fmt.Println()\n\n    }\n\n}\n",
+            "lines": "39"
+        }
+    ]
+}

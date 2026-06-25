@@ -1,0 +1,10 @@
+{"ts":1782388081,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAHcVPWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1782388384,"hash":"ced77bf0f71d759adc1307d3f32ab921021b21ca195613bd0927e70f301c2536","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    testes := 0\n    \n"}]}
+{"ts":1782388425,"hash":"8c21027cf740868750d74aa68f4daee7d2498e96f291e699906fd798928f4a25","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"    tam := 0\n    g\n"}]}
+{"ts":1782388447,"hash":"73a3575a92feb6946a6fdff7aa14859b4fafcfd58a51a9e091de98244f6bbb2f","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    grito := 0\n    fmt.Scan(&testes)\n"}]}
+{"ts":1782388486,"hash":"8cc7ff400b770a937d08b399107998afb60db7e54418fa31ce95fa6461fb376e","mode":"diff","ops":[{"tag":"insert","a1":2,"a2":2,"text":"\nfunc \n\n\n\n"},{"tag":"replace","a1":6,"a2":7,"text":"    fmt.Scan(&testes, &tam, &grito)\n\n"}]}
+{"ts":1782388527,"hash":"84f1c9e62cb88c2756865c5107b9fb1c546b604e3c6b90e4e96b60efe759781b","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"func criarvetor(tam int) []int {\n    vetor := make()\n}\n"}]}
+{"ts":1782388547,"hash":"e2473d6cb70485018671e2e1c4e29641311f9ce703efbb8347261d10c65e2da7","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"    vetor := make([]int, tam)\n    for i := 0; i<\n"}]}
+{"ts":1782388567,"hash":"52cae80656a3d79b84da7cbd251a681a7c644c0ccaaa6288dbd4f77a4dea70be","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    for i := 0; i < len(vetor); i++{}\n"}]}
+{"ts":1782388607,"hash":"b17f36575c4a25d78b8021e148530477dc18828bcb285626935ee14c64078c63","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n"},{"tag":"replace","a1":15,"a2":16,"text":"    \n"}]}
+{"ts":1782388644,"hash":"5f54643d67c2eb4781c9e4597a69184dd867dde50891c0992de8d794b653102a","mode":"diff","ops":[{"tag":"replace","a1":18,"a2":20,"text":"    vetor := criarvetor(tam)\n    fmt.Println(vetor)\n"}]}

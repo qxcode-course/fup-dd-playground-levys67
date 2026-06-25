@@ -17,29 +17,18 @@ func criarvetor2(qtd int) []string {
     return vetor
 }
 
-func compararvetores1(vetor1, vetor2 [] float64) []string {
-    res := make([]string, 0)
-    for i := 0; i < len(vetor1) && i < len(vetor2); i++{
-        if vetor1[i] == vetor2[i] {
-            res = append(res, "A")
-        } else if vetor1[i] > vetor2[i] {
-            res = append(res, "M")
-        } else {
-            res = append(res, "m")
-        }
-    }
-    return res
-}
-
-func quemganhou (result, chute []string) (cont1,cont2 int){
+func comparar3vetores(real, chute1 [] float64, chute2 []string) (int, int) {
     cont1 := 0
     cont2 := 0
-    for i := 0; i < len(result) && i < len(chute); i++ {
-        if 
-    } 
-    
+    for i := 0; i < len(real) && i < len(chute1) && i < len(chute2); i++{
+        if real[i] == chute1[i] || (real[i] > chute1[i] && chute2[i] == "m") || (real[i] < chute1[i] && chute2[i] == "M") {
+            cont1 ++
+        } else {
+            cont2 ++
+        }
+    }
+    return cont1, cont2
 }
-
 
 func main() {
     qtd := 0
@@ -47,7 +36,13 @@ func main() {
     preços := criarvetor(qtd)
     chutes1 := criarvetor(qtd)
     chutes2 := criarvetor2(qtd)
-    result := compararvetores1(preços,chutes1)
-    fmt.Print(result,chutes2)
+    acertos1, acertos2 := comparar3vetores(preços,chutes1,chutes2)
+    if acertos1 == acertos2 {
+        fmt.Println("empate")
+    } else if acertos1 > acertos2 {
+        fmt.Println("primeiro")
+    } else {
+        fmt.Println("segundo")
+    }
 
 }

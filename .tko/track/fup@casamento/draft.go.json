@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_11-54-24",
+            "content": "@@ -41,124 +41,35 @@\n     \n-vetor := make(%5B%5Dint, 5)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    fmt.Println(vetor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_11-56-57",
+            "content": "@@ -22,251 +22,8 @@\n fmt%22\n-%0A%0Afunc contaropostos (vetor %5B%5Dint) int%7B%0A    menor := 0%0A    maior := 0%0A    for _ , v := range vetor%7B%0A        if v %3C menor %7B%0A            menor = v%0A        %7D%0A        if v %3E maior%7B%0A            maior = v%0A        %7D%0A    %7D%0A    return maior + menor%0A%7D%0A%0A\n %0Afun\n@@ -159,61 +159,6 @@\n or)%0A\n-    soma := contaropostos(vetor)%0A    fmt.Println(soma)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-24_12-00-51",
+            "content": "@@ -31,21 +31,23 @@\n c contar\n-menor\n+opostos\n  (vetor \n@@ -73,16 +73,31 @@\n or := 0%0A\n+    maior := 0%0A\n     for \n@@ -169,24 +169,78 @@\n v%0A        %7D%0A\n+        if v %3E maior%7B%0A            maior = v%0A        %7D%0A\n     %7D%0A    re\n@@ -243,16 +243,24 @@\n   return\n+ maior +\n  menor%0A%7D\n@@ -398,29 +398,28 @@\n (vetor)%0A    \n-menor\n+soma\n  := contarme\n@@ -416,21 +416,23 @@\n = contar\n-menor\n+opostos\n (vetor)%0A\n@@ -447,17 +447,16 @@\n Println(\n-menor\n+soma\n )%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-24_12-03-05",
+            "content": "@@ -73,16 +73,9 @@\n  := \n-vetor%5B0%5D\n+0\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-24_12-03-24",
+            "content": "@@ -193,180 +193,8 @@\n %0A%7D%0A%0A\n-func contarmaior (vetor %5B%5Dint) int %7B%0A    maior := vetor%5B0%5D%0A    for _ , v := range vetor %7B%0A        if v %3E maior %7B%0A            maior = v%0A        %7D%0A    %7D%0A    return maior%0A%7D%0A%0A%0A\n %0Afun\n@@ -385,61 +385,6 @@\n or)%0A\n-    maior := contarmaior(vetor)%0A    fmt.Println(maior)%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-24_12-06-32",
+            "content": "@@ -471,24 +471,47 @@\n r%5Bi%5D)%0A    %7D%0A\n+    fmt.Println(vetor)%0A\n     menor :=\n@@ -526,24 +526,47 @@\n enor(vetor)%0A\n+    fmt.Println(menor)%0A\n     maior :=\n@@ -610,16 +610,8 @@\n aior\n- + menor\n )%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-24_12-07-34",
+            "content": "package main\nimport \"fmt\"\n\nfunc contarmenor (vetor []int) int{\n    menor := vetor[0]\n    for _ , v := range vetor{\n        if v < menor {\n            menor = v\n        }\n    }\n    return menor\n}\n\nfunc contarmaior (vetor []int) int {\n    maior := vetor[0]\n    for _ , v := range vetor {\n        if v > maior {\n            maior = v\n        }\n    }\n    return maior\n}\n\n\n\nfunc main() {\n    vetor := make([]int, 5)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    menor := contarmenor(vetor)\n    maior := contarmaior(vetor)\n    fmt.Println(maior + menor)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

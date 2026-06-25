@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_12-27-06",
+            "content": "@@ -1,9 +1,8 @@\n- \n package \n@@ -23,639 +23,53 @@\n mt%22%0A\n-%0A\n func \n-calcularmmc (vetor %5B%5Dint) int%7B%0A    val1 := vetor%5B0%5D%0A    val2 := vetor %5B1%5D%0A    mmc := 0%0A    vezes := 2%0A    for %7B%0A        if val1 %3C val2 %7B%0A            val1 = (val1 * vezes)%0A        %7D else if val2 %3C val1 %7B%0A            val2 = (val2 * vezes)%0A        %7D%0A        if val1 != val2 %7B%0A            vezes ++%0A            val1 = vetor%5B0%5D%0A            val2 = vetor%5B1%5D%0A            continue%0A        %7D else %7B%0A            mmc = val1%0A            return mmc%0A        %7D%0A    %7D%0A%7D%0A%0A%0A%0Afunc main() %7B%0A    numeros := make(%5B%5Dint, 2)%0A    for i := 0; i %3C len(numeros); i++%7B%0A        fmt.Scan(&numeros%5Bi%5D)%0A    %7D%0A    mmc := calcularmmc(numeros)%0A    fmt.Println(mmc\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_12-44-49",
+            "content": " package main\nimport \"fmt\"\n\nfunc calcularmmc (vetor []int) int{\n    val1 := vetor[0]\n    val2 := vetor [1]\n    mmc := 0\n    vezes := 2\n    for {\n        if val1 < val2 {\n            val1 = (val1 * vezes)\n        } else if val2 < val1 {\n            val2 = (val2 * vezes)\n        }\n        if val1 != val2 {\n            vezes ++\n            val1 = vetor[0]\n            val2 = vetor[1]\n            continue\n        } else {\n            mmc = val1\n            return mmc\n        }\n    }\n}\n\n\n\nfunc main() {\n    numeros := make([]int, 2)\n    for i := 0; i < len(numeros); i++{\n        fmt.Scan(&numeros[i])\n    }\n    mmc := calcularmmc(numeros)\n    fmt.Println(mmc)\n}\n",
+            "lines": "36"
+        }
+    ]
+}

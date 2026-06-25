@@ -19,23 +19,23 @@ sources:
   writeable: false
   quests: null
 expanded:
-- sandbox@sandbox
-- fup@struct
-- eval1@eval1
-- fup@string
-- fup@list
-- fup@games
-- fup@for2
-- fup@dict
 - fup@if2
+- eval1@eval1
+- fup@dict
+- fup@struct
+- sandbox@sandbox
+- fup@games
+- fup@list
+- fup@for2
+- fup@string
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@leds
-selected_index: 114
+selected: fup@amora
+selected_index: 117

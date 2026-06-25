@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_12-48-32",
+            "content": "@@ -1,10 +1,8 @@\n-  \n package \n@@ -41,124 +41,35 @@\n     \n-vetor := make(%5B%5Dint, 0)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    fmt.Println(vetor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_12-50-49",
+            "content": "@@ -112,30 +112,26 @@\n     \n-vetor = append(\n+fmt.Scan(&\n vetor\n-,i\n+%5Bi%5D\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-24_12-59-23",
+            "content": "@@ -67,23 +67,8 @@\n  0)%0A\n-    valor := 0%0A\n     \n@@ -112,78 +112,31 @@\n     \n-fmt.Scan(&valor)%0A        vetor = append(vetor,valor)%0A        valor = 0\n+vetor = append(vetor,i)\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-24_13-00-37",
+            "content": "@@ -43,23 +43,31 @@\n     \n-var \n vetor \n+:= make(\n %5B%5Dint\n+, 0)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-24_13-01-38",
+            "content": "@@ -43,25 +43,23 @@\n     \n+var \n vetor\n- :=\n  %5B%5Dint\n- %7B%7D\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-24_13-02-53",
+            "content": "@@ -21,19 +21,16 @@\n t %22fmt%22%0A\n-%0A%0A%0A\n func mai\n@@ -52,35 +52,16 @@\n  := \n-make(%5B%5Dint, 1)%0A    qtd := 0\n+%5B%5Dint %7B%7D\n %0A   \n@@ -96,12 +96,18 @@\n i %3C \n-qtd \n+len(vetor)\n ; i+\n@@ -121,31 +121,84 @@\n     \n-%0A    %7D%0A        %0A  \n+fmt.Scan(&valor)%0A        vetor = append(vetor,valor)%0A        valor = 0\n %0A    \n+%7D\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-25_10-50-55",
+            "content": "@@ -44,19 +44,49 @@\n %7B%0A  \n-char := %22%22%0A\n+  vetor := make(%5B%5Dint, 1)%0A    qtd := 0%0A  \n   va\n@@ -98,123 +98,92 @@\n = 0%0A\n+  \n   for \n-%7B%0A    fmt.Scanf(%22%25d%25c%22,&valor, &char)%0A    fmt.Printf(%22%25d%22, valor)%0A    if char == %22%5Cn%22%7B%0A\n+i := 0; i %3C qtd ; i++%7B%0A        %0A    %7D%0A    \n     \n+%0A\n   \n-break\n %0A    \n-%7D%0A\n %0A  \n-%7D%0A\n+  fmt.Println(vetor)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-25_11-04-59",
+            "content": "  package main\nimport \"fmt\"\n\n\n\nfunc main() {\n  char := \"\"\n  valor := 0\n  for {\n    fmt.Scanf(\"%d%c\",&valor, &char)\n    fmt.Printf(\"%d\", valor)\n    if char == \"\\n\"{\n      break\n    }\n\n  }\n\n}\n",
+            "lines": "18"
+        }
+    ]
+}

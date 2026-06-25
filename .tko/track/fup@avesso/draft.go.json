@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_11-48-02",
+            "content": "@@ -23,309 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor(tam int) %5B%5Dint %7B%0A    vetor := make(%5B%5Dint, tam)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0A%0Afunc main() %7B%0A    testes := 0%0A    tam := 0%0A    grito := 0%0A    fmt.Scan(&testes, &tam, &grito)%0A    vetor := criarvetor(tam)%0A    fmt.Println(vetor\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-25_11-57-26",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int {\n    vetor := make([]int, tam)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\n\n\nfunc main() {\n    testes := 0\n    tam := 0\n    grito := 0\n    fmt.Scan(&testes, &tam, &grito)\n    vetor := criarvetor(tam)\n    fmt.Println(vetor)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

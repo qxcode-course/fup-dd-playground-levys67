@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_13-15-23",
+            "content": "@@ -10,604 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc separarletras (letras %5B%5Drune) (string,string)%7B%0A    vogais := %22%22%0A    consoantes := %22%22%0A    for i := 0; i %3C len(letras); i++\n+%22fmt%22%0Afunc main()\n  %7B%0A    \n- \n-   if letras%5Bi%5D == 'a' %7C%7C letras%5Bi%5D == 'e' %7C%7C letras%5Bi%5D == 'i' %7C%7C letras%5Bi%5D == 'u' %7C%7C letras%5Bi%5D == 'o' %7B%0A            vogais += string(letras%5Bi%5D)%0A        %7D else %7B%0A            consoantes += string(letras%5Bi%5D)%0A        %7D%0A    %7D%0A    return vogais, consoantes%0A%7D%0A%0A%0A%0A%0Afunc main() %7B%0A    texto := %22%22%0A    Scanner := bufio.NewScanner(os.Stdin)%0A    Scanner.Scan()%0A    texto = Scanner.Text()%0A    letras := %5B%5Drune(texto) %0A    fmt.Println(letras\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-24_13-32-02",
+            "content": "@@ -597,18 +597,11 @@\n rint\n-f(%22%25c %5Cn%22,\n+ln(\n letr\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-24_13-32-35",
+            "content": "@@ -615,117 +615,6 @@\n as)%0A\n-    vogais, consoantes := separarletras(letras)%0A    fmt.Printf(%22%25s%22, vogais)%0A    fmt.Printf(%22%25s%22, consoantes) %0A\n %7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-24_13-34-44",
+            "content": "@@ -338,28 +338,8 @@\n else\n- if letras%5Bi%5D != ' '\n  %7B%0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-24_13-35-36",
+            "content": "@@ -600,16 +600,47 @@\n texto) %0A\n+    fmt.Printf(%22%25c %5Cn%22,letras)%0A\n     voga\n@@ -697,18 +697,16 @@\n intf(%22%25s\n-%5Cn\n %22, vogai\n@@ -726,18 +726,16 @@\n intf(%22%25s\n-%5Cn\n %22, conso\n",
+            "lines": "35"
+        }
+    ]
+}

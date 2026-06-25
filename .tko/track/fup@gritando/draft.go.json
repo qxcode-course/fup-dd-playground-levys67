@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_12-01-19",
+            "content": "@@ -10,181 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    texto := %22%22%0A    Scanner := bufio.NewScanner(os.Stdin)%0A    Scanner.Scan()%0A    texto = Scanner.Text()%0A    fmt.Println(texto\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-25_12-08-02",
+            "content": "@@ -42,413 +42,9 @@\n os%22%0A\n-%09%22unicode%22%0A)%0A%0Afunc invertercase(letras %5B%5Drune) string %7B%0A    inverso := make(%5B%5Drune, 0)%0A    for i := 0; i %3C len(letras); i++%7B%0A        if unicode.IsLower(letras%5Bi%5D) %7B%0A            unicode.ToUpper(letras%5Bi%5D)%0A            inverso = append(inverso, letras%5Bi%5D)%0A        %7D else %7B%0A            unicode.ToLower(letras%5Bi%5D)%0A            inverso = append(inverso, letras%5Bi%5D)%0A        %7D%0A    %7D%0A    return string(inverso)%0A%7D%0A%0A%0A\n+)\n %0Afun\n@@ -185,95 +185,6 @@\n to)%0A\n-    letras := %5B%5Drune(texto)%0A    inverso := invertercase(letras)%0A    fmt.Println(inverso)%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-25_12-28-25",
+            "content": "@@ -562,16 +562,39 @@\n .Text()%0A\n+    fmt.Println(texto)%0A\n     letr\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-25_12-28-43",
+            "content": "@@ -199,24 +199,63 @@\n etras%5Bi%5D) %7B%0A\n+            unicode.ToUpper(letras%5Bi%5D)%0A\n             \n@@ -280,32 +280,16 @@\n nverso, \n-unicode.ToUpper(\n letras%5Bi\n@@ -282,33 +282,32 @@\n erso, letras%5Bi%5D)\n-)\n %0A        %7D else \n@@ -308,16 +308,55 @@\n  else %7B%0A\n+            unicode.ToLower(letras%5Bi%5D)%0A\n         \n@@ -385,32 +385,16 @@\n nverso, \n-unicode.ToLower(\n letras%5Bi\n@@ -395,17 +395,16 @@\n tras%5Bi%5D)\n-)\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-25_12-30-59",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\n\nfunc invertercase(letras []rune) string {\n    inverso := make([]rune, 0)\n    for i := 0; i < len(letras); i++{\n        if unicode.IsLower(letras[i]) {\n            inverso = append(inverso, unicode.ToUpper(letras[i]))\n        } else {\n            inverso = append(inverso, unicode.ToLower(letras[i]))\n        }\n    }\n    return string(inverso)\n}\n\n\n\nfunc main() {\n    texto := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    letras := []rune(texto)\n    inverso := invertercase(letras)\n    fmt.Println(inverso)\n}\n",
+            "lines": "32"
+        }
+    ]
+}
