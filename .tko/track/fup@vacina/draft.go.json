@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_12-41-46",
+            "content": "@@ -23,306 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (num int) %5B%5Dint %7B%0A    vetor := make(%5B%5Dint, num)%0A    for i := 0; i %3C len(vetor); i++%7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    vacinas := criarvetor(num)%0A    pessoas := criarvetor(num)%0A%0A    fmt.Println(vacinas, pessoas\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-26_12-50-27",
+            "content": "@@ -179,200 +179,8 @@\n %0A%7D%0A%0A\n-func contarmaior (vetor %5B%5Dint) int %7B%0A    maior := vetor%5B0%5D%0A    for i := 0; i %3C len(vetor); i++ %7B%0A        if maior %3C vetor%5Bi%5D %7B%0A            maior = vetor%5Bi%5D%0A        %7D%0A    %7D%0A    return maior%0A%7D%0A%0A\n %0Afun\n@@ -288,104 +288,41 @@\n um)%0A\n+%0A\n     \n-contv := contarmaior(vacinas)%0A    contp := contarmaior(pessoas)%0A    fmt.Println(contv, contp\n+fmt.Println(vacinas, pessoas\n )%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-26_12-56-45",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int {\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc contarmaior (vetor []int) int {\n    maior := vetor[0]\n    for i := 0; i < len(vetor); i++ {\n        if maior < vetor[i] {\n            maior = vetor[i]\n        }\n    }\n    return maior\n}\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vacinas := criarvetor(num)\n    pessoas := criarvetor(num)\n    contv := contarmaior(vacinas)\n    contp := contarmaior(pessoas)\n    fmt.Println(contv, contp)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

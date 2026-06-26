@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_11-00-24",
+            "content": "@@ -23,264 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (num int) %5B%5Dint %7B%0A    vetor := make(%5B%5Dint, num)%0A    for i := 0; i %3C len(vetor); i++\n+main() \n %7B%0A    \n- \n-   \n fmt.\n-Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    trilha := criarvetor(num)%0A%0A    fmt.Println(trilha\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-26_11-05-00",
+            "content": "@@ -179,183 +179,8 @@\n %0A%7D%0A%0A\n-func inverter (vetor %5B%5Dint) %5B%5Dint %7B%0A    inverso := make(%5B%5Dint, len(vetor))%0A    for i := len(vetor) - 1; i %3E= 0; i-- %7B%0A        fmt.Scan(inverso%5Bi%5D)%0A    %7D%0A    return inverso%0A%7D%0A%0A\n %0Afun\n@@ -256,47 +256,8 @@\n um)%0A\n-    trilhainvertida := inverter(trilha)\n %0A   \n@@ -279,24 +279,8 @@\n ilha\n-,trilhainvertida\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-26_11-09-10",
+            "content": "@@ -310,17 +310,16 @@\n mt.Scan(\n-&\n inverso%5B\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-26_11-09-25",
+            "content": "@@ -238,17 +238,26 @@\n (%5B%5Dint, \n-0\n+len(vetor)\n )%0A    fo\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-26_11-09-48",
+            "content": "@@ -238,26 +238,17 @@\n (%5B%5Dint, \n-len(vetor)\n+0\n )%0A    fo\n@@ -296,39 +296,25 @@\n     \n-inverso = append(inverso, vetor\n+fmt.Scan(&inverso\n %5Bi%5D)\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-26_11-10-43",
+            "content": "@@ -237,17 +237,27 @@\n e(%5B%5Dint,\n-0\n+ len(vetor)\n )%0A    fo\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-26_11-11-13",
+            "content": "@@ -359,212 +359,8 @@\n %0A%7D%0A%0A\n-func contaresfor%C3%A7o(vetor %5B%5Dint) int %7B%0A    cont := 0%0A    for i := 0; i %3C len(vetor)-1; i++%7B%0A        if vetor%5Bi%5D %3C vetor%5Bi+1%5D %7B%0A            cont += vetor%5Bi+1%5D - vetor%5Bi%5D%0A        %7D%0A    %7D%0A    return cont%0A%7D%0A%0A%0A\n %0Afun\n@@ -516,72 +516,6 @@\n da)%0A\n-    contagem1 := contaresfor%C3%A7o(trilha)%0A    fmt.Println(contagem1)%0A\n %7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-26_11-15-27",
+            "content": "@@ -684,40 +684,41 @@\n     \n-contagem1 := contaresfor%C3%A7o(trilh\n+fmt.Println(trilha,trilhainvertid\n a)%0A \n@@ -728,17 +728,17 @@\n contagem\n-2\n+1\n  := cont\n@@ -749,33 +749,24 @@\n for%C3%A7o(trilha\n-invertida\n )%0A    fmt.Pr\n@@ -784,18 +784,8 @@\n gem1\n-,contagem2\n )%0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-26_11-16-54",
+            "content": "@@ -771,87 +771,8 @@\n     \n-if contagem1 %3C contagem2 %7B%0A        fmt.Println(contagem1)%0A    %7D else %7B%0A        \n fmt.\n@@ -779,16 +779,26 @@\n Println(\n+contagem1,\n contagem\n@@ -800,16 +800,10 @@\n tagem2)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-26_11-18-29",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int {\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++{\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc inverter (vetor []int) []int {\n    inverso := make([]int,0)\n    for i := len(vetor) - 1; i >= 0; i-- {\n        inverso = append(inverso, vetor[i])\n    }\n    return inverso\n}\n\nfunc contaresfor\u00e7o(vetor []int) int {\n    cont := 0\n    for i := 0; i < len(vetor)-1; i++{\n        if vetor[i] < vetor[i+1] {\n            cont += vetor[i+1] - vetor[i]\n        }\n    }\n    return cont\n}\n\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    trilha := criarvetor(num)\n    trilhainvertida := inverter(trilha)\n    contagem1 := contaresfor\u00e7o(trilha)\n    contagem2 := contaresfor\u00e7o(trilhainvertida)\n    if contagem1 < contagem2 {\n        fmt.Println(contagem1)\n    } else {\n        fmt.Println(contagem2)\n    }\n}\n",
+            "lines": "44"
+        }
+    ]
+}

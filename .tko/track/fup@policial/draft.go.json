@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_12-08-47",
+            "content": "@@ -23,261 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (num int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, num)%0A    for i := 0; i %3C len(vetor); i++ %7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    vetor := criarvetor(num)%0A    fmt.Println(vetor\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-26_12-13-42",
+            "content": "@@ -179,257 +179,8 @@\n %0A%7D%0A%0A\n-func ordenar (vetor %5B%5Dint) %5B%5Dint %7B%0A    aux := 0%0A    for i := 0; i %3C len(vetor)-1; i++%7B%0A        if vetor%5Bi%5D %3E vetor%5Bi+1%5D %7B%0A            aux = vetor%5Bi%5D%0A            vetor%5Bi%5D = vetor%5Bi+1%5D%0A            vetor%5Bi+1%5D = aux%0A        %7D%0A    %7D%0A    return vetor%0A%7D%0A%0A%0A\n %0Afun\n@@ -278,56 +278,6 @@\n or)%0A\n-    vetor = ordenar(vetor)%0A    fmt.Println(vetor)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-26_12-18-00",
+            "content": "@@ -577,56 +577,6 @@\n or)%0A\n-    vetor = ordenar(vetor)%0A    fmt.Println(vetor)%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-26_12-19-14",
+            "content": "@@ -427,639 +427,8 @@\n %0A%7D%0A%0A\n-func existe (vetor %5B%5Dint, num int) bool%7B%0A    for i := 0;i %3C len(vetor); i++%7B%0A        if vetor%5Bi%5D == num%7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0Afunc percorre (vetor %5B%5Dint) %5B%5Dint %7B%0A    ordenado := make(%5B%5Dint, 0)%0A    menor := vetor%5B0%5D%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if vetor%5Bi%5D %3C menor %7B%0A            menor = vetor%5Bi%5D%0A        %7D%0A    %7D%0A    if !existe(ordenado,menor)%7B%0A        ordenado = append(ordenado, menor)%0A    %7D%0A    return ordenado%0A%7D%0A%0Afunc percorrimento (vetor %5B%5Dint) %5B%5Dint %7B%0A    fila := make(%5B%5Dint, 0)%0A    for i := 0; i %3C len(vetor); i++ %7B%0A        fila = percorre(vetor)%0A    %7D%0A    return fila%0A%7D%0A\n %0A%0Afu\n@@ -531,29 +531,73 @@\n     \n-fila := percorrimento\n+vetor = ordenar(vetor)%0A    fmt.Println(vetor)%0A    vetor = ordenar\n (vet\n@@ -620,12 +620,13 @@\n tln(\n-fila\n+vetor\n )%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-26_12-35-18",
+            "content": "@@ -616,16 +616,18 @@\n  %5B%5Dint) \n+%5B%5D\n int %7B%0A  \n@@ -636,25 +636,38 @@\n ordenado := \n-0\n+make(%5B%5Dint, 0)\n %0A    menor :\n@@ -797,24 +797,84 @@\n     \n-ordenado = menor\n+if !existe(ordenado,menor)%7B%0A        ordenado = append(ordenado, menor)%0A    %7D\n %0A   \n@@ -1017,21 +1017,8 @@\n la =\n- append(fila,\n  per\n@@ -1029,17 +1029,16 @@\n e(vetor)\n-)\n %0A    %7D%0A \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-26_12-37-30",
+            "content": "@@ -762,38 +762,8 @@\n %5Bi%5D%0A\n-            vetor%5Bi%5D = 999999%0A\n     \n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-06-26_12-38-29",
+            "content": "@@ -781,17 +781,22 @@\n or%5Bi%5D = \n-0\n+999999\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-26_12-39-50",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int{\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc ordenar (vetor []int) []int {\n    aux := 0\n    for i := 0; i < len(vetor)-1; i++{\n        if vetor[i] > vetor[i+1] {\n            aux = vetor[i]\n            vetor[i] = vetor[i+1]\n            vetor[i+1] = aux\n        }\n    }\n    return vetor\n}\n\nfunc existe (vetor []int, num int) bool{\n    for i := 0;i < len(vetor); i++{\n        if vetor[i] == num{\n            return true\n        }\n    }\n    return false\n}\n\nfunc percorre (vetor []int) int {\n    ordenado := 0\n    menor := vetor[0]\n    for i := 0; i < len(vetor); i++{\n        if vetor[i] < menor {\n            menor = vetor[i]\n            vetor[i] = 0\n        }\n    }\n    ordenado = menor\n    return ordenado\n}\n\nfunc percorrimento (vetor []int) []int {\n    fila := make([]int, 0)\n    for i := 0; i < len(vetor); i++ {\n        fila = append(fila, percorre(vetor))\n    }\n    return fila\n}\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vetor := criarvetor(num)\n    fmt.Println(vetor)\n    fila := percorrimento(vetor)\n    fmt.Println(fila)\n}\n",
+            "lines": "62"
+        }
+    ]
+}
