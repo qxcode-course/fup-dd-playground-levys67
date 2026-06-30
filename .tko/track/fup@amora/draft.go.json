@@ -17,8 +17,53 @@
         },
         {
             "label": "2026-06-30_12-37-31",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc contarsub(texto, substring string) int {\n    cont := 0\n    for \n}\n\n\n\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    fmt.Println(texto,sub)\n}\n",
+            "content": "@@ -113,313 +113,8 @@\n for \n-i := 0; i %3C= len(texto) - len(substring); i++%7B%0A        igual := true%0A        for j := 0; j %3C len (substring); i++%7B%0A            if texto%5Bi+j%5D != substring%5Bj%5D %7B%0A                igual = false%0A                break%0A            %7D%0A        %7D%0A        if igual %7B%0A            cont ++%0A        %7D%0A    %7D%0A    return cont\n %0A%7D%0A%0A\n",
             "lines": "25"
+        },
+        {
+            "label": "2026-06-30_14-29-12",
+            "content": "@@ -627,69 +627,6 @@\n ub)%0A\n-    contagem := contarsub(texto,sub)%0A    fmt.Println(contagem)%0A\n %7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-30_14-30-26",
+            "content": "@@ -612,16 +612,22 @@\n Println(\n+texto,\n sub)%0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-30_14-31-00",
+            "content": "@@ -612,21 +612,19 @@\n Println(\n-texto\n+sub\n )%0A    co\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-30_14-31-30",
+            "content": "@@ -592,24 +592,47 @@\n nner.Text()%0A\n+    fmt.Println(texto)%0A\n     contagem\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-30_14-31-42",
+            "content": "@@ -105,74 +105,8 @@\n = 0%0A\n-    runastexto := %5B%5Drune(texto)%0A    runassub := %5B%5Drune(substring)%0A\n     \n@@ -126,21 +126,16 @@\n  %3C= len(\n-runas\n texto) -\n@@ -139,24 +139,25 @@\n ) - len(\n-runassub\n+substring\n ); i++%7B%0A\n@@ -207,24 +207,25 @@\n  %3C len (\n-runassub\n+substring\n ); i++%7B%0A\n@@ -239,21 +239,16 @@\n      if \n-runas\n texto%5Bi+\n@@ -257,16 +257,17 @@\n  != \n-runassub\n+substring\n %5Bj%5D \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-30_14-43-47",
+            "content": "@@ -673,52 +673,8 @@\n t()%0A\n-    fmt.Println(texto)%0A    fmt.Println(sub)%0A\n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-30_14-45-18",
+            "content": "@@ -288,17 +288,17 @@\n assub); \n-j\n+i\n ++%7B%0A    \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-30_14-48-40",
+            "content": "@@ -665,24 +665,68 @@\n nner.Text()%0A\n+    fmt.Println(texto)%0A    fmt.Println(sub)%0A\n     contagem\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-30_14-52-26",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc contarsub(texto, substring string) int {\n    cont := 0\n    runastexto := []rune(texto)\n    runassub := []rune(substring)\n    for i := 0; i <= len(runastexto) - len(runassub); i++{\n        igual := true\n        for j := 0; j < len (runassub); j++{\n            if runastexto[i+j] != runassub[j] {\n                igual = false\n                break\n            }\n        }\n        if igual {\n            cont ++\n        }\n    }\n    return cont\n}\n\n\n\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    contagem := contarsub(texto,sub)\n    fmt.Println(contagem)\n}\n",
+            "lines": "40"
         }
     ]
 }

@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_16-36-27",
+            "content": "@@ -41,120 +41,35 @@\n     \n-letra := %22%22%0A    sinal := %22%22%0A    letra2 := %22%22%0A    fmt.Scan(letra,sinal,letra2)%0A    fmt.Println(letra,sinal,letra2\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_16-41-15",
+            "content": "@@ -99,23 +99,20 @@\n can(\n-&\n letra,\n-&\n sinal,\n-&\n letr\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-30_16-41-47",
+            "content": "@@ -22,376 +22,8 @@\n fmt%22\n-%0A%0Afunc calcularcodigo (letra1, letra2, sinal string) int %7B%0A    numeros := map%5Bstring%5Dint %7B%0A        %22a%22 : 0,%0A        %22b%22 : 1,%0A        %22c%22 : 2,%0A        %22d%22 : 3,%0A        %22e%22 : 4,%0A    %7D%0A    if sinal == %22+%22 %7B%0A        res1 := numeros%5Bletra1%5D + numeros%5Bletra2%5D %0A        return res1%0A    %7D else %7B%0A        res2 := numeros%5Bletra1%5D - numeros%5Bletra2%5D%0A        return res2 %0A    %7D%0A%7D%0A%0A\n %0Afun\n@@ -158,77 +158,6 @@\n a2)%0A\n-    conta := calcularcodigo(letra,letra2,sinal)%0A    fmt.Println(conta)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-30_16-50-33",
+            "content": "@@ -198,381 +198,8 @@\n  4,%0A\n-        %22f%22 : 5,%0A        %22g%22 : 6,%0A        %22h%22 : 7,%0A        %22i%22 : 8,%0A        %22j%22 : 9,%0A        %22k%22 : 10,%0A        %22l%22 : 11,%0A        %22m%22 : 12,%0A        %22n%22 : 13,%0A        %22o%22 : 14,%0A        %22p%22 : 15,%0A        %22q%22 : 16,%0A        %22r%22 : 17,%0A        %22s%22 : 18,%0A        %22t%22 : 19,%0A        %22u%22 : 20,%0A        %22v%22 : 21,%0A        %22w%22 : 22,%0A        %22x%22 : 23,%0A        %22y%22 : 24,%0A        %22z%22 : 25,%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_16-56-40",
+            "content": "@@ -581,29 +581,42 @@\n     \n-resultado := calculo(\n+if sinal == %22+%22 %7B%0A        res1 := \n nume\n@@ -626,17 +626,19 @@\n %5Bletra1%5D\n-,\n+ + \n numeros%5B\n@@ -648,17 +648,14 @@\n ra2%5D\n-, sinal)%0A\n+ %0A    \n     \n@@ -668,131 +668,77 @@\n  res\n-ultado%0A%7D%0A%0Afunc calculo (valor1,valor2 int, sinal string) int %7B%0A    if sinal == %22+%22 %7B%0A        return valor1 + valor2\n+1%0A    %7D else %7B%0A        res2 := numeros%5Bletra1%5D - numeros%5Bletra2%5D\n %0A    \n-%7D %0A\n     \n@@ -748,23 +748,19 @@\n urn \n-valor1 - valor2\n+res2 %0A    %7D\n %0A%7D%0A%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-30_17-00-47",
+            "content": "@@ -778,146 +778,35 @@\n   %7D \n-else %7B%0A        if valor1 %3E valor2 %7B%0A            return valor1 - valor2%0A        %7D else %7B%0A            return valor2 - valor1%0A        %7D%0A    %7D\n+%0A    return valor1 - valor2\n %0A%7D%0A%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-30_17-02-30",
+            "content": "@@ -71,22 +71,19 @@\n string) \n-str\n in\n-g\n+t\n  %7B%0A    n\n@@ -646,143 +646,24 @@\n     \n-key := %22%22%0A    for chave, valor := range numeros%7B%0A        if valor == resultado %7B%0A            key = chave%0A        %7D%0A    %7D%0A    return key\n+return resultado\n %0A%7D%0A%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-30_17-06-56",
+            "content": "@@ -645,73 +645,8 @@\n al)%0A\n-    if resultado %3E 25 %7B%0A        resultado = resultado - 25%0A    %7D%0A\n     \n@@ -1138,16 +1138,52 @@\n letra2)%0A\n+    fmt.Println(letra,sinal,letra2)%0A\n     cont\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-06-30_17-08-30",
+            "content": "@@ -980,30 +980,125 @@\n     \n-return valor1 - valor2\n+if valor1 %3E valor2 %7B%0A            return valor1 - valor2%0A        %7D else %7B%0A            return valor2 - valor1%0A        %7D\n %0A   \n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-30_17-09-43",
+            "content": "@@ -698,17 +698,17 @@\n tado - 2\n-6\n+5\n %0A    %7D%0A \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-30_17-11-12",
+            "content": "@@ -10,41 +10,20 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22archive/zip%22%0A%09\n %22fmt%22\n-%0A)\n %0A%0Afu\n@@ -580,68 +580,8 @@\n   %7D%0A\n-    negativos := map%5Bint%5Dstring %7B%0A        -1 : %22z%22,%0A    %7D%0A%0A%0A\n     \n@@ -714,166 +714,17 @@\n     \n-if resultado %3C 0 %7B%0A        for chave, valor := range negativos%7B%0A            if chave == resultado %7B%0A                return valor%0A            %7D%0A        %7D%0A    %7D\n+key := %22%22\n %0A   \n@@ -803,22 +803,21 @@\n         \n-return\n+key =\n  chave%0A \n@@ -842,18 +842,19 @@\n  return \n-%22%22\n+key\n %0A%7D%0A%0Afunc\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-30_17-19-33",
+            "content": "@@ -16,16 +16,31 @@\n mport (%0A\n+%09%22archive/zip%22%0A\n %09%22fmt%22%0A)\n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-06-30_17-19-46",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc calcularcodigo (letra1, letra2, sinal string) string {\n    numeros := map[string]int {\n        \"a\" : 0,\n        \"b\" : 1,\n        \"c\" : 2,\n        \"d\" : 3,\n        \"e\" : 4,\n        \"f\" : 5,\n        \"g\" : 6,\n        \"h\" : 7,\n        \"i\" : 8,\n        \"j\" : 9,\n        \"k\" : 10,\n        \"l\" : 11,\n        \"m\" : 12,\n        \"n\" : 13,\n        \"o\" : 14,\n        \"p\" : 15,\n        \"q\" : 16,\n        \"r\" : 17,\n        \"s\" : 18,\n        \"t\" : 19,\n        \"u\" : 20,\n        \"v\" : 21,\n        \"w\" : 22,\n        \"x\" : 23,\n        \"y\" : 24,\n        \"z\" : 25,\n    }\n    negativos := map[int]string {\n        -1 : \"z\",\n    }\n\n\n    resultado := calculo(numeros[letra1],numeros[letra2], sinal)\n    if resultado > 25 {\n        resultado = resultado - 26\n    }\n    if resultado < 0 {\n        for chave, valor := range negativos{\n            if chave == resultado {\n                return valor\n            }\n        }\n    }\n    for chave, valor := range numeros{\n        if valor == resultado {\n            return chave\n        }\n    }\n    return \"\"\n}\n\nfunc calculo (valor1,valor2 int, sinal string) int {\n    if sinal == \"+\" {\n        return valor1 + valor2\n    } else {\n        return valor1 - valor2\n    }\n}\n\n\nfunc main() {\n    letra := \"\"\n    sinal := \"\"\n    letra2 := \"\"\n    fmt.Scan(&letra,&sinal,&letra2)\n    conta := calcularcodigo(letra,letra2,sinal)\n    fmt.Println(conta)\n}\n",
+            "lines": "76"
+        }
+    ]
+}

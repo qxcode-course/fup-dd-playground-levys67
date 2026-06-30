@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_15-33-12",
+            "content": "@@ -10,181 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    texto := %22%22%0A    Scanner := bufio.NewScanner(os.Stdin)%0A    Scanner.Scan()%0A    texto = Scanner.Text()%0A    fmt.Println(texto\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_15-36-49",
+            "content": "@@ -43,140 +43,8 @@\n s%22%0A)\n-%0A%0Afunc juntarvogais(letras %5B%5Drune) %5B%5Drune %7B%0A    juntas := make(%5B%5Drune, 0) %0A    for i := 0; i %3C len(letras); i++ %7B%0A        %0A    %7D%0A%7D%0A%0A\n %0Afun\n@@ -185,21 +185,6 @@\n to)%0A\n-    letras := %0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-30_15-42-35",
+            "content": "@@ -165,259 +165,14 @@\n     \n-if letras%5Bi+1%5D == ' ' && letras%5Bi+2%5D == letras%5Bi%5D && (letras%5Bi%5D == 'a' %7C%7C letras%5Bi%5D == 'e' %7C%7C letras%5Bi%5D == 'i' %7C%7C  letras%5Bi%5D == 'o' %7C%7C letras%5Bi%5D == 'u')%7B%0A            continue%0A        %7D%0A        juntas = append(juntas, letras%5Bi%5D)%0A    %7D%0A    return juntas\n+%0A    %7D\n %0A%7D%0A%0A\n@@ -331,80 +331,7 @@\n  := \n-%5B%5Drune (texto)%0A    juntas := juntarvogais(letras)%0A    fmt.Println(juntas)\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-55-00",
+            "content": "@@ -149,10 +149,8 @@\n ras)\n--2\n ; i+\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_15-55-12",
+            "content": "@@ -537,16 +537,39 @@\n .Text()%0A\n+    fmt.Println(texto)%0A\n     letr\n@@ -641,15 +641,11 @@\n rint\n-f(%22%25c%22,\n+ln(\n junt\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_15-56-25",
+            "content": "@@ -388,18 +388,16 @@\n letras%5Bi\n-+1\n %5D)%0A    %7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-30_15-56-59",
+            "content": "@@ -70,63 +70,60 @@\n ras \n-string) string %7B%0Ar\n+%5B%5Drune) %5B%5Drune %7B%0A    j\n un\n+t\n as := \n+make(\n %5B%5Drune\n- (letras)%0Ajuntas := %22%22%0A\n+, 0) %0A    \n for \n@@ -127,17 +127,17 @@\n or i := \n-1\n+0\n ; i %3C le\n@@ -142,16 +142,17 @@\n len(\n-run\n+letr\n as)-\n-1\n+2\n ; i+\n@@ -163,136 +163,74 @@\n     \n-if runas%5Bi%5D == ' ' && runas%5Bi-1%5D == 'a' %7C%7C runas%5Bi%5D == 'e' %7C%7C run\n+    if letr\n as%5Bi\n++1\n %5D == '\n-i\n+ \n ' && \n-run\n+letr\n as%5Bi\n++2\n %5D == \n-'o' %7C%7C runas%5Bi%5D == 'u' && run\n+letras%5Bi%5D && (letr\n as%5Bi\n-+1\n %5D ==\n@@ -233,27 +233,28 @@\n %5D == 'a' %7C%7C \n-run\n+letr\n as%5Bi%5D == 'e'\n@@ -253,27 +253,28 @@\n %5D == 'e' %7C%7C \n-run\n+letr\n as%5Bi%5D == 'i'\n@@ -273,27 +273,29 @@\n %5D == 'i' %7C%7C \n-run\n+ letr\n as%5Bi%5D == 'o'\n@@ -298,19 +298,20 @@\n  'o' %7C%7C \n-run\n+letr\n as%5Bi%5D ==\n@@ -318,12 +318,15 @@\n  'u'\n- %7B %0A\n+)%7B%0A    \n     \n@@ -346,11 +346,18 @@\n     \n+  \n-%7D %0A\n+  %7D%0A    \n     \n@@ -367,34 +367,48 @@\n tas \n-+\n = \n-string(run\n+append(juntas, letr\n as%5Bi\n++1\n %5D)\n+%0A\n     \n-%0A\n %7D%0A\n+    \n retu\n@@ -423,13 +423,8 @@\n s%0A%7D%0A\n-    %0A\n %0A%0Afu\n@@ -539,16 +539,45 @@\n .Text()%0A\n+    letras := %5B%5Drune (texto)%0A\n     junt\n@@ -595,21 +595,22 @@\n rvogais(\n-texto\n+letras\n )%0A    fm\n@@ -620,11 +620,15 @@\n rint\n-ln(\n+f(%22%25c%22,\n junt\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-30_16-13-25",
+            "content": "@@ -207,26 +207,24 @@\n ' %7C%7C runas%5Bi\n--1\n %5D == 'e' %7C%7C \n@@ -226,26 +226,24 @@\n ' %7C%7C runas%5Bi\n--1\n %5D == 'i' && \n@@ -245,26 +245,24 @@\n ' && runas%5Bi\n--1\n %5D == 'o' %7C%7C \n@@ -264,26 +264,24 @@\n ' %7C%7C runas%5Bi\n--1\n %5D == 'u' && \n@@ -294,26 +294,96 @@\n i+1%5D == \n-runas%5Bi-1%5D\n+'a' %7C%7C runas%5Bi%5D == 'e' %7C%7C runas%5Bi%5D == 'i' %7C%7C runas%5Bi%5D == 'o' %7C%7C runas%5Bi%5D == 'u' \n %7B %0A     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_16-15-26",
+            "content": "@@ -183,17 +183,16 @@\n  ' ' && \n-(\n runas%5Bi-\n@@ -284,17 +284,16 @@\n %5D == 'u'\n-)\n  && runa\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_16-16-14",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc juntarvogais(letras string) string {\nrunas := []rune (letras)\njuntas := \"\"\nfor i := 1; i < len(runas)-1; i++ {\n    if runas[i] == ' ' && (runas[i-1] == 'a' || runas[i-1] == 'e' || runas[i-1] == 'i' && runas[i-1] == 'o' || runas[i-1] == 'u') && runas[i+1] == runas[i-1]{ \n        continue\n    } \n    juntas += string(runas[i])    \n}\nreturn juntas\n}\n    \n\n\nfunc main() {\n    texto := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    juntas := juntarvogais(texto)\n    fmt.Println(juntas)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

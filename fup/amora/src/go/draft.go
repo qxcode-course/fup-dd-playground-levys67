@@ -8,10 +8,12 @@ import (
 
 func contarsub(texto, substring string) int {
     cont := 0
-    for i := 0; i <= len(texto) - len(substring); i++{
+    runastexto := []rune(texto)
+    runassub := []rune(substring)
+    for i := 0; i <= len(runastexto) - len(runassub); i++{
         igual := true
-        for j := 0; j < len (substring); i++{
-            if texto[i+j] != substring[j] {
+        for j := 0; j < len (runassub); j++{
+            if runastexto[i+j] != runassub[j] {
                 igual = false
                 break
             }
@@ -33,5 +35,6 @@ func main() {
     texto = Scanner.Text()
     Scanner.Scan()
     sub = Scanner.Text()
-    fmt.Println(texto,sub)
+    contagem := contarsub(texto,sub)
+    fmt.Println(contagem)
 }

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_16-24-56",
+            "content": "@@ -10,181 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    texto := %22%22%0A    Scanner := bufio.NewScanner(os.Stdin)%0A    Scanner.Scan()%0A    texto = Scanner.Text()%0A    fmt.Println(texto\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_16-26-51",
+            "content": "@@ -37,325 +37,14 @@\n t%22%0A%09\n-v2 %22math/rand/v2%22%0A%09%22os%22%0A)%0A%0Afunc separarletras (texto string) string %7B%0A    cv := %22%22%0A    for i := 0; i %3C len(texto); i++ %7B%0A        switch texto%5Bi%5D %7B%0A        case 'a','e','i','o','u':%0A            cv += %22v%22%0A        case ' ':%0A            cv += %22 %22%0A        default :%0A            cv += %22c%22%0A        %7D%0A    %7D%0A    return cv%0A%7D%0A%0A%0A\n+%22os%22%0A)\n %0Afun\n@@ -185,65 +185,6 @@\n to)%0A\n-    letras := separarletras(texto)%0A    fmt.Println(letras)%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-30_16-33-57",
+            "content": "@@ -32,16 +32,35 @@\n %0A%09%22fmt%22%0A\n+%09v2 %22math/rand/v2%22%0A\n %09%22os%22%0A)%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-30_16-34-11",
+            "content": "@@ -450,16 +450,39 @@\n .Text()%0A\n+    fmt.Println(texto)%0A\n     letr\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_16-34-20",
+            "content": "@@ -197,28 +197,8 @@\n ,'u'\n-,'A','E','I','O','U'\n :%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-30_16-35-13",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc separarletras (texto string) string {\n    cv := \"\"\n    for i := 0; i < len(texto); i++ {\n        switch texto[i] {\n        case 'a','e','i','o','u','A','E','I','O','U':\n            cv += \"v\"\n        case ' ':\n            cv += \" \"\n        default :\n            cv += \"c\"\n        }\n    }\n    return cv\n}\n\n\n\nfunc main() {\n    texto := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    letras := separarletras(texto)\n    fmt.Println(letras)\n}\n",
+            "lines": "33"
+        }
+    ]
+}

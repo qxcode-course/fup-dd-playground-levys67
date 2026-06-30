@@ -19,14 +19,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- eval1@eval1
-- fup@struct
-- fup@games
-- fup@string
-- fup@list
-- sandbox@sandbox
 - fup@for2
+- fup@string
+- sandbox@sandbox
+- eval1@eval1
 - fup@if2
+- fup@games
+- fup@struct
+- fup@list
 flags:
   inbox: all
   panel: skills

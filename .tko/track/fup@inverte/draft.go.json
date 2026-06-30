@@ -17,7 +17,47 @@
         },
         {
             "label": "2026-06-25_12-19-32",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"unicode\"\n)\nfunc main() {\n    car := \"\"\n    fmt.Scanln(&car)\n    res := invert(car)\n    fmt.Println(res)\n    \n}\nfunc invert(car string) string {\n    runes := []rune(car)[0]\n    \n    if unicode.IsLower(runes){\n    return string(unicode.ToUpper(runes))\n    }\n    if unicode.IsUpper(runes) {\n    return string(unicode.ToLower(runes))\n    }\n    return string(runes)\n}\n",
+            "content": "@@ -40,41 +40,123 @@\n %22%0A)%0A\n-%0A\n func \n-invertercaractere\n+main() %7B%0A    car := %22%22%0A    fmt.Scanln(&car)%0A    res := invert(car)%0A    fmt.Println(res)%0A    %0A%7D%0Afunc invert\n (car\n-actere\n  str\n@@ -176,17 +176,18 @@\n %0A    run\n-a\n+es\n  := %5B%5Dru\n@@ -196,15 +196,17 @@\n (car\n-actere)\n+)%5B0%5D%0A    \n %0A   \n@@ -232,79 +232,53 @@\n (run\n-a%5B0%5D) %7B%0A        unicode.ToUpper(runa%5B0%5D)%0A        return string (runa%5B0%5D\n+es)%7B%0A    return string(unicode.ToUpper(runes)\n )%0A  \n@@ -285,24 +285,27 @@\n   %7D%0A    \n+if \n unicode.\n ToLower(\n@@ -300,24 +300,24 @@\n ode.\n-ToLow\n+IsUpp\n er(run\n-a%5B0%5D)\n+es) %7B\n %0A   \n@@ -334,123 +334,62 @@\n ring\n- (runa%5B0%5D)%0A%7D%0A%0A%0Afunc main() %7B%0A    car := %22%22%0A    fmt.Scan(&car)%0A    inv := invertercaractere(car)%0A    fmt.Println(inv\n+(unicode.ToLower(runes))%0A    %7D%0A    return string(runes\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-15-02",
+            "content": "@@ -120,12 +120,8 @@\n ere)\n- %5B0%5D\n %0A   \n@@ -144,16 +144,19 @@\n wer(runa\n+%5B0%5D\n ) %7B%0A    \n@@ -175,24 +175,27 @@\n ToUpper(runa\n+%5B0%5D\n )%0A        re\n@@ -207,24 +207,27 @@\n string (runa\n+%5B0%5D\n )%0A    %7D%0A    \n@@ -246,16 +246,19 @@\n wer(runa\n+%5B0%5D\n )%0A    re\n@@ -274,16 +274,19 @@\n ng (runa\n+%5B0%5D\n )%0A%7D%0A%0A%0Afu\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-16-11",
+            "content": "@@ -220,20 +220,9 @@\n    %7D\n- else %7B%0A    \n+%0A\n     \n@@ -235,36 +235,32 @@\n e.ToLower(runa)%0A\n-    \n     return strin\n@@ -268,22 +268,16 @@\n  (runa)%0A\n-    %7D%0A\n %7D%0A%0A%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-17-00",
+            "content": "@@ -78,20 +78,22 @@\n string) \n-rune\n+string\n  %7B%0A    r\n@@ -193,28 +193,37 @@\n      return \n+string (\n runa\n+)\n %0A    %7D else \n@@ -269,20 +269,29 @@\n  return \n+string (\n runa\n+)\n %0A    %7D%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_15-18-15",
+            "content": "@@ -78,22 +78,20 @@\n string) \n-string\n+rune\n  %7B%0A    r\n@@ -191,37 +191,28 @@\n      return \n-string (\n runa\n-)\n %0A    %7D else \n@@ -262,21 +262,12 @@\n urn \n-string (\n runa\n-)\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_15-18-55",
+            "content": "@@ -116,16 +116,20 @@\n ractere)\n+ %5B0%5D\n %0A    if \n@@ -148,19 +148,16 @@\n wer(runa\n-%5B0%5D\n ) %7B%0A    \n@@ -176,27 +176,24 @@\n ToUpper(runa\n-%5B0%5D\n )%0A        re\n@@ -252,19 +252,16 @@\n wer(runa\n-%5B0%5D\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_15-20-15",
+            "content": "@@ -70,22 +70,22 @@\n ractere \n-%5B%5Drune\n+string\n ) string\n@@ -87,16 +87,46 @@\n tring %7B%0A\n+    runa := %5B%5Drune(caractere)%0A\n     if u\n@@ -136,33 +136,28 @@\n ode.IsLower(\n-caractere\n+runa\n %5B0%5D) %7B%0A     \n@@ -175,25 +175,20 @@\n ToUpper(\n-caractere\n+runa\n %5B0%5D)%0A   \n@@ -205,29 +205,22 @@\n n string\n-(caractere%5B0%5D\n+ (runa\n )%0A    %7D \n@@ -238,22 +238,8 @@\n     \n-return string(\n unic\n@@ -254,23 +254,45 @@\n wer(\n-caractere%5B0%5D))%0A\n+runa%5B0%5D)%0A        return string (runa)\n %0A   \n@@ -349,32 +349,8 @@\n ar)%0A\n-    runa := %5B%5Drune(car)%0A\n     \n@@ -374,20 +374,19 @@\n ractere(\n-runa\n+car\n )%0A    fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_15-30-18",
+            "content": "@@ -130,38 +130,24 @@\n ) %7B%0A        \n-return string(\n unicode.ToUp\n@@ -163,16 +163,51 @@\n tere%5B0%5D)\n+%0A        return string(caractere%5B0%5D\n )%0A    %7D \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_15-30-52",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"unicode\"\n)\n\nfunc invertercaractere(caractere []rune) string {\n    if unicode.IsLower(caractere[0]) {\n        return string(unicode.ToUpper(caractere[0]))\n    } else {\n        return string(unicode.ToLower(caractere[0]))\n\n    }\n}\n\n\nfunc main() {\n    car := \"\"\n    fmt.Scan(&car)\n    runa := []rune(car)\n    inv := invertercaractere(runa)\n    fmt.Println(inv)\n}\n",
             "lines": "24"
         }
     ]
