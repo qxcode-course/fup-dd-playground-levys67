@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-06-25_12-40-05",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    fmt.Println(texto,sub)\n}\n",
+            "content": "@@ -43,83 +43,8 @@\n s%22%0A)\n-%0A%0Afunc contarsub(texto, substring string) int %7B%0A    cont := 0%0A    for %0A%7D%0A%0A%0A\n %0Afun\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-06-30_12-37-31",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc contarsub(texto, substring string) int {\n    cont := 0\n    for \n}\n\n\n\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    fmt.Println(texto,sub)\n}\n",
+            "lines": "25"
         }
     ]
 }

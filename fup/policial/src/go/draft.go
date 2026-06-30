@@ -9,53 +9,30 @@ func criarvetor (num int) []int{
     return vetor
 }
 
-func ordenar (vetor []int) []int {
-    aux := 0
+func ordenarvetor(vetor []int) []int{
     for i := 0; i < len(vetor)-1; i++{
-        if vetor[i] > vetor[i+1] {
-            aux = vetor[i]
-            vetor[i] = vetor[i+1]
-            vetor[i+1] = aux
+        for j := 0; j < len(vetor)-1; j++{
+            if vetor[j] > vetor[j+1]{
+                vetor[j], vetor[j+1] = vetor[j+1], vetor[j]
+            }
         }
     }
     return vetor
 }
 
-func existe (vetor []int, num int) bool{
-    for i := 0;i < len(vetor); i++{
-        if vetor[i] == num{
-            return true
-        }
-    }
-    return false
-}
-
-func percorre (vetor []int) int {
-    ordenado := 0
-    menor := vetor[0]
-    for i := 0; i < len(vetor); i++{
-        if vetor[i] < menor {
-            menor = vetor[i]
-        }
-    }
-    ordenado = menor
-    return ordenado
-}
-
-func percorrimento (vetor []int) []int {
-    fila := make([]int, 0)
-    for i := 0; i < len(vetor); i++ {
-        fila = append(fila, percorre(vetor))
-    }
-    return fila
-}
-
-
 func main() {
     num := 0
     fmt.Scan(&num)
     vetor := criarvetor(num)
-    fmt.Println(vetor)
-    fila := percorrimento(vetor)
-    fmt.Println(fila)
+    ordenado := ordenarvetor(vetor)
+    for i, v := range ordenado {
+        if i != 0{
+            fmt.Print(" ")
+        }
+        fmt.Printf("%d", v)
+        if i == len(ordenado)-1{
+            
+            fmt.Print("\n")
+        }
+    }
 }

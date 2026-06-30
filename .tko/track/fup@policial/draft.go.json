@@ -37,8 +37,58 @@
         },
         {
             "label": "2026-06-26_12-39-50",
-            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int{\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc ordenar (vetor []int) []int {\n    aux := 0\n    for i := 0; i < len(vetor)-1; i++{\n        if vetor[i] > vetor[i+1] {\n            aux = vetor[i]\n            vetor[i] = vetor[i+1]\n            vetor[i+1] = aux\n        }\n    }\n    return vetor\n}\n\nfunc existe (vetor []int, num int) bool{\n    for i := 0;i < len(vetor); i++{\n        if vetor[i] == num{\n            return true\n        }\n    }\n    return false\n}\n\nfunc percorre (vetor []int) int {\n    ordenado := 0\n    menor := vetor[0]\n    for i := 0; i < len(vetor); i++{\n        if vetor[i] < menor {\n            menor = vetor[i]\n            vetor[i] = 0\n        }\n    }\n    ordenado = menor\n    return ordenado\n}\n\nfunc percorrimento (vetor []int) []int {\n    fila := make([]int, 0)\n    for i := 0; i < len(vetor); i++ {\n        fila = append(fila, percorre(vetor))\n    }\n    return fila\n}\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vetor := criarvetor(num)\n    fmt.Println(vetor)\n    fila := percorrimento(vetor)\n    fmt.Println(fila)\n}\n",
+            "content": "@@ -750,32 +750,57 @@\n enor = vetor%5Bi%5D%0A\n+            vetor%5Bi%5D = 0%0A\n         %7D%0A    %7D%0A\n",
             "lines": "62"
+        },
+        {
+            "label": "2026-06-30_11-14-41",
+            "content": "@@ -183,29 +183,25 @@\n func ordenar\n-vetor\n+ \n (vetor %5B%5Dint\n@@ -203,25 +203,39 @@\n %5B%5Dint) %5B%5Dint\n-%7B\n+ %7B%0A    aux := 0\n %0A    for i :\n@@ -274,21 +274,218 @@\n     \n-for j\n+if vetor%5Bi%5D %3E vetor%5Bi+1%5D %7B%0A            aux = vetor%5Bi%5D%0A            vetor%5Bi%5D = vetor%5Bi+1%5D%0A            vetor%5Bi+1%5D = aux%0A        %7D%0A    %7D%0A    return vetor%0A%7D%0A%0Afunc existe (vetor %5B%5Dint, num int) bool%7B%0A    for i\n  := 0;\n- j\n+i\n  %3C l\n@@ -497,13 +497,11 @@\n tor)\n--1\n ; \n-j\n+i\n ++%7B%0A\n@@ -504,28 +504,24 @@\n ++%7B%0A        \n-    \n if vetor%5Bj%5D \n@@ -521,24 +521,42 @@\n tor%5B\n-j%5D %3E vetor%5Bj+1%5D%7B\n+i%5D == num%7B%0A            return true\n %0A   \n@@ -564,58 +564,204 @@\n     \n+%7D%0A\n     \n+%7D%0A\n     \n-vetor%5Bj%5D, vetor%5Bj+1%5D = vetor%5Bj+1%5D,\n+return false%0A%7D%0A%0Afunc percorre (vetor %5B%5Dint) int %7B%0A    ordenado := 0%0A    menor := vetor%5B0%5D%0A    for i := 0; i %3C len(vetor); i++%7B%0A        if vetor%5Bi%5D %3C menor %7B%0A            menor =\n  vetor%5B\n-j\n+i\n %5D%0A  \n@@ -762,24 +762,26 @@\n %5Bi%5D%0A        \n+%7D%0A\n     %7D%0A      \n@@ -782,38 +782,223 @@\n     \n-    %7D%0A    %7D%0A    return vetor%0A%7D\n+ordenado = menor%0A    return ordenado%0A%7D%0A%0Afunc percorrimento (vetor %5B%5Dint) %5B%5Dint %7B%0A    fila := make(%5B%5Dint, 0)%0A    for i := 0; i %3C len(vetor); i++ %7B%0A        fila = append(fila, percorre(vetor))%0A    %7D%0A    return fila%0A%7D%0A\n %0A%0Afu\n@@ -1101,32 +1101,29 @@\n     \n-ordenado := ordenarve\n+fila := percorrimen\n to\n-r\n (vet\n@@ -1142,20 +1142,16 @@\n Println(\n-ordenado\n+fila\n )%0A%7D%0A\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-06-30_11-21-33",
+            "content": "@@ -526,32 +526,19 @@\n     \n-ordenado := ordenarvetor\n+fmt.Println\n (vet\n@@ -549,65 +549,39 @@\n     \n-f\n or\n- _, v := range ordenado %7B%0A        fmt.Println(v)%0A    %7D\n+denado := ordenarvetor(vetor)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-30_11-23-29",
+            "content": "@@ -562,17 +562,17 @@\n     for \n-i\n+_\n , v := r\n@@ -608,16 +608,18 @@\n rint\n+ln\n (v)%0A    \n     \n@@ -618,22 +618,24 @@\n     \n+%7D%0A\n     \n-if i == le\n+fmt.Printl\n n(or\n@@ -645,50 +645,7 @@\n ado)\n-%7B%0A            fmt.Println()%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-30_11-24-46",
+            "content": "@@ -608,17 +608,9 @@\n rint\n-f(%22%25d %22, \n+(\n v)%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_11-25-21",
+            "content": "@@ -591,64 +591,8 @@\n o %7B%0A\n-        if i != 0%7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n@@ -609,16 +609,17 @@\n intf(%22%25d\n+ \n %22, v)%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-30_11-26-04",
+            "content": "@@ -730,10 +730,8 @@\n tln(\n-%22%22\n )%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-30_11-26-25",
+            "content": "@@ -727,12 +727,12 @@\n rint\n+ln\n (%22\n-%5Cn\n %22)%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-30_11-26-52",
+            "content": "@@ -700,18 +700,16 @@\n rdenado)\n--1\n %7B%0A      \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-30_11-27-10",
+            "content": "@@ -708,21 +708,8 @@\n -1%7B%0A\n-            %0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-30_11-50-56",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int{\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc ordenarvetor(vetor []int) []int{\n    for i := 0; i < len(vetor)-1; i++{\n        for j := 0; j < len(vetor)-1; j++{\n            if vetor[j] > vetor[j+1]{\n                vetor[j], vetor[j+1] = vetor[j+1], vetor[j]\n            }\n        }\n    }\n    return vetor\n}\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vetor := criarvetor(num)\n    ordenado := ordenarvetor(vetor)\n    for i, v := range ordenado {\n        if i != 0{\n            fmt.Print(\" \")\n        }\n        fmt.Printf(\"%d\", v)\n        if i == len(ordenado)-1{\n            \n            fmt.Print(\"\\n\")\n        }\n    }\n}\n",
+            "lines": "38"
         }
     ]
 }

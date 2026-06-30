@@ -8,7 +8,19 @@ import (
 
 func contarsub(texto, substring string) int {
     cont := 0
-    for 
+    for i := 0; i <= len(texto) - len(substring); i++{
+        igual := true
+        for j := 0; j < len (substring); i++{
+            if texto[i+j] != substring[j] {
+                igual = false
+                break
+            }
+        }
+        if igual {
+            cont ++
+        }
+    }
+    return cont
 }
 
 

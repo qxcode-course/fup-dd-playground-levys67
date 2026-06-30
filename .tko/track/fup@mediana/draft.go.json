@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_10-59-51",
+            "content": "@@ -23,261 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor( num int )%5B%5Dint %7B%0A    vetor := make(%5B%5Dint, num)%0A    for i := 0; i%3Clen(vetor); i++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    vetor := criarvetor(num)%0A    fmt.Println(vetor\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_11-03-55",
+            "content": "@@ -48,23 +48,19 @@\n  int )%5B%5D\n-float64\n+int\n  %7B%0A    v\n@@ -78,15 +78,11 @@\n e(%5B%5D\n-float64\n+int\n , nu\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-30_11-05-05",
+            "content": "@@ -186,288 +186,8 @@\n %0A%7D%0A%0A\n-func ordenarvetor(vetor %5B%5Dfloat64) %5B%5Dfloat64 %7B%0A    for i := 0; i %3C len(vetor)-1; i++ %7B%0A        for j := 0; j %3C len(vetor)-1-i; j++%7B%0A            if vetor%5Bj%5D %3E vetor%5Bj+1%5D %7B%0A                vetor%5Bj%5D, vetor%5Bj+1%5D = vetor%5Bj+1%5D, vetor%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A    return vetor%0A%7D%0A\n %0A%0Afu\n@@ -286,62 +286,6 @@\n or)%0A\n-    notas := ordenarvetor(vetor)%0A    fmt.Println(notas)%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-30_12-04-36",
+            "content": "@@ -467,153 +467,8 @@\n %0A%7D%0A%0A\n-func mediana (vetor %5B%5Dfloat64) float64%7B%0A    if len(vetor) %25 2 == 0%7B%0A        return vetor %5Blen(vetor)/2%5D%0A    %7D%0A    return vetor %5Blen(vetor)/2%5D%0A%7D%0A%0A\n %0Afun\n@@ -622,61 +622,6 @@\n as)%0A\n-    mediana := mediana(notas)%0A    fmt.Println(mediana)%0A\n %7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_12-10-37",
+            "content": "@@ -543,46 +543,22 @@\n     \n-media := vetor%5Blen(vetor)/2%5D +\n+return\n  vetor\n+ \n %5B\n-(\n len(\n@@ -569,37 +569,9 @@\n r)/2\n-)-1%5D%0A        return media / 2\n+%5D\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-30_12-13-47",
+            "content": "@@ -862,20 +862,11 @@\n rint\n-f(%22%25.1f%5Cn%22, \n+ln(\n medi\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-30_12-14-52",
+            "content": "@@ -732,24 +732,47 @@\n rvetor(num)%0A\n+    fmt.Println(vetor)%0A\n     notas :=\n@@ -788,24 +788,47 @@\n etor(vetor)%0A\n+    fmt.Println(notas)%0A\n     mediana \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-30_12-15-07",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor( num int )[]float64 {\n    vetor := make([]float64, num)\n    for i := 0; i<len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc ordenarvetor(vetor []float64) []float64 {\n    for i := 0; i < len(vetor)-1; i++ {\n        for j := 0; j < len(vetor)-1-i; j++{\n            if vetor[j] > vetor[j+1] {\n                vetor[j], vetor[j+1] = vetor[j+1], vetor[j]\n            }\n        }\n    }\n    return vetor\n}\n\nfunc mediana (vetor []float64) float64{\n    if len(vetor) % 2 == 0{\n        media := vetor[len(vetor)/2] + vetor[(len(vetor)/2)-1]\n        return media / 2\n    }\n    return vetor [len(vetor)/2]\n}\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    vetor := criarvetor(num)\n    notas := ordenarvetor(vetor)\n    mediana := mediana(notas)\n    fmt.Printf(\"%.1f\\n\", mediana)\n}\n",
+            "lines": "39"
+        }
+    ]
+}

@@ -9,14 +9,24 @@ func criarvetor (num int) []int {
     return vetor
 }
 
-func contarmaior (vetor []int) int {
-    maior := vetor[0]
-    for i := 0; i < len(vetor); i++ {
-        if maior < vetor[i] {
-            maior = vetor[i]
+func ordenarvetor(vetor[]int) []int{
+    for i := 0; i < len(vetor)-1; i++{
+        for j := 0; j < len(vetor)-1-i ; j++{
+            if vetor[j] > vetor[j+1] {
+                vetor[j], vetor[j+1] = vetor[j+1], vetor[j]
+            }
         }
     }
-    return maior
+    return vetor
+}
+
+func compararvetores (vetor1, vetor2 []int) bool {
+    for i := 0; i < len(vetor1); i++{
+        if vetor1[i] < vetor2[i]{
+            return false
+        }
+    }
+    return true
 }
 
 
@@ -25,7 +35,12 @@ func main() {
     fmt.Scan(&num)
     vacinas := criarvetor(num)
     pessoas := criarvetor(num)
-    contv := contarmaior(vacinas)
-    contp := contarmaior(pessoas)
-    fmt.Println(contv, contp)
+    ordv := ordenarvetor(vacinas)
+    ordp := ordenarvetor(pessoas)
+    relatorio := compararvetores(ordv, ordp)
+    if !relatorio{
+        fmt.Println("No")
+    } else {
+        fmt.Println("Yes")
+    }
 }

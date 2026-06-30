@@ -1,0 +1,105 @@
+2026-06-30 10:58:47, MOVE, v:1, k:fup@mediana, mode:DOWN
+2026-06-30 10:58:48, MOVE, v:1, k:fup@mediana, mode:PICK
+2026-06-30 10:59:34, MOVE, v:1, k:fup@mediana, mode:PICK
+2026-06-30 10:59:50, MOVE, v:1, k:fup@mediana, mode:PICK
+2026-06-30 10:59:51, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:5
+2026-06-30 11:03:55, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:19
+2026-06-30 11:03:55, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 11:04:38, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 11:05:06, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:19
+2026-06-30 11:05:46, MOVE, v:1, k:fup@mediana, mode:BACK
+2026-06-30 11:05:02, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 11:05:05, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 11:14:39, MOVE, v:1, k:fup@policial, mode:PICK
+2026-06-30 11:14:41, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:61
+2026-06-30 11:14:40, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:19:41, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:21:33, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:30
+2026-06-30 11:23:29, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:32
+2026-06-30 11:24:39, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:23:29, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:24:46, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:34
+2026-06-30 11:25:21, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:34
+2026-06-30 11:26:04, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:37
+2026-06-30 11:26:25, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:37
+2026-06-30 11:26:52, EXEC, v:1, k:fup@policial, mode:FULL, rate:0, size:37
+2026-06-30 11:27:10, EXEC, v:1, k:fup@policial, mode:FULL, rate:100, size:37
+2026-06-30 11:27:14, MOVE, v:1, k:fup@policial, mode:BACK
+2026-06-30 11:27:42, SELF, v:1, k:fup@policial, self:1, rate:100, study:46, concept:1
+2026-06-30 11:28:18, MOVE, v:1, k:fup@vacina, mode:PICK
+2026-06-30 11:28:19, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0
+2026-06-30 11:28:02, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:27:10, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:28:19, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:29:39, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:34:43, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:38:42, MOVE, v:1, k:fup@vacina, mode:BACK
+2026-06-30 11:39:06, MOVE, v:1, k:fup@vacina, mode:PICK
+2026-06-30 11:39:08, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:42
+2026-06-30 11:39:23, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0
+2026-06-30 11:38:35, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:39:22, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:41:08, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:46
+2026-06-30 11:41:44, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:46
+2026-06-30 11:43:46, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:47
+2026-06-30 11:44:02, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:41
+2026-06-30 11:43:59, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:44:01, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:46:39, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:41
+2026-06-30 11:49:18, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:41
+2026-06-30 11:49:17, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:49:18, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:50:54, MOVE, v:1, k:fup@vacina, mode:BACK
+2026-06-30 11:50:55, MOVE, v:1, k:fup@policial, mode:PICK
+2026-06-30 11:50:56, EXEC, v:1, k:fup@policial, mode:FULL, rate:100, size:38
+2026-06-30 11:51:34, MOVE, v:1, k:fup@policial, mode:BACK
+2026-06-30 11:51:37, MOVE, v:1, k:fup@vacina, mode:PICK
+2026-06-30 11:52:16, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:41
+2026-06-30 11:54:03, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:47
+2026-06-30 11:54:15, EXEC, v:1, k:fup@vacina, mode:FULL, rate:0, size:46
+2026-06-30 11:54:34, EXEC, v:1, k:fup@vacina, mode:FULL, rate:100, size:46
+2026-06-30 11:54:37, MOVE, v:1, k:fup@vacina, mode:BACK
+2026-06-30 11:50:56, MOVE, v:1, k:fup@policial, mode:EDIT
+2026-06-30 11:54:31, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:54:34, MOVE, v:1, k:fup@vacina, mode:EDIT
+2026-06-30 11:54:54, SELF, v:1, k:fup@vacina, self:1, rate:100, study:60
+2026-06-30 11:58:49, MOVE, v:1, k:fup@mediana, mode:PICK
+2026-06-30 11:58:50, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0
+2026-06-30 11:58:50, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 11:59:43, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:04:36, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:31
+2026-06-30 12:04:30, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:04:36, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:09:43, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:10:37, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:40
+2026-06-30 12:13:47, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:41
+2026-06-30 12:14:45, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:13:47, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:14:52, EXEC, v:1, k:fup@mediana, mode:FULL, rate:0, size:41
+2026-06-30 12:15:07, EXEC, v:1, k:fup@mediana, mode:FULL, rate:100, size:39
+2026-06-30 12:15:08, MOVE, v:1, k:fup@mediana, mode:BACK
+2026-06-30 12:15:21, SELF, v:1, k:fup@mediana, self:1, rate:100, study:25
+2026-06-30 12:16:09, MOVE, v:1, k:fup@indices, mode:DOWN
+2026-06-30 12:16:10, MOVE, v:1, k:fup@indices, mode:PICK
+2026-06-30 12:16:12, EXEC, v:1, k:fup@indices, mode:FULL, rate:0, size:5
+2026-06-30 12:15:05, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:15:07, MOVE, v:1, k:fup@mediana, mode:EDIT
+2026-06-30 12:16:09, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:16:12, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:19:45, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:21:01, EXEC, v:1, k:fup@indices, mode:FULL, rate:0, size:18
+2026-06-30 12:24:44, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:21:01, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:29:40, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:31:36, EXEC, v:1, k:fup@indices, mode:FULL, rate:0, size:33
+2026-06-30 12:32:23, MOVE, v:1, k:fup@indices, mode:BACK
+2026-06-30 12:32:28, MOVE, v:1, k:fup@trilhas, mode:DOWN
+2026-06-30 12:32:28, MOVE, v:1, k:fup@trilhas, mode:PICK
+2026-06-30 12:31:35, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:31:36, MOVE, v:1, k:fup@indices, mode:EDIT
+2026-06-30 12:32:28, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-06-30 12:36:03, MOVE, v:1, k:fup@trilhas, mode:BACK
+2026-06-30 12:37:30, MOVE, v:1, k:fup@amora, mode:PICK
+2026-06-30 12:37:31, EXEC, v:1, k:fup@amora, mode:FULL, size:25, fail:COMP
+2026-06-30 12:53:53, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-06-30 12:56:23, MOVE, v:1, k:fup@amora, mode:BACK
