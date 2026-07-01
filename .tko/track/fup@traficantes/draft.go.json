@@ -2,8 +2,73 @@
     "patches": [
         {
             "label": "2026-06-30_14-59-50",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,181 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    texto := %22%22%0A    Scanner := bufio.NewScanner(os.Stdin)%0A    Scanner.Scan()%0A    texto = Scanner.Text()%0A    fmt.Println(texto\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-01_15-04-01",
+            "content": "@@ -44,195 +44,31 @@\n %22%0A)%0A\n-%0Afunc substituir(texto string) string %7B%0A   // letras := %5B%5Drune(texto)%0A    for i := 0; i %3C= len(texto); i++ %7B%0A%0A    %7D%0A    return %22%22%0A%7D%0A%0A%0Afunc main() %7B%0A    texto := %22%22%0A    alvo := %22%22%0A    subs\n+func main() %7B%0A    texto\n  := \n@@ -162,98 +162,8 @@\n t()%0A\n-    Scanner.Scan()%0A    alvo = Scanner.Text()%0A    Scanner.Scan()%0A    subs = Scanner.Text()%0A\n     \n@@ -183,18 +183,8 @@\n exto\n-,alvo,subs\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-07-01_15-08-24",
+            "content": "@@ -66,20 +66,8 @@\n exto\n-, alvo, subs\n  str\n@@ -87,16 +87,17 @@\n %0A   \n+//\n  letras\n-t\n  := \n@@ -114,57 +114,8 @@\n to)%0A\n-    //letrasal := %5B%5Drune(alvo)%0A    retorno := %22%22%0A\n     \n@@ -133,65 +133,28 @@\n  i %3C\n+=\n  len(\n-letrast\n+texto\n ); i++\n+ \n %7B%0A\n-        retorno += string(letrast%5Bi%5D)\n %0A   \n@@ -171,15 +171,10 @@\n urn \n-retorno\n+%22%22\n %0A%7D%0A%0A\n@@ -449,70 +449,6 @@\n bs)%0A\n-    frase := substituir(texto,alvo,subs)%0A    fmt.Println(frase)%0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-01_15-23-31",
+            "content": "@@ -121,24 +121,26 @@\n (texto)%0A    \n+//\n letrasal := \n@@ -213,179 +213,8 @@\n ++%7B%0A\n-        for j := 0; j %3C len(letrasal); i++ %7B%0A            if letrast%5Bi+j%5D == letrasal%5Bj%5D %7B%0A                retorno += subs%0A                continue%0A            %7D%0A        %7D%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-01_15-27-03",
+            "content": "@@ -187,17 +187,16 @@\n = 0; i %3C\n-=\n  len(let\n@@ -204,24 +204,8 @@\n ast)\n- - len(letrasal)\n ; i+\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-01_15-27-28",
+            "content": "@@ -263,17 +263,17 @@\n rasal); \n-j\n+i\n ++ %7B%0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-01_15-27-51",
+            "content": "@@ -228,30 +228,8 @@\n ++%7B%0A\n-        igual := true%0A\n     \n@@ -301,9 +301,9 @@\n +j%5D \n-!\n+=\n = le\n@@ -334,57 +334,23 @@\n     \n-igual = false%0A                break%0A            %7D\n+retorno += subs\n %0A   \n@@ -358,18 +358,16 @@\n     \n-%7D%0A\n         \n if i\n@@ -366,18 +366,16 @@\n     \n-if igual %7B\n+continue\n %0A   \n@@ -387,45 +387,20 @@\n     \n-retorno += subs%0A        %7D else %7B%0A    \n+%7D%0A        %7D%0A\n     \n@@ -436,19 +436,8 @@\n %5Bi%5D)\n- %0A        %7D\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-01_15-31-54",
+            "content": "@@ -463,29 +463,8 @@\n ubs%0A\n-            continue%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-01_15-32-34",
+            "content": "@@ -100,141 +100,166 @@\n     \n-var textoalt %5B%5Dbyte%0A    i := 0%0A    for i %3C len(texto) %7B%0A        encontrou := true%0A        if i+len(alvo) %3C= len(texto) %7B%0A       \n+letrast := %5B%5Drune(texto)%0A    letrasal := %5B%5Drune(alvo)%0A    retorno := %22%22%0A    for i := 0; i %3C= len(letrast) - len(letrasal); i++%7B%0A        igual := true%0A\n      \n+   \n for \n@@ -266,36 +266,40 @@\n j := 0; j %3C len(\n-subs\n+letrasal\n ); j++ %7B%0A       \n@@ -307,20 +307,18 @@\n     \n-    if texto\n+if letrast\n %5Bi+j\n@@ -322,21 +322,24 @@\n i+j%5D != \n-texto\n+letrasal\n %5Bj%5D %7B%0A  \n@@ -348,37 +348,29 @@\n             \n-    encontrou\n+igual\n  = false%0A   \n@@ -382,20 +382,16 @@\n         \n-   \n- \n break%0A  \n@@ -400,32 +400,26 @@\n         \n-    %7D%0A  \n+%7D%0A\n         \n   %7D%0A    \n@@ -402,34 +402,32 @@\n       %7D%0A        \n-  \n %7D%0A        %7D else\n@@ -412,38 +412,40 @@\n       %7D%0A        \n-%7D else\n+if igual\n  %7B%0A            e\n@@ -447,260 +447,104 @@\n     \n-encontrou = false\n+retorno += subs\n %0A     \n-   %7D%0A\n        \n- if encontrou %7B%0A            for j := 0; j %3C len(subs); j++ %7B%0A                textoalt = append(textoalt, subs%5Bj%5D)%0A            %7D%0A            i += len(subs)%0A        %7D else %7B%0A        textoalt = append(textoalt, texto\n+continue%0A        %7D else %7B%0A            retorno += string(letrast\n %5Bi%5D)\n+ \n %0A   \n@@ -548,19 +548,17 @@\n         \n-i++\n+%7D\n %0A    %7D%0A \n@@ -571,24 +571,15 @@\n urn \n-string(textoalt)\n+retorno\n %0A%7D%0A%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-01_16-53-12",
+            "content": "@@ -702,18 +702,16 @@\n +%0A    %7D%0A\n-%7D%0A\n     retu\n@@ -733,16 +733,17 @@\n alt)%0A%7D%0A%0A\n+%0A\n func mai\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-07-01_16-54-40",
+            "content": "@@ -969,24 +969,57 @@\n nner.Text()%0A\n+    fmt.Println(texto,alvo,subs)%0A\n     frase :=\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-07-01_16-55-11",
+            "content": "@@ -249,20 +249,20 @@\n j %3C len(\n-alvo\n+subs\n ); j++ %7B\n@@ -295,19 +295,20 @@\n i+j%5D != \n-alv\n+text\n o%5Bj%5D %7B%0A \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-07-01_16-58-26",
+            "content": "@@ -614,20 +614,20 @@\n  += len(\n-alvo\n+subs\n )%0A      \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-07-01_17-03-26",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc substituir(texto, alvo, subs string) string {\n    var textoalt []byte\n    i := 0\n    for i < len(texto) {\n        encontrou := true\n        if i+len(alvo) <= len(texto) {\n            for j := 0; j < len(alvo); j++ {\n                if texto[i+j] != alvo[j] {\n                    encontrou = false\n                    break\n                }\n            }\n        } else {\n            encontrou = false\n        }\n        if encontrou {\n            for j := 0; j < len(subs); j++ {\n                textoalt = append(textoalt, subs[j])\n            }\n            i += len(alvo)\n        } else {\n        textoalt = append(textoalt, texto[i])\n        i++\n    }\n}\n    return string(textoalt)\n}\n\nfunc main() {\n    texto := \"\"\n    alvo := \"\"\n    subs := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    alvo = Scanner.Text()\n    Scanner.Scan()\n    subs = Scanner.Text()\n    frase := substituir(texto,alvo,subs)\n    fmt.Println(frase)\n}\n",
+            "lines": "50"
         }
     ]
 }

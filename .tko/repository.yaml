@@ -19,14 +19,15 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@base
 - fup@struct
-- fup@if2
-- fup@for2
-- fup@string
-- sandbox@sandbox
-- eval1@eval1
-- fup@games
 - fup@list
+- sandbox@sandbox
+- fup@string
+- fup@games
+- eval1@eval1
+- fup@for2
+- fup@if2
 flags:
   inbox: all
   panel: skills
@@ -36,5 +37,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@pedra
-selected_index: 87
+selected: fup@fresco
+selected_index: 132

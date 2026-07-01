@@ -22,7 +22,37 @@
         },
         {
             "label": "2026-05-04_11-32-20",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    vel := 0\n    time := 0\n    cons := 0.0\n    fmt.Scan(&vel, &time, &cons)\n    t_hora := float64(time) / 60\n    dist := float64(vel) * t_hora\n    desm := dist / float64(cons)\n    fmt.Printf(\"%.2f\\n\", float64(desm))\n}\n",
+            "content": "@@ -37,11 +37,222 @@\n ) %7B%0A    \n+vel := 0%0A    time := 0%0A    cons := 0.0%0A    fmt.Scan(&vel, &time, &cons)%0A    t_hora := float64(time) / 60%0A    dist := float64(vel) * t_hora%0A    desm := dist / float64(cons)%0A    fmt.Printf(%22%25.2f%5Cn%22, float64(desm))\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-07-01_17-14-50",
+            "content": "@@ -41,20 +41,7 @@\n     \n-fmt.Print(%22%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-01_17-15-08",
+            "content": "@@ -41,106 +41,20 @@\n     \n-velm := 0%0A    time := 0%0A    cons := 0%0A    fmt.Scan(&velm,&time,&cons)%0A    fmt.Print(velm,time,cons\n+fmt.Print(%22%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-01_17-18-25",
+            "content": "@@ -115,116 +115,32 @@\n     \n-timeh := time * 60%0A    traj := \n+fmt.Print(\n velm\n- * \n+,\n time\n-h%0A    desem := traj / cons%0A    fmt.Printf(%22%25.2f%5Cn%22, float64(desem)\n+,cons\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-07-01_17-22-27",
+            "content": "@@ -125,17 +125,17 @@\n := time \n-/\n+*\n  60%0A    \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-07-01_17-23-00",
+            "content": "@@ -42,26 +42,24 @@\n    velm := 0\n-.0\n %0A    time :=\n@@ -56,26 +56,24 @@\n    time := 0\n-.0\n %0A    cons :=\n@@ -78,10 +78,8 @@\n := 0\n-.0\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-07-01_17-23-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    velm := 0.0\n    time := 0.0\n    cons := 0.0\n    fmt.Scan(&velm,&time,&cons)\n    timeh := time / 60\n    traj := velm * timeh\n    desem := traj / cons\n    fmt.Printf(\"%.2f\\n\", float64(desem))\n}\n",
             "lines": "12"
         }
     ]

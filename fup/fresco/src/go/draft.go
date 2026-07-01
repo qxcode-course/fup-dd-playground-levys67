@@ -8,16 +8,30 @@ import (
 
 func juntarvogais(letras string) string {
 runas := []rune (letras)
-juntas := ""
-for i := 1; i < len(runas)-1; i++ {
-    if runas[i] == ' ' && (runas[i-1] == 'a' || runas[i-1] == 'e' || runas[i-1] == 'i' && runas[i-1] == 'o' || runas[i-1] == 'u') && runas[i+1] == runas[i-1]{ 
-        continue
-    } 
-    juntas += string(runas[i])    
-}
-return juntas
+juntas := ""//armazena letras
+i := 0
+    for i < len(runas){
+        if i+1 < len(runas) && runas[i] == ' ' && ehvogal(runas[i+1]){//verifica se o elemento atual e um espaço e o proximo uma vogal 
+            i += 2//pula 2 eleementos
+            continue
+        }
+        juntas += string(runas[i])// realiza a concatenação
+        i ++
+    }
+    return juntas
 }
     
+func ehvogal (c rune) bool {
+    if c == 'a' || 
+    c == 'e' ||
+    c == 'i' ||
+    c == 'o' ||
+    c == 'u' {
+        return true
+    }
+    return false
+}
+
 
 
 func main() {

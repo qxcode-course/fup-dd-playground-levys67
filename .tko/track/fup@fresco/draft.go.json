@@ -47,8 +47,13 @@
         },
         {
             "label": "2026-06-30_16-16-14",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc juntarvogais(letras string) string {\nrunas := []rune (letras)\njuntas := \"\"\nfor i := 1; i < len(runas)-1; i++ {\n    if runas[i] == ' ' && (runas[i-1] == 'a' || runas[i-1] == 'e' || runas[i-1] == 'i' && runas[i-1] == 'o' || runas[i-1] == 'u') && runas[i+1] == runas[i-1]{ \n        continue\n    } \n    juntas += string(runas[i])    \n}\nreturn juntas\n}\n    \n\n\nfunc main() {\n    texto := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    juntas := juntarvogais(texto)\n    fmt.Println(juntas)\n}\n",
+            "content": "@@ -125,22 +125,19 @@\n  %22%22%0A\n+for \n i := \n-0%0A    for\n+1;\n  i %3C\n@@ -151,104 +151,178 @@\n nas)\n+-1; i++ \n %7B%0A\n-  \n     \n-  \n if \n-i+1 %3C len(runas)\n+runas%5Bi%5D == ' '\n  && \n+(\n runas%5Bi\n+-1\n %5D == '\n- ' && ehvogal(\n+a' %7C%7C \n runas%5Bi\n-+1%5D)%7B%0A            i += 2%0A    \n+-1%5D == 'e' %7C%7C runas%5Bi-1%5D == 'i' && runas%5Bi-1%5D == 'o' %7C%7C runas%5Bi-1%5D == 'u') && runas%5Bi+1%5D == runas%5Bi-1%5D%7B %0A\n     \n@@ -338,26 +338,19 @@\n nue%0A    \n-    \n %7D\n+ \n %0A\n-    \n     junt\n@@ -375,32 +375,15 @@\n %5Bi%5D)\n-%0A\n     \n-    i ++%0A    %7D%0A    \n+%0A%7D%0A\n retu\n@@ -403,166 +403,8 @@\n    %0A\n-func ehvogal (c rune) bool %7B%0A    if c == 'a' %7C%7C %0A    c == 'e' %7C%7C%0A    c == 'i' %7C%7C%0A    c == 'o' %7C%7C%0A    c == 'u' %7B%0A        return true%0A    %7D%0A    return false%0A%7D%0A%0A\n %0A%0Afu\n",
             "lines": "30"
+        },
+        {
+            "label": "2026-07-01_17-57-41",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc juntarvogais(letras string) string {\nrunas := []rune (letras)\njuntas := \"\"\ni := 0\n    for i < len(runas){\n        if i+1 < len(runas) && runas[i] == ' ' && ehvogal(runas[i+1]){\n            i += 2\n            continue\n        }\n        juntas += string(runas[i])\n        i ++\n    }\n    return juntas\n}\n    \nfunc ehvogal (c rune) bool {\n    if c == 'a' || \n    c == 'e' ||\n    c == 'i' ||\n    c == 'o' ||\n    c == 'u' {\n        return true\n    }\n    return false\n}\n\n\n\nfunc main() {\n    texto := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    juntas := juntarvogais(texto)\n    fmt.Println(juntas)\n}\n",
+            "lines": "44"
         }
     ]
 }

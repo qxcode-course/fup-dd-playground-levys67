@@ -1,4 +1,4 @@
-package main
+  package main
 
 import (
 	"bufio"
@@ -8,18 +8,16 @@ import (
 
 func contarsub(texto, substring string) int {
     cont := 0
-    runastexto := []rune(texto)
-    runassub := []rune(substring)
-    for i := 0; i <= len(runastexto) - len(runassub); i++{
+    for i := 0; i <= len(texto) - len(substring);i++ {
         igual := true
-        for j := 0; j < len (runassub); j++{
-            if runastexto[i+j] != runassub[j] {
+        for j := 0; j < len(substring); j++{
+            if texto[i+j] != substring[j] {
                 igual = false
                 break
             }
         }
-        if igual {
-            cont ++
+        if igual{
+            cont++
         }
     }
     return cont

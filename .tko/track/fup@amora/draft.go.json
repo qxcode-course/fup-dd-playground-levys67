@@ -62,8 +62,13 @@
         },
         {
             "label": "2026-06-30_14-52-26",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc contarsub(texto, substring string) int {\n    cont := 0\n    runastexto := []rune(texto)\n    runassub := []rune(substring)\n    for i := 0; i <= len(runastexto) - len(runassub); i++{\n        igual := true\n        for j := 0; j < len (runassub); j++{\n            if runastexto[i+j] != runassub[j] {\n                igual = false\n                break\n            }\n        }\n        if igual {\n            cont ++\n        }\n    }\n    return cont\n}\n\n\n\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    contagem := contarsub(texto,sub)\n    fmt.Println(contagem)\n}\n",
+            "content": "@@ -1,10 +1,8 @@\n-  \n package \n@@ -101,16 +101,82 @@\n nt := 0%0A\n+    runastexto := %5B%5Drune(texto)%0A    runassub := %5B%5Drune(substring)%0A\n     for \n@@ -192,16 +192,21 @@\n  %3C= len(\n+runas\n texto) -\n@@ -214,23 +214,22 @@\n len(\n-substring\n+runassub\n );\n+ \n i++\n- \n %7B%0A  \n@@ -275,26 +275,26 @@\n  j %3C len\n-(substring\n+ (runassub\n ); j++%7B%0A\n@@ -308,16 +308,21 @@\n      if \n+runas\n texto%5Bi+\n@@ -327,25 +327,24 @@\n i+j%5D != \n-substring\n+runassub\n %5Bj%5D %7B%0A  \n@@ -433,16 +433,17 @@\n if igual\n+ \n %7B%0A      \n@@ -452,16 +452,17 @@\n     cont\n+ \n ++%0A     \n",
             "lines": "40"
+        },
+        {
+            "label": "2026-07-01_17-10-51",
+            "content": "  package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc contarsub(texto, substring string) int {\n    cont := 0\n    for i := 0; i <= len(texto) - len(substring);i++ {\n        igual := true\n        for j := 0; j < len(substring); j++{\n            if texto[i+j] != substring[j] {\n                igual = false\n                break\n            }\n        }\n        if igual{\n            cont++\n        }\n    }\n    return cont\n}\n\n\n\nfunc main() {\n    texto := \"\"\n    sub := \"\"\n    Scanner := bufio.NewScanner(os.Stdin)\n    Scanner.Scan()\n    texto = Scanner.Text()\n    Scanner.Scan()\n    sub = Scanner.Text()\n    contagem := contarsub(texto,sub)\n    fmt.Println(contagem)\n}\n",
+            "lines": "38"
         }
     ]
 }

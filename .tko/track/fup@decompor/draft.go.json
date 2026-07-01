@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-06-24_13-14-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,215 +41,35 @@\n     \n-numero := 0%0A    fmt.Scan(&numero)%0A    numeros := make(%5B%5Dint,0)%0A    for numero %3E 0%7B%0A        digito := numero %25 10%0A        numeros = append(numeros, digito )%0A        numero /= 10 %0A    %7D%0A    fmt.Println(numeros\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-01_14-56-31",
+            "content": "@@ -225,154 +225,8 @@\n   %7D%0A\n-    for i := len(numeros)-1; i %3E= 0; i--%7B%0A        if i != len(numeros) -1%7B%0A            fmt.Print(%22 %22)%0A        %7D%0A        fmt.Print(numeros)%0A    %7D %0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-01_14-58-46",
+            "content": "@@ -362,11 +362,8 @@\n eros\n-%5Bi%5D\n )%0A  \n@@ -367,10 +367,35 @@\n %0A    %7D %0A\n+    fmt.Println(numeros)%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-01_14-59-02",
+            "content": "@@ -367,72 +367,13 @@\n i%5D)%0A\n-        if i == 0 %7B%0A            fmt.Println(%22%22)%0A        %7D%0A\n     %7D %0A\n-%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-07-01_14-59-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    numero := 0\n    fmt.Scan(&numero)\n    numeros := make([]int,0)\n    for numero > 0{\n        digito := numero % 10\n        numeros = append(numeros, digito )\n        numero /= 10 \n    }\n    for i := len(numeros)-1; i >= 0; i--{\n        if i != len(numeros) -1{\n            fmt.Print(\" \")\n        }\n        fmt.Print(numeros[i])\n        if i == 0 {\n            fmt.Println(\"\")\n        }\n    } \n\n}\n",
+            "lines": "22"
         }
     ]
 }

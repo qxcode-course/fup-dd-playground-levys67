@@ -1,0 +1,12 @@
+{"ts":1782926076,"hash":"07498fcc526f3fbe3e4d60179a294089e389cfa0f2a222e29719d7ee5b407d1b","mode":"full","content":"H4sIAA1LRWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFXLRcAk2NUei8AAAA="}
+{"ts":1782926105,"hash":"ddc7cc25a86a30821f637aecb142b1bf768448fbe0efacd4da979e177b651002","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    fmt.Print(\"\")\n"}]}
+{"ts":1782926191,"hash":"e64dbb9a00660bc8e4ccd76d7c0f65138ccc18d7b9c40391fe75386621e7538a","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    velm := 0\n    \n"}]}
+{"ts":1782926247,"hash":"573edf8d868fb10cd851b5585710adcf59884c66d4b7fd1b6e3dbd4cf563e48a","mode":"diff","ops":[{"tag":"insert","a1":4,"a2":4,"text":"    time := 0\n    cons := 0\n"}]}
+{"ts":1782926272,"hash":"f5a7860f3d5f3cefb44e423a34bdbea7221e00e73629feb6a57ba9c128bb68e5","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"    fmt.Scan(&velm,)\n"}]}
+{"ts":1782926292,"hash":"efd3d766ea3b4517c1af97503a9822bff5813f41a14ef24312e5edb2a7f1c300","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":8,"text":"    fmt.Scan(&velm,&time,&cons)\n    fmt.Print(velm,)\n"}]}
+{"ts":1782926387,"hash":"ded29a06206528fb588ae7bfd6d81f890de4656b2052c92e3fb8a52c7f21f2e1","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    timeh := time * 60\n    \n    fmt.Print(velm,time,cons)\n"}]}
+{"ts":1782926446,"hash":"10a5672773d8ac44a75522af8710952443ba06e16ae3afd94e7b9ffc2dda4212","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    traj := \n"}]}
+{"ts":1782926492,"hash":"00ee5d8d7e71d894ae6c1c74870fbc907bb5c8ea98175de353c68c80492bc16b","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    traj := velm * timeh\n    desem := te\n"}]}
+{"ts":1782926530,"hash":"44e0ec728d1237b21c0bebe447ec16a71a20262e9f2cbd1e1124ce7fea545341","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":11,"text":"    desem := traj / cons\n    fmt.Printf(\"%.2f\\n\", desem)\n"}]}
+{"ts":1782926578,"hash":"8e9910596a78d96bfa7e1972a77aa34ad3078ecb62933d053b068325c4e26e3e","mode":"full","content":"H4sIAAJNRWoC/0WNwQrCMBBE7/mKJWBIJLQi0oPgPwhevYSYaLTZlDR6Ef/dZpV2bzP7ZmYw9mGuDqIJyEIcUi7AfSyc+SdasqWCN4PpXq6PsD/AhlQJ0S3KJhwXNRU0J2tQiprRorJaVEbN2VvFqaSF7l+Zzb26NLT+UfS4uNHRNBEtrc1DxxyweMlXzdafkWvwfTKl20lKKcU+7Au4Pk8h5gAAAA=="}
+{"ts":1782926608,"hash":"9aad78c1658c37617e97a7a4bd90b61740392fba1d991696d7bce86223584c65","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":6,"text":"    velm := 0.0\n    time := 0.0\n    cons := 0.0\n"}]}
