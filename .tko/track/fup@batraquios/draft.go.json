@@ -37,8 +37,18 @@
         },
         {
             "label": "2026-06-22_17-16-10",
-            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int {\n    lista := make([]int, tam)\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\n\nfunc main() {\n    tam1 := 0\n    tam2 := 0\n    fmt.Scan(&tam1)\n    vet1 := criarvetor(tam1)\n    fmt.Scan(&tam2)\n    vet2 := criarvetor(tam2)\n    //fmt.Print(vet1, vet2)\n    contido := true\n    for i := 0; i < tam1; i++ {\n        encontrado := false\n        for j := 0; j < tam2; j++{\n            if vet1[i] == vet2[j] {\n                encontrado = true\n                break\n            }\n            \n        }\n        if !encontrado {\n        contido = false\n        }\n    }\n    if contido {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "content": "@@ -172,243 +172,269 @@\n %0A%7D%0A%0A\n+%0A\n func \n-estacontido (vetor %5B%5Dint, elem int) bool %7B%0A    for i := 0; i %3C len(vetor); i++ %7B%0A        if elem == vetor%5Bi%5D%7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0A%0A%0Afunc compararvetores (vetor1, vetor2 %5B%5Dint) bool%7B%0A\n+main() %7B%0A    tam1 := 0%0A    tam2 := 0%0A    fmt.Scan(&tam1)%0A    vet1 := criarvetor(tam1)%0A    fmt.Scan(&tam2)%0A    vet2 := criarvetor(tam2)%0A    //fmt.Print(vet1, vet2)%0A    contido := true%0A    for i := 0; i %3C tam1; i++ %7B%0A        encontrado := false%0A    \n     for \n i :=\n@@ -433,37 +433,29 @@\n for \n-i\n+j\n  := 0; \n-i %3C len(vetor1); i\n+j %3C tam2; j\n ++\n- \n %7B%0A  \n@@ -464,62 +464,64 @@\n     \n-if estacontido(vetor2, vetor1%5Bi%5D) %7B%0A            return\n+    if vet1%5Bi%5D == vet2%5Bj%5D %7B%0A                encontrado =\n  tru\n@@ -534,177 +534,88 @@\n     \n-%7D%0A\n     \n-%7D%0A\n     \n+b\n re\n-turn false%0A%7D%0A%0A%0Afunc main() %7B%0A    tam1 := 0%0A    tam2 := 0%0A    fmt.Scan(&tam1)%0A    vet1 := criarvetor(tam1)%0A    fmt.Scan(&tam2)%0A    vet2 := criarvetor(tam2)%0A\n+ak%0A            %7D%0A            %0A        %7D%0A        if !encontrado %7B%0A    \n     \n@@ -626,38 +626,31 @@\n ido \n-:\n = \n-compararvetores(vet1, vet2)\n+false%0A        %7D%0A    %7D\n %0A   \n",
             "lines": "40"
+        },
+        {
+            "label": "2026-07-01_12-28-08",
+            "content": "@@ -449,9 +449,8 @@\n  if \n-!\n esta\n@@ -497,20 +497,19 @@\n  return \n-fals\n+tru\n e%0A      \n@@ -529,19 +529,20 @@\n  return \n-tru\n+fals\n e%0A%7D%0A%0A%0Afu\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-01_12-29-12",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor(tam int) []int {\n    lista := make([]int, tam)\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&lista[i])\n    }\n    return lista\n}\n\nfunc estacontido (vetor []int, elem int) bool {\n    for i := 0; i < len(vetor); i++ {\n        if elem == vetor[i]{\n            return true\n        }\n    }\n    return false\n}\n\n\n\nfunc compararvetores (vetor1, vetor2 []int) bool{\n    for i := 0; i < len(vetor1); i++ {\n        if !estacontido(vetor2, vetor1[i]) {\n            return false\n        }\n    }\n    return true\n}\n\n\nfunc main() {\n    tam1 := 0\n    tam2 := 0\n    fmt.Scan(&tam1)\n    vet1 := criarvetor(tam1)\n    fmt.Scan(&tam2)\n    vet2 := criarvetor(tam2)\n    contido := compararvetores(vet1, vet2)\n    if contido {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "46"
         }
     ]
 }

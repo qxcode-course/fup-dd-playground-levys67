@@ -19,13 +19,13 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@struct
+- fup@if2
 - fup@for2
 - fup@string
 - sandbox@sandbox
 - eval1@eval1
-- fup@if2
 - fup@games
-- fup@struct
 - fup@list
 flags:
   inbox: all
@@ -36,5 +36,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@amora
-selected_index: 117
+selected: fup@pedra
+selected_index: 87

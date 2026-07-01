@@ -5,11 +5,21 @@ type bota struct{
     tam int
     pe string
 }
- 
-func ehpar( 
 
-)
+func criarvetor(qtd int) []bota {
+    mapa := make(map[bota]int)
+    for i := 0; i < len(vetor); i++ {
+        fmt.Scan(
+    }
+    return vetor
+}
+
+
 func main() {
-     
-    fmt.Println("Hello, World!")
+     qtd := 0
+     fmt.Scan(&qtd)
+     vetor := criarvetor(qtd)
+
+
+    fmt.Println(vetor)
 }

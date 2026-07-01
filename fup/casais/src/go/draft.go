@@ -22,27 +22,39 @@ func separarpares(vetor []int) ([]int, []int) {
     return machos, femeas
 }
 
-func contarpares (machos,femeas []int) int {
-    contagem := 0
-    for _, v := range machos{
-        for _, k := range femeas{
-            if v * (-1) == k {
-                contagem ++
-            }
+func contarpares (animais[]int ) int {
+    cont := 0
+    mapa1 := make(map[int]int)
+    mapa2 := make(map[int]int)
+    for i := 0; i < len(animais);i++{
+        if animais[i] > 0{
+            mapa1[i] ++
+        } else {
+            mapa2[i] ++
         }
     }
-    return contagem
-}
+    for chave, valor := range mapa1 {
+        esp := false 
+        for key := range mapa2 {
+            if key * -1 == chave {
+                esp = false 
+            }
 
+        }
+        if esp && valor >  0 && mapa2[chave *-1] > 0 {
+            cont++
+            valor --
+            mapa2[chave * -1] --
+        }
+    }
+    return cont
+}
 
 func main() {
     tam := 0
     fmt.Scan(&tam)
     vetor := criarvetor(tam)
-    //fmt.Println(vetor)
-    machos, femeas := separarpares(vetor)
-    fmt.Println(machos, femeas)
-    contagem := contarpares(machos, femeas)
+    fmt.Println(vetor)
+    contagem := contarpares(vetor)
     fmt.Println(contagem)
-
 }

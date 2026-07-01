@@ -9,6 +9,26 @@ func criarvetor(tam int) []int {
     return lista
 }
 
+func estacontido (vetor []int, elem int) bool {
+    for i := 0; i < len(vetor); i++ {
+        if elem == vetor[i]{
+            return true
+        }
+    }
+    return false
+}
+
+
+
+func compararvetores (vetor1, vetor2 []int) bool{
+    for i := 0; i < len(vetor1); i++ {
+        if !estacontido(vetor2, vetor1[i]) {
+            return false
+        }
+    }
+    return true
+}
+
 
 func main() {
     tam1 := 0
@@ -17,21 +37,7 @@ func main() {
     vet1 := criarvetor(tam1)
     fmt.Scan(&tam2)
     vet2 := criarvetor(tam2)
-    //fmt.Print(vet1, vet2)
-    contido := true
-    for i := 0; i < tam1; i++ {
-        encontrado := false
-        for j := 0; j < tam2; j++{
-            if vet1[i] == vet2[j] {
-                encontrado = true
-                break
-            }
-            
-        }
-        if !encontrado {
-        contido = false
-        }
-    }
+    contido := compararvetores(vet1, vet2)
     if contido {
         fmt.Println("sim")
     } else {

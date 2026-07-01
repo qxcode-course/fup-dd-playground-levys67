@@ -2,8 +2,43 @@
     "patches": [
         {
             "label": "2026-06-22_17-07-31",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,261 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (num int) %5B%5Dint%7B%0A    vetor := make(%5B%5Dint, num)%0A    for i := 0; i %3C len(vetor); i++ %7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    num := 0%0A    fmt.Scan(&num)%0A    tazos := criarvetor(num)%0A    fmt.Println(tazos\n+Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-01_11-29-20",
+            "content": "@@ -179,164 +179,8 @@\n %0A%7D%0A%0A\n-func contartazos(vetor %5B%5Dint) map%5Bint%5Dint%7B%0A    contagem := make(map%5Bint%5Dint)%0A    for i := range vetor%7B%0A        contagem%5Bi%5D ++%0A    %7D%0A    return contagem%0A%7D%0A%0A%0A\n %0Afun\n@@ -278,67 +278,6 @@\n os)%0A\n-    contagem := contartazos(tazos)%0A    fmt.Println(contagem)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-07-01_11-39-52",
+            "content": "@@ -264,13 +264,9 @@\n for \n- _, v\n+i\n  := \n@@ -295,17 +295,17 @@\n ontagem%5B\n-v\n+i\n %5D ++%0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-01_11-41-11",
+            "content": "@@ -338,315 +338,8 @@\n %0A%7D%0A%0A\n-func qualmaisaparece(cont map%5Bint%5Dint) %5B%5Dint%7B%0A    mais := make(%5B%5Dint, 0)%0A    val := 0%0A    for chave, valor := range cont%7B%0A        if val %3C valor %7B%0A            val = chave%0A        %7D else if val == valor %7B%0A            mais = append(mais, val, chave)%0A            val = chave%0A        %7D%0A%0A    %7D%0A    return mais%0A%7D%0A\n %0A%0Afu\n@@ -407,24 +407,47 @@\n rvetor(num)%0A\n+    fmt.Println(tazos)%0A\n     contagem\n@@ -473,46 +473,8 @@\n os)%0A\n-    mais := qualmaisaparece(contagem)%0A\n     \n@@ -489,12 +489,16 @@\n tln(\n-mais\n+contagem\n )%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-01_11-50-04",
+            "content": "@@ -428,17 +428,21 @@\n     for \n-_\n+chave\n , valor \n@@ -499,21 +499,21 @@\n   val = \n-valor\n+chave\n %0A       \n@@ -518,78 +518,29 @@\n    %7D\n-%0A    %7D    %0A    for chave, valor := range cont%7B%0A       \n+ else\n  if val\n-or\n  == val\n+or\n  %7B%0A \n@@ -573,16 +573,21 @@\n ais,\n+ val,\n  chave)%0A\n     \n@@ -582,16 +582,40 @@\n  chave)%0A\n+            val = chave%0A\n         \n@@ -612,24 +612,25 @@\n e%0A        %7D%0A\n+%0A\n     %7D%0A    re\n@@ -638,24 +638,25 @@\n urn mais%0A%7D%0A%0A\n+%0A\n func main() \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-01_12-07-49",
+            "content": "@@ -661,279 +661,8 @@\n %0A%7D%0A%0A\n-func ordenar(vetor%5B%5Dint) %5B%5Dint %7B%0A    for i := 0; i %3C len(vetor); i++%7B%0A        for j := 0; j %3C len(vetor) - 1 - i; j++ %7B%0A            if vetor%5Bj%5D %3E vetor%5Bj+1%5D %7B%0A                vetor%5Bj%5D, vetor%5Bj+1%5D = vetor%5Bj+1%5D, vetor%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A    return vetor%0A%7D%0A%0A%0A%0A\n func\n@@ -809,33 +809,8 @@\n em)%0A\n-    mais = ordenar(mais)%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-01_12-12-27",
+            "content": "@@ -1118,111 +1118,15 @@\n rint\n-(%22%5B %22)%0A    for i := 0; i %3C len(mais);i++ %7B%0A        fmt.Printf(%22%25d %22, mais%5Bi%5D)%0A    %7D%0A    fmt.Println(%22%5D%22\n+ln(mais\n )%0A%7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-07-01_12-14-35",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (num int) []int{\n    vetor := make([]int, num)\n    for i := 0; i < len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc contartazos(vetor []int) map[int]int{\n    contagem := make(map[int]int)\n    for  _, v := range vetor{\n        contagem[v] ++\n    }\n    return contagem\n}\n\nfunc qualmaisaparece(cont map[int]int) []int{\n    mais := make([]int, 0)\n    val := 0\n    for _, valor := range cont{\n        if val < valor {\n            val = valor\n        }\n    }    \n    for chave, valor := range cont{\n        if valor == val {\n            mais = append(mais, chave)\n        }\n    }\n    return mais\n}\n\nfunc ordenar(vetor[]int) []int {\n    for i := 0; i < len(vetor); i++{\n        for j := 0; j < len(vetor) - 1 - i; j++ {\n            if vetor[j] > vetor[j+1] {\n                vetor[j], vetor[j+1] = vetor[j+1], vetor[j]\n            }\n        }\n    }\n    return vetor\n}\n\n\n\nfunc main() {\n    num := 0\n    fmt.Scan(&num)\n    tazos := criarvetor(num)\n    contagem := contartazos(tazos)\n    mais := qualmaisaparece(contagem)\n    mais = ordenar(mais)\n    fmt.Print(\"[ \")\n    for i := 0; i < len(mais);i++ {\n        fmt.Printf(\"%d \", mais[i])\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "61"
         }
     ]
 }

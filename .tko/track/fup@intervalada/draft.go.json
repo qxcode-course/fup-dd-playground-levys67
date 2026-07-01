@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-05-26_11-53-31",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,302 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarvetor (qtd int) %5B%5Dint %7B%0A    vetor := make(%5B%5Dint, qtd)%0A    for i := 0; i %3C len(vetor); i++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A    return vetor%0A%7D%0A%0A%0Afunc main() %7B%0A    qtd := 0%0A    lims := 0%0A    limi := 0%0A    fmt.Scan(&qtd,&lims,&limi)%0A    vetor := criarvetor(qtd)%0A    fmt.Println(vetor\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-01_13-29-19",
+            "content": "@@ -180,193 +180,8 @@\n %0A%7D%0A%0A\n-func percorrer (vetor %5B%5Dint,limA, limB int) int %7B%0A    cont := 0%0A    for _, v := range vetor %7B%0A        if v %3E= limA && v %3C= limB %7B%0A            cont ++%0A        %7D%0A    %7D%0A    return cont%0A%7D%0A%0A\n %0Afun\n@@ -211,17 +211,17 @@\n %0A    lim\n-A\n+s\n  := 0%0A  \n@@ -225,17 +225,17 @@\n %0A    lim\n-B\n+i\n  := 0%0A  \n@@ -258,15 +258,15 @@\n &lim\n-A\n+s\n ,&lim\n-B\n+i\n )%0A  \n@@ -319,75 +319,6 @@\n or)%0A\n-    contagem := percorrer(vetor,limA,limB)%0A    fmt.Println(contagem)%0A\n %7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-01_13-34-17",
+            "content": "@@ -473,24 +473,47 @@\n rvetor(qtd)%0A\n+    fmt.Println(vetor)%0A\n     contagem\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-01_13-34-35",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor (qtd int) []int {\n    vetor := make([]int, qtd)\n    for i := 0; i < len(vetor); i++ {\n        fmt.Scan(&vetor[i])\n    }\n    return vetor\n}\n\nfunc percorrer (vetor []int,limA, limB int) int {\n    cont := 0\n    for _, v := range vetor {\n        if v >= limA && v <= limB {\n            cont ++\n        }\n    }\n    return cont\n}\n\n\nfunc main() {\n    qtd := 0\n    limA := 0\n    limB := 0\n    fmt.Scan(&qtd,&limA,&limB)\n    vetor := criarvetor(qtd)\n    contagem := percorrer(vetor,limA,limB)\n    fmt.Println(contagem)\n}\n",
+            "lines": "31"
         }
     ]
 }
